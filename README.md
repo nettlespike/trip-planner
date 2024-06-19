@@ -2,44 +2,59 @@
 CS 338 Final Project
 
 ## 1. Download the project.
+- Use GitHub Desktop (software) if you don't want to clone it using command prompt
 
 ## 2. Ensure you have the necessary things downloaded
 ### Node:
 Check if you have node installed by running 
 > node -v
-If it lists out the versio detail you're good! Otherwise:
-- download node at https://nodejs.org/en/download/package-manager
+
+- If it lists out the version detail you're good! Otherwise:
+  - download node at https://nodejs.org/en/download/package-manager
 - If you're using mac use homebrew. To check if you have homebrew installed type this into command terminal:
+
 > brew help
-  If you get 'command not found' please install brew by following instructions at https://brew.sh/ 
+
+- If you get 'command not found' please install brew by following instructions at https://brew.sh/ 
 
 ### npm
 Check if you have npm installed by typing this into your command prompt:
 > npm -v
-If it gives error, donwload npm:
-On mac:
+- If you're on MAC and it gives error, donwload npm:
 > brew install node
 
 
 ### SQL + SQL Workbench
 - follow instructions at https://dev.mysql.com/downloads/workbench/
 
-## 3. Download all necessary node module packages
-- go into directory and type
+## 3. Download all necessary node module packages on local machine
+- go into directory where project is stored and type in terminal
 > npm i
 
-## 5. Copy & Paste, and run create-test.sql in SQL workbench to make all your data
+## 5. Creating data into database locally
+- Open up SQL workbench and configure your user 
+- Copy, Paste, and run create-test.sql (found in backend folder in your project) in SQL workbench to make all your data
+- Update index.js in backend folder with your SQL Server username, password, hostname, etc:
 
-## 6. Update index.js with your own username, password, hostname, etc 
+```
+const db = mysql.createConnection({
+    host:"localhost",
+    user:"root",
+    password:"password",
+    database:"test_trip"
+})
+```
 
-## 7. To run the code type in terminal:
-> cd backend
+## 6. Running application 
+Go into backend directory and type:
 > npm start
 
-## 8. To see application please type localhost:8800/poi into internet browswer of choice and click enter
+Go to: localhost:8800/poi site on your favorite browser 
 
-## 9. To see output from queries, please copy and paste SQL query from test-sample.sql and paste it into the quotations in 
+## 7. Doing queries 
+To see output from queries, please copy and paste SQL query from test-sample.sql and paste it into the quotations in 
   > const q = "SELECT * FROM poi" 
+
 on line 19 of backend/index.js
 
 Refresh your browser to see the new query
