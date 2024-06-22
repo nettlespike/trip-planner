@@ -1,13 +1,15 @@
 import express from "express"
 import mysql from "mysql2"
+import dotenv from "dotenv"
 
 const app = express()
+const result = dotenv.config()
 
 const db = mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"password",
-    database:"test_trip"
+    host:process.env.DB_HOST,
+    user: process.env.DB_USERNAME,
+    password:process.env.DB_PASSWORD,
+    database:process.env.DB_DATABASE
 })
 
 app.get("/", (req, res) => {
@@ -16,7 +18,7 @@ app.get("/", (req, res) => {
 
 
 app.get("/poi", (req,res)=> {
-    const q = "SELECT * FROM poi" 
+    const q = "SELECT * FROM poi WHERE days_of_week like '%F%'" 
     db.query(q, (err, data)=> {
         if(err) {
             return res.json(err)
@@ -25,9 +27,10 @@ app.get("/poi", (req,res)=> {
     })
 })
 
+/*
 app.post("/poi", (req,res) => {
     
-    const q = "INSERT INTO `test_trip`.`poi`(`pid`,`name`,`days_of_week`, `time`, `address`, `reservation_details`, `reservation_required`, `location`, `accessibility`) VALUES (?)"
+    const q = "SELECT * FROM poi where review >= 3"
     const values = [
         req.body.pid,
         req.body.name,
@@ -43,7 +46,7 @@ app.post("/poi", (req,res) => {
         if (err) return res.json(err)
         return res.json("Created")
     })
-})
+})*/
 
 app.listen(8800, ()=> {
     console.log("Connected!")

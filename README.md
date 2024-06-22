@@ -35,15 +35,16 @@ Go into directory where project is stored and type in terminal
 ## 5. Creating data into database locally
 - Open up SQL workbench and configure your user 
 - Copy, Paste, and run create-test.sql (found in backend folder in your project) in SQL workbench to make all your data
-- Update index.js in backend folder with your SQL Server username, password, hostname, etc:
+- Create a file called ".env" in the backend folder and fill it with information like so based on your personal SQL Server configurations:
+  - Note: you probably only have to change the value of DB_PAASSWORD and DB_USERNAME
 
 ```
-const db = mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"password",
-    database:"test_trip"
-})
+DB_CONNECTION=mysql
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=test_trip
+DB_USERNAME=root
+DB_PASSWORD="my_password"
 ```
 
 ## 6. Running application 
