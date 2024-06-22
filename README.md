@@ -2,7 +2,7 @@
 CS 338 Final Project
 
 ## 1. Download the project.
-- Downlaod and use GitHub Desktop (software) if you don't want to clone it using command prompt
+- Download and use GitHub Desktop (software) if you don't want to clone it using command prompt
 
 ## 2. Ensure you have the necessary things downloaded
 ### Node:
