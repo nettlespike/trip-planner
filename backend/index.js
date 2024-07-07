@@ -7,13 +7,6 @@ const result = dotenv.config()
 
 import cors from "cors"
 
-const corsOptions ={
-    origin:'http://localhost:3000', 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200
-}
-
-
 const db = mysql.createConnection({
     host:process.env.DB_HOST,
     user: process.env.DB_USERNAME,
@@ -21,11 +14,13 @@ const db = mysql.createConnection({
     database:process.env.DB_DATABASE
 })
 
+app.use(cors()) 
+app.use(express.json())
+
 app.get("/", (req, res) => {
     // res.setHeader("Access-Control-Allow-Origin", "*");
     res.json("front page")
 })
-
 
 app.get("/poi", (req,res)=> {
     // res.setHeader("Access-Control-Allow-Origin", "*");
@@ -37,7 +32,6 @@ app.get("/poi", (req,res)=> {
         return res.json(data)
     })
 })
-
 
 app.post("/poi", (req,res) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
@@ -62,6 +56,3 @@ app.post("/poi", (req,res) => {
 app.listen(8800, ()=> {
     console.log("Connected!")
 })
-
-app.use(cors(corsOptions));
-app.use(cors()) 
