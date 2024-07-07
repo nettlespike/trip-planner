@@ -36,20 +36,25 @@ const Pois = () => {
       <div className="pois">
         {pois.map((poi) => (
           <div key={poi.pid} className="poi">
-            <h2>{poi.name}</h2>
-            <p>{poi.days_of_week}</p>
-            <p>{poi.time}</p>
-            <p>{poi.address}</p>
-            <p>{poi.reservation_details}</p>
-            <p>{poi.reservation_required}</p>
-            <p>{poi.location}</p>
-            <p>{poi.accessibility}</p>
-            <button className="delete" onClick={() => handleDelete(poi.pid)}>Delete</button>
-            <button className="update">
-              <Link to={`/update/${poi.pid}`} style={{ color: "inherit", textDecoration: "none" }}>
-                Update
-              </Link>
-            </button>
+            <div className="name">{poi.name}</div>
+            <div className="attr">
+              <p>{poi.days_of_week}</p>
+              <p>{poi.time}</p>
+              <p>{poi.address}</p>
+              <p>{poi.reservation_details}</p>
+              <p>{poi.reservation_required}</p>
+              <p>{poi.location}</p>
+              <p>{poi.accessibility}</p>  
+            </div>
+            <div className="but">
+              <button className="delete" onClick={() => handleDelete(poi.pid)}>Delete</button>
+              <button className="update">
+                <Link to={`/update/${poi.pid}`} style={{ color: "inherit", textDecoration: "none" }}>
+                  Update
+                </Link>
+              </button>
+            </div>
+            
           </div>
         ))}
       </div>
