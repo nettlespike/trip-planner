@@ -1,9 +1,9 @@
 import axios from "axios";
 import React from "react";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
-const Add = () => {
+const Update = () => {
   const [poi, setPoi] = useState({
     pid: null,
     name: "",
@@ -18,6 +18,11 @@ const Add = () => {
   // const [error,setError] = useState(false)
 
   const navigate = useNavigate();
+  const location = useLocation();
+
+  console.log(location.pathname.split("/")[2])
+
+  const pId = location.pathname.split("/")[2];
 
   const handleChange = (e) => {
     setPoi((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -28,7 +33,7 @@ const Add = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/poi", poi);
+      await axios.put("http://localhost:8800/poi/" + pId, poi);
       navigate("/");
     } catch (err) {
       console.log(err.response.data);
@@ -38,8 +43,7 @@ const Add = () => {
 
   return (
     <div className="form">
-      <h1>Add New POI</h1>
-      <input type="number" placeholder="pid" name="pid" onChange={handleChange}/>
+      <h1>Update the POI</h1>
       <input type="text" placeholder="name" name="name" onChange={handleChange}/>
       <input type="text" placeholder="days_of_week" name="days_of_week" onChange={handleChange}/>
       <input type="text" placeholder="time" name="time" onChange={handleChange}/>
@@ -48,11 +52,11 @@ const Add = () => {
       <input type="number" placeholder="reservation_required" name="reservation_required" onChange={handleChange}/>
       <input type="text" placeholder="location" name="location" onChange={handleChange}/>
       <input type="text" placeholder="accessibility" name="accessibility" onChange={handleChange}/>
-      <button onClick={handleClick}>Add</button>
+      <button onClick={handleClick}>Update</button>
       {/* {error && "Something went wrong!"} */}
       <Link to="/">See all POIs</Link>
     </div>
   );
 };
 
-export default Add;
+export default Update;

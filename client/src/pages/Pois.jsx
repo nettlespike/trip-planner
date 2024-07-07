@@ -21,6 +21,15 @@ const Pois = () => {
 
   console.log(pois);
 
+  const handleDelete = async (pid) => {
+    try {
+      await axios.delete(`http://localhost:8800/poi/${pid}`);
+      window.location.reload()
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div>
       <h1>Trip Planner</h1>
@@ -35,6 +44,12 @@ const Pois = () => {
             <p>{poi.reservation_required}</p>
             <p>{poi.location}</p>
             <p>{poi.accessibility}</p>
+            <button className="delete" onClick={() => handleDelete(poi.pid)}>Delete</button>
+            <button className="update">
+              <Link to={`/update/${poi.pid}`} style={{ color: "inherit", textDecoration: "none" }}>
+                Update
+              </Link>
+            </button>
           </div>
         ))}
       </div>

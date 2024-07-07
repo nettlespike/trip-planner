@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import Add from "./pages/Add";
 import Pois from "./pages/Pois";
-// import Update from "./pages/Update";
+import Update from "./pages/Update";
 import "./style.css"
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Pois />} />
           <Route path="/add" element={<Add />} />
-          {/* <Route path="/update/:id" element={<Update />} /> */}
+          <Route path="/update/:pid" element={<Update />} />
         </Routes>
       </BrowserRouter>
     </div>
