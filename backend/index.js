@@ -6,12 +6,12 @@ const app = express()
 const result = dotenv.config()
 
 import cors from "cors"
-// const cors = require('cors')
-// const corsOptions ={
-//     origin:'http://localhost:3000', 
-//     credentials:true,            //access-control-allow-credentials:true
-//     optionSuccessStatus:200
-// }
+
+const corsOptions ={
+    origin:'http://localhost:3000', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
 
 
 const db = mysql.createConnection({
@@ -63,5 +63,5 @@ app.listen(8800, ()=> {
     console.log("Connected!")
 })
 
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 app.use(cors()) 
