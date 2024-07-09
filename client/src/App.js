@@ -16,7 +16,6 @@ function App() {
           <Route path="/" element={<Pois />} />
           <Route path="/add" element={<Add />} />
           <Route path="/update/:pid" element={<Update />} />
-          <Route path = "/review" element = {<Review />}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -72,7 +72,7 @@ const Pois = () => {
             </div>
             <div className="attr">
               <p>{poi.days_of_week}</p>
-              <p>{poi.time}</p>
+              {/*<p>{poi.time}</p>*/}
               <p>{poi.address}</p>
               <p>{poi.reservation_required}</p>
              {/* <p>{poi.location}</p>  }
