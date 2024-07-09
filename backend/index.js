@@ -24,7 +24,18 @@ app.get("/", (req, res) => {
 
 app.get("/poi", (req,res)=> {
     // res.setHeader("Access-Control-Allow-Origin", "*");
-    const q = "SELECT * FROM poi LIMIT 10" 
+   const q = "SELECT * FROM poi WHERE `time` not like '%Tuesday Closed%' LIMIT 10"
+   //const q = query
+    db.query(q, (err, data)=> {
+        if(err) {
+            return res.json(err)
+        }
+        return res.json(data)
+    })
+})
+
+app.get("/review", (req, res) => {
+    const q = "SELECT * FROM review LIMIT 5"
     db.query(q, (err, data)=> {
         if(err) {
             return res.json(err)

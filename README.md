@@ -102,3 +102,13 @@ Go to: localhost:3000 on your favorite browser to see project
 
 
 ### Features:
+On top of existing features that can be tested by directly copy pasting lines from test-production.sql into index.js in backend, the frontend client also has an interface for certain functions. 
+
+#### Adding
+By clicking "Add POI" button, users can add POIs into the database. 
+
+#### Delete
+By clicking "Delete" beside any POI, users can delete POI from the database
+
+#### Update
+By clicking "Update" beside any POI, and can update the information in it

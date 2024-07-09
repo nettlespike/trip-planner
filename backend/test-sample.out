@@ -1,0 +1,118 @@
+1. First Query Output:
+[
+    {
+        "pid": 1,
+        "name": "Gols",
+        "days_of_week": "MTWTF",
+        "time": null,
+        "address": null,
+        "reservation_details": null,
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": null
+    },
+    {
+        "pid": 2,
+        "name": "Mels",
+        "days_of_week": "MW",
+        "time": null,
+        "address": null,
+        "reservation_details": null,
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": null
+    },
+    {
+        "pid": 3,
+        "name": "",
+        "days_of_week": "MTWF",
+        "time": "",
+        "address": "",
+        "reservation_details": "",
+        "reservation_required": null,
+        "location": "",
+        "accessibility": ""
+    }
+]
+
+
+2. First Query Output:
+[
+    {
+        "pid": 1,
+        "name": "Gols",
+        "days_of_week": "MTWTF",
+        "time": null,
+        "address": null,
+        "reservation_details": null,
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": null
+    },
+    {
+        "pid": 2,
+        "name": "Mels",
+        "days_of_week": "MW",
+        "time": null,
+        "address": null,
+        "reservation_details": null,
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": null
+    },
+]
+
+3. Second Query Output:
+[
+    {
+        "rno": 1,
+        "date": null,
+        "experience_rating": "4",
+        "would_revisit_rating": null,
+        "comment": null,
+        "cus_no": null,
+        "poi_code": 1
+    },
+    {
+        "rno": 3,
+        "date": null,
+        "experience_rating": "3",
+        "would_revisit_rating": null,
+        "comment": null,
+        "cus_no": null,
+        "poi_code": 2
+    }
+]
+
+4. Third Query Output:
+[
+    {
+        "password": "password123"
+    }
+]
+
+5. Fourth Query output:
+[
+    {
+        "pid": 1,
+        "name": "Gols",
+        "days_of_week": "MTWTF",
+        "time": null,
+        "address": null,
+        "reservation_details": null,
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": null
+    },
+    {
+        "pid": 3,
+        "name": "",
+        "days_of_week": "MTWF",
+        "time": "",
+        "address": "",
+        "reservation_details": "",
+        "reservation_required": null,
+        "location": "",
+        "accessibility": ""
+    }
+]

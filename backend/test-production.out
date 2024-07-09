@@ -1,0 +1,346 @@
+1. First query
+[
+    {
+        "pid": 1,
+        "name": "Wildcraft Grill + Long Bar",
+        "days_of_week": null,
+        "time": "Sunday 12â€“11â€¯PM, Monday 11:30â€¯AMâ€“11â€¯PM, Tuesday 11:30â€¯AMâ€“11â€¯PM, Wednesday 11:30â€¯AMâ€“11â€¯PM, Thursday 11:30â€¯AMâ€“12â€¯AM, Friday 11:30â€¯AMâ€“12â€¯AM, Saturday 12â€¯PMâ€“12â€¯AM",
+        "address": "425 King St N, Waterloo, ON N2J 2Z5, Canada",
+        "reservation_details": "https://wildcraft.ca/",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Takeaway, Dine-in, Fireplace, Great bar food, Great cocktails, Live performances, Sport, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Food, Food at bar, Happy-hour food, Healthy options, Late-night food, Organic dishes, Private dining room, Quick bite, Small plates, Spirits, Vegetarian options, Wine, Brunch, Lunch, Dinner, Catering, Counter service, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Transgender safe space, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 2,
+        "name": "Johnny Fresco",
+        "days_of_week": null,
+        "time": "Sunday 11â€¯AMâ€“10â€¯PM, Monday 10â€¯AMâ€“10â€¯PM, Tuesday 10â€¯AMâ€“10â€¯PM, Wednesday 10â€¯AMâ€“10â€¯PM, Thursday 10â€¯AMâ€“11â€¯PM, Friday 10â€¯AMâ€“11â€¯PM, Saturday 10â€¯AMâ€“11â€¯PM",
+        "address": "244 Weber St N, Waterloo, ON N2J 3H4, Canada",
+        "reservation_details": "https://order.online/store/-387385/?pickup=true&hideModal=true&utm_source=gfo&rwg_token=AJKvS9UXktjGNnTA3xvuQ7AwFgvbAYLKRptmha08nbX2utRXokmGNSuE8WrG_xiA9H6aQoE6-O7qEKBgfZFWvv7AYGhHdlRPFg%3D%3D",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "No-contact delivery, Delivery, Takeaway, Dine-in, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible toilet, Halal food, Healthy options, Late-night food, Vegan options, Vegetarian options, Lunch, Dinner, Catering, Dessert, Seating, Toilets, Casual, Groups, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking, Dogs allowed"
+    },
+    {
+        "pid": 3,
+        "name": "Proof Kitchen + Lounge",
+        "days_of_week": null,
+        "time": "Sunday 7â€“10â€¯AM 11â€¯AMâ€“10â€¯PM, Monday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Tuesday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Wednesday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Thursday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Friday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Saturday 7â€“10â€¯AM 11â€¯AMâ€“11â€¯PM",
+        "address": "110 Erb St. W, Waterloo, ON N2L 1T5, Canada",
+        "reservation_details": "https://proofwaterloo.com/?utm_source=google&utm_medium=organic&utm_campaign=google%20business%20profile&utm_term=reservation#reservations",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, No-contact delivery, Delivery, Takeaway, Dine-in, Great cocktails, Great tea selection, Sport, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Halal food, Happy-hour food, Healthy options, Late-night food, Private dining room, Small plates, Spirits, Vegan options, Vegetarian options, Wine, Breakfast, Brunch, Lunch, Dinner, Catering, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking, Valet parking"
+    },
+    {
+        "pid": 4,
+        "name": "Ethel's Lounge",
+        "days_of_week": null,
+        "time": "Sunday 11â€¯AMâ€“12â€¯AM, Monday 11â€¯AMâ€“12â€¯AM, Tuesday 11â€¯AMâ€“1â€¯AM, Wednesday 11â€¯AMâ€“1â€¯AM, Thursday 11â€¯AMâ€“1â€¯AM, Friday 11â€¯AMâ€“2â€¯AM, Saturday 11â€¯AMâ€“2â€¯AM",
+        "address": "114 King St N, Waterloo, ON N2J 2X6, Canada",
+        "reservation_details": "",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, Takeaway, Dine-in, Fast service, Great bar food, Great cocktails, Live performances, Sport, Wheelchair-accessible car park, Wheelchair-accessible entrance, Alcohol, Beer, Cocktails, Food, Food at bar, Spirits, Wine, Seating, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Groups, LGBTQ+ friendly, Transgender safe space, Credit cards, Debit cards, Mobile Wallets, Credit cards, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 5,
+        "name": "The Bauer Kitchen",
+        "days_of_week": null,
+        "time": "Sunday 10â€¯AMâ€“11â€¯PM, Monday 11â€¯AMâ€“11â€¯PM, Tuesday 11â€¯AMâ€“11â€¯PM, Wednesday 11â€¯AMâ€“11â€¯PM, Thursday 11â€¯AMâ€“12â€¯AM, Friday 11â€¯AMâ€“12â€¯AM, Saturday 10â€¯AMâ€“12â€¯AM",
+        "address": "187 King St S #102, Waterloo, ON N2J 1R1, Canada",
+        "reservation_details": "https://www.thebauerkitchen.ca/",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, Takeaway, Dine-in, Great cocktails, Great tea selection, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Healthy options, Late-night food, Organic dishes, Private dining room, Small plates, Spirits, Vegan options, Vegetarian options, Wine, Brunch, Lunch, Dinner, Catering, Counter service, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Transgender safe space, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 6,
+        "name": "Kim's Kitchen",
+        "days_of_week": null,
+        "time": "Sunday 4â€“10â€¯PM, Monday 11:30â€¯AMâ€“10â€¯PM, Tuesday 11:30â€¯AMâ€“10â€¯PM, Wednesday 11:30â€¯AMâ€“10â€¯PM, Thursday 11:30â€¯AMâ€“10â€¯PM, Friday 11:30â€¯AMâ€“11â€¯PM, Saturday 11:30â€¯AMâ€“11â€¯PM",
+        "address": "258 King St N Unit #2, Waterloo, ON N2J 2Y9, Canada",
+        "reservation_details": "",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "No-contact delivery, Delivery, Takeaway, Dine-in, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Alcohol, Beer, Halal food, Late-night food, Small plates, Vegan options, Vegetarian options, Lunch, Dinner, Seating, Toilets, Casual, Cosy, Groups, Credit cards, Debit cards, Mobile Wallets, Credit cards, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 7,
+        "name": "SolÃ© Uptown",
+        "days_of_week": null,
+        "time": "Sunday 10:30â€¯AMâ€“11â€¯PM, Monday 11:30â€¯AMâ€“11â€¯PM, Tuesday 11:30â€¯AMâ€“11â€¯PM, Wednesday 11:30â€¯AMâ€“11â€¯PM, Thursday 11:30â€¯AMâ€“11â€¯PM, Friday 11:30â€¯AMâ€“12â€¯AM, Saturday 10:30â€¯AMâ€“12â€¯AM",
+        "address": "83 Erb St. W Building Two, Waterloo, ON N2L 6C2, Canada",
+        "reservation_details": "https://www.sole.ca/reservations/",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, No-contact delivery, Delivery, Takeaway, Dine-in, Fireplace, Great cocktails, Great tea selection, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Healthy options, Late-night food, Organic dishes, Small plates, Spirits, Vegetarian options, Wine, Brunch, Lunch, Dinner, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 8,
+        "name": "Dearborn Restaurant",
+        "days_of_week": null,
+        "time": "Sunday 8â€¯AMâ€“2â€¯PM, Monday 7â€¯AMâ€“2â€¯PM, Tuesday 7â€¯AMâ€“2â€¯PM, Wednesday 7â€¯AMâ€“2â€¯PM, Thursday 7â€¯AMâ€“2â€¯PM, Friday 7â€¯AMâ€“2â€¯PM, Saturday 8â€¯AMâ€“2â€¯PM",
+        "address": "105 Lexington Rd, Waterloo, ON N2J 4R7, Canada",
+        "reservation_details": "https://www.skipthedishes.com/dearborn-restaurant?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "No-contact delivery, Delivery, Takeaway, Dine-in, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Salad bar, Small plates, Spirits, Vegetarian options, Wine, Breakfast, Brunch, Lunch, Dinner, Dessert, Seating, Gender-neutral toilets, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Family friendly, Groups, LGBTQ+ friendly, Transgender safe space, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 9,
+        "name": "The Crazy Canuck",
+        "days_of_week": null,
+        "time": "Sunday 11â€¯AMâ€“8â€¯PM, Monday 11â€¯AMâ€“8â€¯PM, Tuesday 11â€¯AMâ€“8â€¯PM, Wednesday 11â€¯AMâ€“8â€¯PM, Thursday 11â€¯AMâ€“8â€¯PM, Friday 11â€¯AMâ€“8â€¯PM, Saturday 11â€¯AMâ€“8â€¯PM",
+        "address": "845 Weber St N, Waterloo, ON N2J 4G8, Canada",
+        "reservation_details": "https://www.ubereats.com/ca/store/the-crazy-canuck-weber-st/Gy8OkrfMVYa96I3eTbZ05g?utm_campaign=place-action-link&utm_medium=organic&utm_source=google",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Delivery, Takeaway, Dine-in, Fast service, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Coffee, Quick bite, Vegetarian options, Breakfast, Brunch, Lunch, Dinner, Catering, Dessert, Seating, Toilets, Casual, Cosy, Groups, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 10,
+        "name": "Bodega Rose",
+        "days_of_week": null,
+        "time": "Sunday 10â€¯AMâ€“3â€¯PM, Monday Closed, Tuesday Closed, Wednesday 10â€¯AMâ€“3â€¯PM 5â€“10:30â€¯PM, Thursday 10â€¯AMâ€“3â€¯PM 5â€“10:30â€¯PM, Friday 10â€¯AMâ€“3â€¯PM 5â€¯PMâ€“12â€¯AM, Saturday 10â€¯AMâ€“3â€¯PM 5â€¯PMâ€“2â€¯AM",
+        "address": "17 Erb St E, Waterloo, ON N2J 1L4, Canada",
+        "reservation_details": "https://www.opentable.ca/restaurant/profile/1271416?ref=16423",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, No-contact delivery, Takeaway, Dine-in, Great cocktails, Live performances, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Food, Spirits, Wine, Seating, Toilets, Casual, Cosy, Upmarket, Groups, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, Free street parking"
+    }
+]
+
+2. Second Query
+[
+    {
+        "pid": 1,
+        "name": "Wildcraft Grill + Long Bar",
+        "days_of_week": null,
+        "time": "Sunday 12â€“11â€¯PM, Monday 11:30â€¯AMâ€“11â€¯PM, Tuesday 11:30â€¯AMâ€“11â€¯PM, Wednesday 11:30â€¯AMâ€“11â€¯PM, Thursday 11:30â€¯AMâ€“12â€¯AM, Friday 11:30â€¯AMâ€“12â€¯AM, Saturday 12â€¯PMâ€“12â€¯AM",
+        "address": "425 King St N, Waterloo, ON N2J 2Z5, Canada",
+        "reservation_details": "https://wildcraft.ca/",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Takeaway, Dine-in, Fireplace, Great bar food, Great cocktails, Live performances, Sport, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Food, Food at bar, Happy-hour food, Healthy options, Late-night food, Organic dishes, Private dining room, Quick bite, Small plates, Spirits, Vegetarian options, Wine, Brunch, Lunch, Dinner, Catering, Counter service, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Transgender safe space, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 2,
+        "name": "Johnny Fresco",
+        "days_of_week": null,
+        "time": "Sunday 11â€¯AMâ€“10â€¯PM, Monday 10â€¯AMâ€“10â€¯PM, Tuesday 10â€¯AMâ€“10â€¯PM, Wednesday 10â€¯AMâ€“10â€¯PM, Thursday 10â€¯AMâ€“11â€¯PM, Friday 10â€¯AMâ€“11â€¯PM, Saturday 10â€¯AMâ€“11â€¯PM",
+        "address": "244 Weber St N, Waterloo, ON N2J 3H4, Canada",
+        "reservation_details": "https://order.online/store/-387385/?pickup=true&hideModal=true&utm_source=gfo&rwg_token=AJKvS9UXktjGNnTA3xvuQ7AwFgvbAYLKRptmha08nbX2utRXokmGNSuE8WrG_xiA9H6aQoE6-O7qEKBgfZFWvv7AYGhHdlRPFg%3D%3D",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "No-contact delivery, Delivery, Takeaway, Dine-in, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible toilet, Halal food, Healthy options, Late-night food, Vegan options, Vegetarian options, Lunch, Dinner, Catering, Dessert, Seating, Toilets, Casual, Groups, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking, Dogs allowed"
+    },
+    {
+        "pid": 3,
+        "name": "Proof Kitchen + Lounge",
+        "days_of_week": null,
+        "time": "Sunday 7â€“10â€¯AM 11â€¯AMâ€“10â€¯PM, Monday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Tuesday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Wednesday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Thursday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Friday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Saturday 7â€“10â€¯AM 11â€¯AMâ€“11â€¯PM",
+        "address": "110 Erb St. W, Waterloo, ON N2L 1T5, Canada",
+        "reservation_details": "https://proofwaterloo.com/?utm_source=google&utm_medium=organic&utm_campaign=google%20business%20profile&utm_term=reservation#reservations",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, No-contact delivery, Delivery, Takeaway, Dine-in, Great cocktails, Great tea selection, Sport, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Halal food, Happy-hour food, Healthy options, Late-night food, Private dining room, Small plates, Spirits, Vegan options, Vegetarian options, Wine, Breakfast, Brunch, Lunch, Dinner, Catering, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking, Valet parking"
+    },
+    {
+        "pid": 4,
+        "name": "Ethel's Lounge",
+        "days_of_week": null,
+        "time": "Sunday 11â€¯AMâ€“12â€¯AM, Monday 11â€¯AMâ€“12â€¯AM, Tuesday 11â€¯AMâ€“1â€¯AM, Wednesday 11â€¯AMâ€“1â€¯AM, Thursday 11â€¯AMâ€“1â€¯AM, Friday 11â€¯AMâ€“2â€¯AM, Saturday 11â€¯AMâ€“2â€¯AM",
+        "address": "114 King St N, Waterloo, ON N2J 2X6, Canada",
+        "reservation_details": "",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, Takeaway, Dine-in, Fast service, Great bar food, Great cocktails, Live performances, Sport, Wheelchair-accessible car park, Wheelchair-accessible entrance, Alcohol, Beer, Cocktails, Food, Food at bar, Spirits, Wine, Seating, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Groups, LGBTQ+ friendly, Transgender safe space, Credit cards, Debit cards, Mobile Wallets, Credit cards, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 5,
+        "name": "The Bauer Kitchen",
+        "days_of_week": null,
+        "time": "Sunday 10â€¯AMâ€“11â€¯PM, Monday 11â€¯AMâ€“11â€¯PM, Tuesday 11â€¯AMâ€“11â€¯PM, Wednesday 11â€¯AMâ€“11â€¯PM, Thursday 11â€¯AMâ€“12â€¯AM, Friday 11â€¯AMâ€“12â€¯AM, Saturday 10â€¯AMâ€“12â€¯AM",
+        "address": "187 King St S #102, Waterloo, ON N2J 1R1, Canada",
+        "reservation_details": "https://www.thebauerkitchen.ca/",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, Takeaway, Dine-in, Great cocktails, Great tea selection, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Healthy options, Late-night food, Organic dishes, Private dining room, Small plates, Spirits, Vegan options, Vegetarian options, Wine, Brunch, Lunch, Dinner, Catering, Counter service, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Transgender safe space, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 6,
+        "name": "Kim's Kitchen",
+        "days_of_week": null,
+        "time": "Sunday 4â€“10â€¯PM, Monday 11:30â€¯AMâ€“10â€¯PM, Tuesday 11:30â€¯AMâ€“10â€¯PM, Wednesday 11:30â€¯AMâ€“10â€¯PM, Thursday 11:30â€¯AMâ€“10â€¯PM, Friday 11:30â€¯AMâ€“11â€¯PM, Saturday 11:30â€¯AMâ€“11â€¯PM",
+        "address": "258 King St N Unit #2, Waterloo, ON N2J 2Y9, Canada",
+        "reservation_details": "",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "No-contact delivery, Delivery, Takeaway, Dine-in, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Alcohol, Beer, Halal food, Late-night food, Small plates, Vegan options, Vegetarian options, Lunch, Dinner, Seating, Toilets, Casual, Cosy, Groups, Credit cards, Debit cards, Mobile Wallets, Credit cards, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 7,
+        "name": "SolÃ© Uptown",
+        "days_of_week": null,
+        "time": "Sunday 10:30â€¯AMâ€“11â€¯PM, Monday 11:30â€¯AMâ€“11â€¯PM, Tuesday 11:30â€¯AMâ€“11â€¯PM, Wednesday 11:30â€¯AMâ€“11â€¯PM, Thursday 11:30â€¯AMâ€“11â€¯PM, Friday 11:30â€¯AMâ€“12â€¯AM, Saturday 10:30â€¯AMâ€“12â€¯AM",
+        "address": "83 Erb St. W Building Two, Waterloo, ON N2L 6C2, Canada",
+        "reservation_details": "https://www.sole.ca/reservations/",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, No-contact delivery, Delivery, Takeaway, Dine-in, Fireplace, Great cocktails, Great tea selection, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Healthy options, Late-night food, Organic dishes, Small plates, Spirits, Vegetarian options, Wine, Brunch, Lunch, Dinner, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 8,
+        "name": "Dearborn Restaurant",
+        "days_of_week": null,
+        "time": "Sunday 8â€¯AMâ€“2â€¯PM, Monday 7â€¯AMâ€“2â€¯PM, Tuesday 7â€¯AMâ€“2â€¯PM, Wednesday 7â€¯AMâ€“2â€¯PM, Thursday 7â€¯AMâ€“2â€¯PM, Friday 7â€¯AMâ€“2â€¯PM, Saturday 8â€¯AMâ€“2â€¯PM",
+        "address": "105 Lexington Rd, Waterloo, ON N2J 4R7, Canada",
+        "reservation_details": "https://www.skipthedishes.com/dearborn-restaurant?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "No-contact delivery, Delivery, Takeaway, Dine-in, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Salad bar, Small plates, Spirits, Vegetarian options, Wine, Breakfast, Brunch, Lunch, Dinner, Dessert, Seating, Gender-neutral toilets, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Family friendly, Groups, LGBTQ+ friendly, Transgender safe space, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 9,
+        "name": "The Crazy Canuck",
+        "days_of_week": null,
+        "time": "Sunday 11â€¯AMâ€“8â€¯PM, Monday 11â€¯AMâ€“8â€¯PM, Tuesday 11â€¯AMâ€“8â€¯PM, Wednesday 11â€¯AMâ€“8â€¯PM, Thursday 11â€¯AMâ€“8â€¯PM, Friday 11â€¯AMâ€“8â€¯PM, Saturday 11â€¯AMâ€“8â€¯PM",
+        "address": "845 Weber St N, Waterloo, ON N2J 4G8, Canada",
+        "reservation_details": "https://www.ubereats.com/ca/store/the-crazy-canuck-weber-st/Gy8OkrfMVYa96I3eTbZ05g?utm_campaign=place-action-link&utm_medium=organic&utm_source=google",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Delivery, Takeaway, Dine-in, Fast service, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Coffee, Quick bite, Vegetarian options, Breakfast, Brunch, Lunch, Dinner, Catering, Dessert, Seating, Toilets, Casual, Cosy, Groups, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 10,
+        "name": "Bodega Rose",
+        "days_of_week": null,
+        "time": "Sunday 10â€¯AMâ€“3â€¯PM, Monday Closed, Tuesday Closed, Wednesday 10â€¯AMâ€“3â€¯PM 5â€“10:30â€¯PM, Thursday 10â€¯AMâ€“3â€¯PM 5â€“10:30â€¯PM, Friday 10â€¯AMâ€“3â€¯PM 5â€¯PMâ€“12â€¯AM, Saturday 10â€¯AMâ€“3â€¯PM 5â€¯PMâ€“2â€¯AM",
+        "address": "17 Erb St E, Waterloo, ON N2J 1L4, Canada",
+        "reservation_details": "https://www.opentable.ca/restaurant/profile/1271416?ref=16423",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, No-contact delivery, Takeaway, Dine-in, Great cocktails, Live performances, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Food, Spirits, Wine, Seating, Toilets, Casual, Cosy, Upmarket, Groups, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, Free street parking"
+    }
+]
+
+3. Output from 3rd Query
+
+
+4. Output from 4th Query
+
+5. Output from 5th Query
+[
+    {
+        "pid": 1,
+        "name": "Wildcraft Grill + Long Bar",
+        "days_of_week": null,
+        "time": "Sunday 12â€“11â€¯PM, Monday 11:30â€¯AMâ€“11â€¯PM, Tuesday 11:30â€¯AMâ€“11â€¯PM, Wednesday 11:30â€¯AMâ€“11â€¯PM, Thursday 11:30â€¯AMâ€“12â€¯AM, Friday 11:30â€¯AMâ€“12â€¯AM, Saturday 12â€¯PMâ€“12â€¯AM",
+        "address": "425 King St N, Waterloo, ON N2J 2Z5, Canada",
+        "reservation_details": "https://wildcraft.ca/",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Takeaway, Dine-in, Fireplace, Great bar food, Great cocktails, Live performances, Sport, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Food, Food at bar, Happy-hour food, Healthy options, Late-night food, Organic dishes, Private dining room, Quick bite, Small plates, Spirits, Vegetarian options, Wine, Brunch, Lunch, Dinner, Catering, Counter service, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Transgender safe space, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 2,
+        "name": "Johnny Fresco",
+        "days_of_week": null,
+        "time": "Sunday 11â€¯AMâ€“10â€¯PM, Monday 10â€¯AMâ€“10â€¯PM, Tuesday 10â€¯AMâ€“10â€¯PM, Wednesday 10â€¯AMâ€“10â€¯PM, Thursday 10â€¯AMâ€“11â€¯PM, Friday 10â€¯AMâ€“11â€¯PM, Saturday 10â€¯AMâ€“11â€¯PM",
+        "address": "244 Weber St N, Waterloo, ON N2J 3H4, Canada",
+        "reservation_details": "https://order.online/store/-387385/?pickup=true&hideModal=true&utm_source=gfo&rwg_token=AJKvS9UXktjGNnTA3xvuQ7AwFgvbAYLKRptmha08nbX2utRXokmGNSuE8WrG_xiA9H6aQoE6-O7qEKBgfZFWvv7AYGhHdlRPFg%3D%3D",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "No-contact delivery, Delivery, Takeaway, Dine-in, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible toilet, Halal food, Healthy options, Late-night food, Vegan options, Vegetarian options, Lunch, Dinner, Catering, Dessert, Seating, Toilets, Casual, Groups, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking, Dogs allowed"
+    },
+    {
+        "pid": 3,
+        "name": "Proof Kitchen + Lounge",
+        "days_of_week": null,
+        "time": "Sunday 7â€“10â€¯AM 11â€¯AMâ€“10â€¯PM, Monday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Tuesday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Wednesday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Thursday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Friday 7â€“10â€¯AM 11:30â€¯AMâ€“11â€¯PM, Saturday 7â€“10â€¯AM 11â€¯AMâ€“11â€¯PM",
+        "address": "110 Erb St. W, Waterloo, ON N2L 1T5, Canada",
+        "reservation_details": "https://proofwaterloo.com/?utm_source=google&utm_medium=organic&utm_campaign=google%20business%20profile&utm_term=reservation#reservations",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, No-contact delivery, Delivery, Takeaway, Dine-in, Great cocktails, Great tea selection, Sport, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Halal food, Happy-hour food, Healthy options, Late-night food, Private dining room, Small plates, Spirits, Vegan options, Vegetarian options, Wine, Breakfast, Brunch, Lunch, Dinner, Catering, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking, Valet parking"
+    },
+    {
+        "pid": 4,
+        "name": "Ethel's Lounge",
+        "days_of_week": null,
+        "time": "Sunday 11â€¯AMâ€“12â€¯AM, Monday 11â€¯AMâ€“12â€¯AM, Tuesday 11â€¯AMâ€“1â€¯AM, Wednesday 11â€¯AMâ€“1â€¯AM, Thursday 11â€¯AMâ€“1â€¯AM, Friday 11â€¯AMâ€“2â€¯AM, Saturday 11â€¯AMâ€“2â€¯AM",
+        "address": "114 King St N, Waterloo, ON N2J 2X6, Canada",
+        "reservation_details": "",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, Takeaway, Dine-in, Fast service, Great bar food, Great cocktails, Live performances, Sport, Wheelchair-accessible car park, Wheelchair-accessible entrance, Alcohol, Beer, Cocktails, Food, Food at bar, Spirits, Wine, Seating, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Groups, LGBTQ+ friendly, Transgender safe space, Credit cards, Debit cards, Mobile Wallets, Credit cards, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 5,
+        "name": "The Bauer Kitchen",
+        "days_of_week": null,
+        "time": "Sunday 10â€¯AMâ€“11â€¯PM, Monday 11â€¯AMâ€“11â€¯PM, Tuesday 11â€¯AMâ€“11â€¯PM, Wednesday 11â€¯AMâ€“11â€¯PM, Thursday 11â€¯AMâ€“12â€¯AM, Friday 11â€¯AMâ€“12â€¯AM, Saturday 10â€¯AMâ€“12â€¯AM",
+        "address": "187 King St S #102, Waterloo, ON N2J 1R1, Canada",
+        "reservation_details": "https://www.thebauerkitchen.ca/",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, Takeaway, Dine-in, Great cocktails, Great tea selection, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Healthy options, Late-night food, Organic dishes, Private dining room, Small plates, Spirits, Vegan options, Vegetarian options, Wine, Brunch, Lunch, Dinner, Catering, Counter service, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Transgender safe space, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 6,
+        "name": "Kim's Kitchen",
+        "days_of_week": null,
+        "time": "Sunday 4â€“10â€¯PM, Monday 11:30â€¯AMâ€“10â€¯PM, Tuesday 11:30â€¯AMâ€“10â€¯PM, Wednesday 11:30â€¯AMâ€“10â€¯PM, Thursday 11:30â€¯AMâ€“10â€¯PM, Friday 11:30â€¯AMâ€“11â€¯PM, Saturday 11:30â€¯AMâ€“11â€¯PM",
+        "address": "258 King St N Unit #2, Waterloo, ON N2J 2Y9, Canada",
+        "reservation_details": "",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "No-contact delivery, Delivery, Takeaway, Dine-in, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Alcohol, Beer, Halal food, Late-night food, Small plates, Vegan options, Vegetarian options, Lunch, Dinner, Seating, Toilets, Casual, Cosy, Groups, Credit cards, Debit cards, Mobile Wallets, Credit cards, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 7,
+        "name": "SolÃ© Uptown",
+        "days_of_week": null,
+        "time": "Sunday 10:30â€¯AMâ€“11â€¯PM, Monday 11:30â€¯AMâ€“11â€¯PM, Tuesday 11:30â€¯AMâ€“11â€¯PM, Wednesday 11:30â€¯AMâ€“11â€¯PM, Thursday 11:30â€¯AMâ€“11â€¯PM, Friday 11:30â€¯AMâ€“12â€¯AM, Saturday 10:30â€¯AMâ€“12â€¯AM",
+        "address": "83 Erb St. W Building Two, Waterloo, ON N2L 6C2, Canada",
+        "reservation_details": "https://www.sole.ca/reservations/",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, No-contact delivery, Delivery, Takeaway, Dine-in, Fireplace, Great cocktails, Great tea selection, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Healthy options, Late-night food, Organic dishes, Small plates, Spirits, Vegetarian options, Wine, Brunch, Lunch, Dinner, Dessert, Seating, Bar on site, Toilets, Wi-Fi, Wi-Fi, Cosy, Romantic, Upmarket, Family friendly, Groups, LGBTQ+ friendly, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 8,
+        "name": "Dearborn Restaurant",
+        "days_of_week": null,
+        "time": "Sunday 8â€¯AMâ€“2â€¯PM, Monday 7â€¯AMâ€“2â€¯PM, Tuesday 7â€¯AMâ€“2â€¯PM, Wednesday 7â€¯AMâ€“2â€¯PM, Thursday 7â€¯AMâ€“2â€¯PM, Friday 7â€¯AMâ€“2â€¯PM, Saturday 8â€¯AMâ€“2â€¯PM",
+        "address": "105 Lexington Rd, Waterloo, ON N2J 4R7, Canada",
+        "reservation_details": "https://www.skipthedishes.com/dearborn-restaurant?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "No-contact delivery, Delivery, Takeaway, Dine-in, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Cocktails, Coffee, Salad bar, Small plates, Spirits, Vegetarian options, Wine, Breakfast, Brunch, Lunch, Dinner, Dessert, Seating, Gender-neutral toilets, Toilets, Wi-Fi, Wi-Fi, Casual, Cosy, Family friendly, Groups, LGBTQ+ friendly, Transgender safe space, Accepts reservations, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 9,
+        "name": "The Crazy Canuck",
+        "days_of_week": null,
+        "time": "Sunday 11â€¯AMâ€“8â€¯PM, Monday 11â€¯AMâ€“8â€¯PM, Tuesday 11â€¯AMâ€“8â€¯PM, Wednesday 11â€¯AMâ€“8â€¯PM, Thursday 11â€¯AMâ€“8â€¯PM, Friday 11â€¯AMâ€“8â€¯PM, Saturday 11â€¯AMâ€“8â€¯PM",
+        "address": "845 Weber St N, Waterloo, ON N2J 4G8, Canada",
+        "reservation_details": "https://www.ubereats.com/ca/store/the-crazy-canuck-weber-st/Gy8OkrfMVYa96I3eTbZ05g?utm_campaign=place-action-link&utm_medium=organic&utm_source=google",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Delivery, Takeaway, Dine-in, Fast service, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Alcohol, Beer, Coffee, Quick bite, Vegetarian options, Breakfast, Brunch, Lunch, Dinner, Catering, Dessert, Seating, Toilets, Casual, Cosy, Groups, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, High chairs, Kids' menu, Free parking lot, Free street parking, Parking"
+    },
+    {
+        "pid": 11,
+        "name": "Sultans Mediterranean Grill - Waterloo",
+        "days_of_week": null,
+        "time": "Sunday 11â€¯AMâ€“1â€¯AM, Monday 11â€¯AMâ€“1â€¯AM, Tuesday 11â€¯AMâ€“1â€¯AM, Wednesday 11â€¯AMâ€“1â€¯AM, Thursday 11â€¯AMâ€“1â€¯AM, Friday 11â€¯AMâ€“4â€¯AM, Saturday 11â€¯AMâ€“4â€¯AM",
+        "address": "253 King St N Unit: FC2, Waterloo, ON N2J 2Y8, Canada",
+        "reservation_details": "https://www.doordash.com/store/sultan%27s-mediterranean-grill-waterloo-1064243/?utm_campaign=gpa&pickup=true",
+        "reservation_required": 0,
+        "location": null,
+        "accessibility": "Outdoor seating, Kerbside pickup, Delivery, Takeaway, Dine-in, Wheelchair-accessible car park, Wheelchair-accessible entrance, Wheelchair-accessible seating, Wheelchair-accessible toilet, Halal food, Healthy options, Late-night food, Salad bar, Small plates, Vegetarian options, Lunch, Dinner, Catering, Dessert, Seating, Toilets, Wi-Fi, Wi-Fi, Casual, Family friendly, Groups, Credit cards, Debit cards, Mobile Wallets, Credit cards, Good for kids, Free parking lot, Free street parking, Parking"
+    }
+]
