@@ -67,15 +67,16 @@ const Pois = () => {
       <div className="pois">
         {pois.map((poi) => (
           <div key={poi.pid} className="poi">
-            <div className="name">{poi.name}</div>
+            <div className="name">
+              <a href = {poi.reservation_details}>{poi.name}</a>
+            </div>
             <div className="attr">
               <p>{poi.days_of_week}</p>
               <p>{poi.time}</p>
               <p>{poi.address}</p>
-              <p>{poi.reservation_details}</p>
               <p>{poi.reservation_required}</p>
-              <p>{poi.location}</p>
-              <p>{poi.accessibility}</p>  
+             {/* <p>{poi.location}</p>  }
+             {/* <p>{poi.accessibility}</p> */}
             </div>
             <div className="but">
               <button className="delete" onClick={() => handleDeleteReq(poi.pid)}>Delete</button>

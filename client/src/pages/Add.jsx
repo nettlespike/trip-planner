@@ -39,14 +39,13 @@ const Add = () => {
   return (
     <div className="form">
       <h1>Add New POI</h1>
-      <input type="number" placeholder="pid" name="pid" onChange={handleChange}/>
       <input type="text" placeholder="name" name="name" onChange={handleChange}/>
       <input type="text" placeholder="days_of_week" name="days_of_week" onChange={handleChange}/>
       <input type="text" placeholder="time" name="time" onChange={handleChange}/>
       <input type="text" placeholder="address" name="address" onChange={handleChange}/>
       <input type="text" placeholder="reservation_details" name="reservation_details" onChange={handleChange}/>
       <input type="number" placeholder="reservation_required" name="reservation_required" onChange={handleChange}/>
-      <input type="text" placeholder="location" name="location" onChange={handleChange}/>
+     {/* <input type="text" placeholder="location" name="location" onChange={handleChange}/> */}
       <input type="text" placeholder="accessibility" name="accessibility" onChange={handleChange}/>
       <button onClick={handleClick}>Add</button>
       {/* {error && "Something went wrong!"} */}

@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 
 app.get("/poi", (req,res)=> {
     // res.setHeader("Access-Control-Allow-Origin", "*");
-    const q = "SELECT * FROM poi" 
+    const q = "SELECT * FROM poi LIMIT 10" 
     db.query(q, (err, data)=> {
         if(err) {
             return res.json(err)
