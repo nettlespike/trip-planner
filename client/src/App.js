@@ -6,7 +6,7 @@ import {
 import Add from "./pages/Add";
 import Pois from "./pages/Pois";
 import Update from "./pages/Update";
-import Register from "./pages/Reg";
+import Register from "./pages/Register";
 import "./style.css"
 
 function App() {
