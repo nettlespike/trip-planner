@@ -6,6 +6,7 @@ import {
 import Add from "./pages/Add";
 import Pois from "./pages/Pois";
 import Update from "./pages/Update";
+import Register from "./pages/Reg";
 import "./style.css"
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Pois />} />
           <Route path="/add" element={<Add />} />
           <Route path="/update/:pid" element={<Update />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </div>
