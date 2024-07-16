@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Add = () => {
   const [poi, setPoi] = useState({
-    pid: null,
     name: "",
     days_of_week: "",
     time: "",

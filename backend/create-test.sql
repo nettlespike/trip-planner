@@ -3,7 +3,7 @@ CREATE DATABASE `test_trip`;
 USE `test_trip`;
 
 CREATE TABLE `poi` (
-  `pid` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
+  `pid` tinyint(4) NOT NULL UNIQUE AUTO_INCREMENT,
   `name` LONGTEXT DEFAULT NULL,
   `days_of_week` VARCHAR(45) DEFAULT NULL,
   `time` VARCHAR(45) DEFAULT NULL,
@@ -21,7 +21,7 @@ INSERT INTO `test_trip`.`poi` (`pid`, `name`, `days_of_week`, `reservation_requi
 
 
 CREATE TABLE `restaurant` (
-  `rid` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
+  `rid` tinyint(4) NOT NULL UNIQUE AUTO_INCREMENT,
   `type_of_cuisine` VARCHAR(45) DEFAULT NULL,
   `menu_language` VARCHAR(45) DEFAULT NULL,
   `dietary` VARCHAR(45) DEFAULT NULL,
@@ -35,14 +35,14 @@ INSERT INTO `test_trip`.`restaurant` (`rid`, `type_of_cuisine`) VALUES ('3', 'Ch
 
 
 CREATE TABLE `activity` (
-  `aid` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
+  `aid` tinyint(4) NOT NULL UNIQUE AUTO_INCREMENT,
   `is_time_sensitive` TINYINT DEFAULT 0,
   PRIMARY KEY (`aid`),
   CONSTRAINT FOREIGN KEY (`aid`) REFERENCES `poi` (`pid`) ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `users` (
-  `uid` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
+  `uid` tinyint(4) NOT NULL UNIQUE AUTO_INCREMENT,
   `username` VARCHAR(45) NOT NULL DEFAULT "guest",
   `email` VARCHAR(45) DEFAULT NULL,
   `password` VARCHAR(45) NOT NULL DEFAULT "password",

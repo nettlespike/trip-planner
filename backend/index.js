@@ -46,9 +46,8 @@ app.get("/review", (req, res) => {
 
 app.post("/poi", (req,res) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
-    const q = "INSERT INTO poi(`pid`,`name`,`days_of_week`,`time`,`address`,`reservation_details`,`reservation_required`,`location`, `accessibility`) VALUES (?)";
+    const q = "INSERT INTO poi(`name`,`days_of_week`,`time`,`address`,`reservation_details`,`reservation_required`,`location`, `accessibility`) VALUES (?)";
     const values = [
-        req.body.pid,
         req.body.name,
         req.body.days_of_week,
         req.body.time,
