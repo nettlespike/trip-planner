@@ -26,7 +26,7 @@ CREATE TABLE `restaurant` (
   `menu_language` VARCHAR(45) DEFAULT NULL,
   `dietary` VARCHAR(45) DEFAULT NULL,
   PRIMARY KEY (`rid`),
-  CONSTRAINT FOREIGN KEY (`rid`) REFERENCES `poi` (`pid`) ON UPDATE CASCADE
+  CONSTRAINT FOREIGN KEY (`rid`) REFERENCES `poi` (`pid`) ON UPDATE ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `test_trip`.`restaurant` (`rid`, `type_of_cuisine`) VALUES ('1', 'Chinese');
@@ -38,7 +38,7 @@ CREATE TABLE `activity` (
   `aid` tinyint(4) NOT NULL UNIQUE AUTO_INCREMENT,
   `is_time_sensitive` TINYINT DEFAULT 0,
   PRIMARY KEY (`aid`),
-  CONSTRAINT FOREIGN KEY (`aid`) REFERENCES `poi` (`pid`) ON UPDATE CASCADE
+  CONSTRAINT FOREIGN KEY (`aid`) REFERENCES `poi` (`pid`) ON UPDATE ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `users` (
@@ -60,7 +60,7 @@ INSERT INTO `test_trip`.`users` (`uid`, `username`,`password`) VALUES (2, "jane"
 CREATE TABLE `customer` (
   `cno` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
   PRIMARY KEY (`cno`),
-  CONSTRAINT FOREIGN KEY (`cno`) REFERENCES `users` (`uid`) ON UPDATE CASCADE
+  CONSTRAINT FOREIGN KEY (`cno`) REFERENCES `users` (`uid`) ON UPDATE ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
@@ -73,7 +73,7 @@ CREATE TABLE `review` (
   `cus_no` tinyint(4) DEFAULT NULL,
   `poi_code` tinyint(4) NOT NULL DEFAULT 0,
   PRIMARY KEY (`rno`),
-  CONSTRAINT FOREIGN KEY (`poi_code`) REFERENCES `poi` (`pid`) ON UPDATE CASCADE,
+  CONSTRAINT FOREIGN KEY (`poi_code`) REFERENCES `poi` (`pid`) ON UPDATE ON DELETE CASCADE,
   CONSTRAINT FOREIGN KEY (`cus_no`) REFERENCES `customer`(`cno`) 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -87,7 +87,7 @@ CREATE TABLE `administrator` (
   `ano` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
   `isStoreOwner` TINYINT NOT NULL DEFAULT 1,
   PRIMARY KEY (`ano`),
-  CONSTRAINT FOREIGN KEY (`ano`) REFERENCES `users` (`uid`) ON UPDATE CASCADE
+  CONSTRAINT FOREIGN KEY (`ano`) REFERENCES `users` (`uid`) ON UPDATE ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `schedule` (
@@ -96,14 +96,14 @@ CREATE TABLE `schedule` (
     `time` VARCHAR(45) DEFAULT NULL,
     `cus_no` tinyint(4) DEFAULT NULL,
     PRIMARY KEY(`sno`),
-    CONSTRAINT FOREIGN KEY (`cus_no`) REFERENCES `users` (`uid`) ON UPDATE CASCADE
+    CONSTRAINT FOREIGN KEY (`cus_no`) REFERENCES `users` (`uid`) ON UPDATE ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `contains` (
     `pno` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
     `sno` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
     PRIMARY KEY (`pno`, `sno`),
-    CONSTRAINT FOREIGN KEY (`pno`) REFERENCES `poi` (`pid`) ON UPDATE CASCADE,
-    CONSTRAINT FOREIGN KEY (`sno`) REFERENCES `schedule` (`sno`) ON UPDATE CASCADE
+    CONSTRAINT FOREIGN KEY (`pno`) REFERENCES `poi` (`pid`) ON UPDATE ON DELETE CASCADE,
+    CONSTRAINT FOREIGN KEY (`sno`) REFERENCES `schedule` (`sno`) ON UPDATE ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
