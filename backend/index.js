@@ -5,6 +5,7 @@ import cors from "cors"
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/users.js";
 import postRoutes from "./routes/posts.js";
+import cookieParser from "cookie-parser";
 
 const app = express()
 const result = dotenv.config()
@@ -18,7 +19,7 @@ export const db = mysql.createConnection({
 
 app.use(cors()) 
 app.use(express.json())
-
+app.use(cookieParser())
 app.use("/poi/auth", authRoutes);
 app.use("/poi/users", userRoutes);
 app.use("/poi/posts", postRoutes);
@@ -27,16 +28,16 @@ app.get("/", (req, res) => {
     res.json("front page")
 })
 
-// // for testing purposes
-// app.get("/users", (req,res)=> {
-//    const q = "SELECT * FROM users"
-//     db.query(q, (err, data)=> {
-//         if(err) {
-//             return res.json(err)
-//         }
-//         return res.json(data)
-//     })
-// })
+// for testing purposes
+app.get("/users", (req,res)=> {
+   const q = "SELECT * FROM users"
+    db.query(q, (err, data)=> {
+        if(err) {
+            return res.json(err)
+        }
+        return res.json(data)
+    })
+})
 
 app.get("/poi", (req,res)=> {
    const q = "SELECT * FROM poi LIMIT 10"

@@ -17,14 +17,14 @@ const Register = () => {
     setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  console.log(inputs)
+  // console.log(inputs)
 
   const handleClick = async (e) => {
     e.preventDefault();
     try {
       await axios.post("http://localhost:8800/poi/auth/register", inputs);
       setError(false)
-    //   navigate("/");
+      navigate("/login");
     } catch (err) {
       console.log(err.response.data);
       setError(true)
@@ -39,6 +39,7 @@ const Register = () => {
       <input required type="password" placeholder="password" name="password" onChange={handleChange}/>
       <button onClick={handleClick}>Register</button>
       {error && "Something went wrong!"}
+      <span> Do you have an account? <Link to="/login">Login</Link> </span>
       <Link to="/">See all POIs</Link>
     </div>
   );
