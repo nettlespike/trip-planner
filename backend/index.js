@@ -40,8 +40,8 @@ app.get("/users", (req,res)=> {
     })
 })
 
-app.get("/poi", (req,res)=> {
-   const q = "SELECT * FROM poi LIMIT 10"
+app.get("/review", (req, res) => {
+    const q = "SELECT * FROM review LIMIT 5"
     db.query(q, (err, data)=> {
         if(err) {
             return res.json(err)
@@ -50,8 +50,10 @@ app.get("/poi", (req,res)=> {
     })
 })
 
-app.get("/review", (req, res) => {
-    const q = "SELECT * FROM review LIMIT 5"
+///// add POI (admin view)
+
+app.get("/poi", (req,res)=> {
+   const q = "SELECT * FROM poi LIMIT 10"
     db.query(q, (err, data)=> {
         if(err) {
             return res.json(err)
@@ -77,49 +79,6 @@ app.post("/poi", (req,res) => {
         if (err) return res.send(err);
         return res.json(data);
     })
-})
-
-app.get("/schedule", (req, res) => {
-    const q = "SELECT * FROM schedule"
-    db.query(q, (err, data)=> {
-        if(err) {
-            return res.json(err)
-        }
-        return res.json(data)
-    })
-})
-
-// app.post("/schedule/:pid", (req,res) => {
-app.post("/schedule", (req,res) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    const q = "INSERT INTO schedule(`cus_no`,`pid`) VALUES (?)"
-    
-    // const cId = (localStorage.getItem("user"))['uid']
-    // const pId = req;
-    db.query(q, [values], (err, data)=> {
-        if (err) return res.send(err);
-        return res.json(data);
-    })
-    // console.log(localStorage.getItem("user"))
-    // res.setHeader("Access-Control-Allow-Origin", "*");
-    // console.log(localStorage.getItem("user"))
-    // const token = req.cookies.access_token;
-    // // console.log(cookies)
-    // if (!token) return res.status(401).json("Not authenticated!");
-
-    // jwt.verify(token, "jwtkey", (err, userInfo) => {
-    //     if (err) return res.status(403).json("Token is not valid!");
-        
-    //     const pId = req.params.pid;
-    //     const cId = userInfo.id;
-    //     console.log(pId)
-    //     console.log(cId)
-    //     const q = "INSERT INTO schedule(`cus_no`,`pid`) VALUES (?)";
-    //     db.query(q, [cId, pId], (err, data)=> {
-    //         if (err) return res.send(err);
-    //         return res.json(data);
-    //     });
-    // });
 })
 
 app.delete("/poi/:pid", (req, res) => {
@@ -166,6 +125,51 @@ app.post("/", (req,res) => {
         if (err) return res.send(err);
         return res.json(data);
     })
+})
+
+///// schedule
+
+app.get("/schedule", (req, res) => {
+    const q = "SELECT * FROM schedule"
+    db.query(q, (err, data)=> {
+        if(err) {
+            return res.json(err)
+        }
+        return res.json(data)
+    })
+})
+
+// app.post("/schedule/:pid", (req,res) => {
+app.post("/schedule", (req,res) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    const q = "INSERT INTO schedule(`cus_no`,`pid`) VALUES (?)"
+    
+    const cId = (localStorage.getItem("user"))['uid']
+    const pId = req.body.pid;
+    db.query(q, [cId, pId], (err, data)=> {
+        if (err) return res.send(err);
+        return res.json(data);
+    })
+    // console.log(localStorage.getItem("user"))
+    // res.setHeader("Access-Control-Allow-Origin", "*");
+    // console.log(localStorage.getItem("user"))
+    // const token = req.cookies.access_token;
+    // // console.log(cookies)
+    // if (!token) return res.status(401).json("Not authenticated!");
+
+    // jwt.verify(token, "jwtkey", (err, userInfo) => {
+    //     if (err) return res.status(403).json("Token is not valid!");
+        
+    //     const pId = req.params.pid;
+    //     const cId = userInfo.id;
+    //     console.log(pId)
+    //     console.log(cId)
+    //     const q = "INSERT INTO schedule(`cus_no`,`pid`) VALUES (?)";
+    //     db.query(q, [cId, pId], (err, data)=> {
+    //         if (err) return res.send(err);
+    //         return res.json(data);
+    //     });
+    // });
 })
 
 app.listen(8800, ()=> {

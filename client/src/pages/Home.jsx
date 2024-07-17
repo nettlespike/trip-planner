@@ -40,7 +40,7 @@ const Home = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/posts", pois);
+      await axios.post("http://localhost:8800/schedule", pois);
       // var hi = localStorage.getItem("user")
       // console.log(hi)
       // navigate("/");

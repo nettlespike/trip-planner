@@ -19,7 +19,7 @@ const Navbar = () => {
           ) : (
             <Link className="link" to="/login">Login</Link>
           )}
-          <span className="home"><Link className="home" to="/">Clear filters</Link></span>
+          <span className="home"><Link className="home" to="/">Customer Home Page</Link></span>
           <span className="write"><Link className="link" to="/review">View all reviews</Link></span>
         </div>
       </div>
