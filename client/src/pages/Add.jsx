@@ -22,7 +22,7 @@ const Add = () => {
     setPoi((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  console.log(poi)
+  // console.log(poi)
 
   const handleClick = async (e) => {
     e.preventDefault();

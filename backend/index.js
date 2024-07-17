@@ -110,6 +110,20 @@ app.put("/poi/:pid", (req, res) => {
     });
 });
 
+app.post("/", (req,res) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    const q = "INSERT INTO review(`experience_rating`,`would_revisit_rating`,`comment`) VALUES (?)";
+    const values = [
+        req.body.experience_rating,
+        req.body.would_revisit_rating,
+        req.body.comment,
+    ]
+    db.query(q, [values], (err, data)=> {
+        if (err) return res.send(err);
+        return res.json(data);
+    })
+})
+
 app.listen(8800, ()=> {
     console.log("Connected!")
 })
