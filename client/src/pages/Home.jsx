@@ -3,10 +3,15 @@ import { useEffect } from "react";
 import { useState, useRef } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Dialog from "./Dialog";
+import { AuthContext } from "../context/authContext.js";
+import { useContext } from "react";
 
 const Home = () => {
   const [pois, setPois] = useState([]);
+
+  // const { token } = useContext(AuthContext);
+
+  // console.log(token)
 
   useEffect(() => {
     const fetchAllPois = async () => {
@@ -22,12 +27,26 @@ const Home = () => {
 
   console.log(pois);
 
-  const handleAdd = async (pid) => {
+  const handleAdd = async (pois) => {
     try {
-      await axios.delete(`http://localhost:8800/poi/${pid}`);
-      window.location.reload()
+      await axios.post("http://localhost:8800/schedule", pois);
+      // await axios.post(`http://localhost:8800/schedule/${pid}`);
+      // window.location.reload()
     } catch (err) {
       console.log(err);
+    }
+  };
+
+  const handleClick = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:8800/posts", pois);
+      // var hi = localStorage.getItem("user")
+      // console.log(hi)
+      // navigate("/");
+    } catch (err) {
+      console.log(err.response.data);
+      // setError(true)
     }
   };
 
@@ -48,12 +67,14 @@ const Home = () => {
              {/* <p>{poi.location}</p>  }
              {/* <p>{poi.accessibility}</p> */}
             </div>
-            <button className="but">
-                <Link to="/addReview" style={{ color: "inherit", textDecoration: "none" }}>
+            <div className="but">
+              <button className="add" onClick={handleClick}>Add to Schedule</button>
+              <button className="add">
+              <Link to="/addReview" style={{ color: "inherit", textDecoration: "none" }}>
                 Add review
-                </Link>
-            </button>
-            
+              </Link>
+              </button>
+            </div>
           </div>
         ))}
       </div>

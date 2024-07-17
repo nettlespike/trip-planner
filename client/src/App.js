@@ -14,6 +14,7 @@ import Update from "./pages/Update";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import AddReview from "./pages/AddReview";
+import Footer from "./components/Footer";
 import "./style.css"
 
 const Layout = () => {
@@ -21,7 +22,7 @@ const Layout = () => {
     <>
       <Navbar />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

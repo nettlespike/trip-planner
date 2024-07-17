@@ -5,8 +5,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Update = () => {
 
-  
-
   const navigate = useNavigate();
   const location = useLocation();
 
