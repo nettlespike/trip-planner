@@ -45,10 +45,7 @@ CREATE TABLE `users` (
   `uid` tinyint(4) NOT NULL UNIQUE AUTO_INCREMENT,
   `username` VARCHAR(45) NOT NULL DEFAULT "guest",
   `email` VARCHAR(45) DEFAULT NULL,
-  `password` VARCHAR(45) NOT NULL DEFAULT "password",
-  `comment` VARCHAR(45) DEFAULT NULL,
-  `cus_no` VARCHAR(45) DEFAULT NULL,
-  `poi_code` tinyint(4) DEFAULT 0,
+  `password` VARCHAR(60) NOT NULL DEFAULT "password",
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 

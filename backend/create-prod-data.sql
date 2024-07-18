@@ -67,7 +67,7 @@ CREATE TABLE `users` (
   `uid` INT NOT NULL UNIQUE AUTO_INCREMENT,
   `username` VARCHAR(50) NOT NULL DEFAULT "guest",
   `email` VARCHAR(100) DEFAULT NULL,
-  `password` VARCHAR(50) NOT NULL DEFAULT "password",
+  `password` VARCHAR(60) NOT NULL DEFAULT "password",
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
