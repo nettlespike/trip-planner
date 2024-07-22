@@ -10,9 +10,9 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <div className="links">
-          <Link className="link" to="/?cat=art"><h6>Filter1</h6></Link>
+          {/* <Link className="link" to="/?cat=art"><h6>Filter1</h6></Link>
           <Link className="link" to="/?cat=science"><h6>Filter2</h6></Link>
-          <Link className="link" to="/?cat=technology"><h6>Filter3</h6></Link>
+          <Link className="link" to="/?cat=technology"><h6>Filter3</h6></Link> */}
           <span>{"Hello, "+ currentUser?.username}</span>
           {currentUser ? (
             <span onClick={logout}>Logout</span>

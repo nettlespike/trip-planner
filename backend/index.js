@@ -50,6 +50,37 @@ app.get("/review", (req, res) => {
     })
 })
 
+// filters
+
+app.get("/reservation", (req,res)=> {
+    const q = "SELECT * FROM poi WHERE reservation_required = '1'"
+     db.query(q, (err, data)=> {
+         if(err) {
+             return res.json(err)
+         }
+         return res.json(data)
+     })
+ })
+
+app.get("/noreservation", (req,res)=> {
+    const q = "SELECT * FROM poi WHERE reservation_required = '0'"
+     db.query(q, (err, data)=> {
+         if(err) {
+             return res.json(err)
+         }
+         return res.json(data)
+     })
+ })
+
+ app.get("/rating", (req,res)=> {
+    const q = "SELECT * FROM review WHERE experience_rating >= ?"
+    const values = req.body.rating
+    db.query(q, [values], (err, data)=> {
+        if (err) return res.send(err);
+        return res.json(data);
+    })
+ })
+
 ///// add POI (admin view)
 
 app.get("/poi", (req,res)=> {
