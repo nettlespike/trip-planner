@@ -1,20 +1,18 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState, useRef } from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/authContext.js";
-import { useContext } from "react";
 import ReactSearchBox from "react-search-box";
 
 const Home = () => {
   const [pois, setPois] = useState([]);
   const [checkbox, setCheckbox] = useState([]);
   const [spid, setSpid] = useState([]);
-
-  // const { token } = useContext(AuthContext);
-
-  // console.log(token)
+  const { currentUser, logout } = useContext(AuthContext);
+  const [poiUser, setPoiUser] = useState({
+    poi: "",
+    user: "",
+  });
 
   useEffect(() => {
     const fetchAllPois = async () => {
@@ -26,30 +24,18 @@ const Home = () => {
       }
     };
     fetchAllPois();
+    setPoiUser({poi: pois, user: currentUser})
   }, []);
 
   console.log(pois);
 
-  const handleAdd = async (pois) => {
+  const handleSchedule = async (e) => {
+    // e.preventDefault();
+    console.log({poi: e, user: currentUser})
     try {
-      await axios.post("http://localhost:8800/schedule", pois);
-      // await axios.post(`http://localhost:8800/schedule/${pid}`);
-      // window.location.reload()
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  const handleClick = async (e) => {
-    e.preventDefault();
-    try {
-      await axios.post("http://localhost:8800/schedule", pois);
-      // var hi = localStorage.getItem("user")
-      // console.log(hi)
-      // navigate("/");
+      await axios.post("http://localhost:8800/schedule", {poi: e, user: currentUser});
     } catch (err) {
       console.log(err.response.data);
-      // setError(true)
     }
   };
 
@@ -110,7 +96,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Trip Planner</h1>
+      <h1>POIs</h1>
       <div className="filter_container">
         <input type="checkbox" value={1} onChange={clickReservation} checked={checkbox == 1}/> <span>Reservation required</span>
         <input type="checkbox" value={2} onChange={clickNoReservation} checked={checkbox == 2}/> <span>No reservation required</span>
@@ -130,7 +116,7 @@ const Home = () => {
               <p>{poi.reservation_required}</p>
             </div>
             <div className="but">
-              <button className="add" onClick={handleClick}>Add to Schedule</button>
+              <button className="add" onClick={() => handleSchedule(poi.pid)}>Add to Schedule</button>
               <button className="add">
               <Link to="/addReview" style={{ color: "inherit", textDecoration: "none" }}>
                 Add review

@@ -29,7 +29,6 @@ app.get("/", (req, res) => {
     res.json("front page")
 })
 
-// for testing purposes
 app.get("/users", (req,res)=> {
    const q = "SELECT * FROM users"
     db.query(q, (err, data)=> {
@@ -226,38 +225,43 @@ app.get("/schedule", (req, res) => {
     })
 })
 
-// app.post("/schedule/:pid", (req,res) => {
 app.post("/schedule", (req,res) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
     const q = "INSERT INTO schedule(`cus_no`,`pid`) VALUES (?)"
-    
-    const cId = (localStorage.getItem("user"))['uid']
-    const pId = req.body.pid;
-    db.query(q, [cId, pId], (err, data)=> {
+    const values = [
+        req.body.user.uid,
+        req.body.poi,
+    ]
+    db.query(q, [values], (err, data)=> {
         if (err) return res.send(err);
         return res.json(data);
     })
-    // console.log(localStorage.getItem("user"))
-    // res.setHeader("Access-Control-Allow-Origin", "*");
-    // console.log(localStorage.getItem("user"))
-    // const token = req.cookies.access_token;
-    // // console.log(cookies)
-    // if (!token) return res.status(401).json("Not authenticated!");
-
-    // jwt.verify(token, "jwtkey", (err, userInfo) => {
-    //     if (err) return res.status(403).json("Token is not valid!");
-        
-    //     const pId = req.params.pid;
-    //     const cId = userInfo.id;
-    //     console.log(pId)
-    //     console.log(cId)
-    //     const q = "INSERT INTO schedule(`cus_no`,`pid`) VALUES (?)";
-    //     db.query(q, [cId, pId], (err, data)=> {
-    //         if (err) return res.send(err);
-    //         return res.json(data);
-    //     });
-    // });
 })
+
+app.delete("/schedule/:sno", (req, res) => {
+    const sno = req.params.sno;
+    const q = " DELETE FROM schedule WHERE sno = ? ";
+  
+    db.query(q, [sno], (err, data) => {
+      if (err) return res.send(err);
+      return res.json(data);
+    });
+});
+
+app.put("/schedule/:sno", (req, res) => {
+    const sno = req.params.sno;
+    const q = "UPDATE schedule SET `date`= ?, `time`= ? WHERE sno = ?";
+
+    const values = [
+        req.body.date,
+        req.body.time,
+    ];
+
+    db.query(q, [...values, sno], (err, data) => {
+        if (err) return res.send(err);
+        return res.json(data);
+    });
+});
 
 app.listen(8800, ()=> {
     console.log("Connected!")

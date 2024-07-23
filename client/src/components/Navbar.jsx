@@ -20,6 +20,10 @@ const Navbar = () => {
             <span className="home"><Link className="home" to="/">Home Page</Link></span>
           }
           <span className="write"><Link className="link" to="/review">View all reviews</Link></span>
+          {!(currentUser?.isAdmin) ? 
+            <span className="schedule"><Link className="schedule" to="/schedule">My Schedule</Link></span> : 
+            null
+          }
           {currentUser?.isAdmin ?
             <span className="manage"><Link className="manage" to="/poi">Manage POIs</Link></span> : 
             null

@@ -16,7 +16,9 @@ import Login from "./pages/Login";
 import AddReview from "./pages/AddReview";
 import Review from "./pages/Review";
 import Footer from "./components/Footer";
-import Password from "./pages/Password";
+import Password from "./pages/ViewPassword";
+import Schedule from "./pages/Schedule";
+import UpdateSchedule from "./pages/UpdateSchedule";
 import "./style.css"
 
 const Layout = () => {
@@ -69,6 +71,14 @@ const router = createBrowserRouter([
       {
         path: "/password",
         element: <Password />,
+      },
+      {
+        path: "/schedule",
+        element: <Schedule />,
+      },
+      {
+        path: "/updateSchedule/:sno",
+        element: <UpdateSchedule />,
       },
     ],
   },
