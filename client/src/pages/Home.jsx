@@ -9,10 +9,6 @@ const Home = () => {
   const [checkbox, setCheckbox] = useState([]);
   const [spid, setSpid] = useState([]);
   const { currentUser, logout } = useContext(AuthContext);
-  const [poiUser, setPoiUser] = useState({
-    poi: "",
-    user: "",
-  });
 
   useEffect(() => {
     const fetchAllPois = async () => {
@@ -24,7 +20,6 @@ const Home = () => {
       }
     };
     fetchAllPois();
-    setPoiUser({poi: pois, user: currentUser})
   }, []);
 
   console.log(pois);
@@ -107,9 +102,10 @@ const Home = () => {
       <div className="pois">
         {pois.map((poi) => (
           <div key={poi.pid} className="poi">
-            <div className="name">
-              <a href = {poi.reservation_details}>{poi.name}</a>
-            </div>
+            {!(poi.reservation_details) ? 
+              <div className="name"> {poi.name} </div> : 
+              <div className="name"> <a href = {poi.reservation_details}>{poi.name}</a> </div>
+            }
             <div className="attr">
               <p>{poi.days_of_week}</p>
               <p>{poi.address}</p>

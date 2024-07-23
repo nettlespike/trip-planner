@@ -1,12 +1,12 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState, useRef } from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Dialog from "./Dialog";
+import { AuthContext } from "../context/authContext.js";
 
 const Schedule = () => {
   const [pois, setPois] = useState([]);
+  const { currentUser, logout } = useContext(AuthContext);
 
   const [dialog, setDialog] = useState({
     message: "",
@@ -41,7 +41,7 @@ const Schedule = () => {
   useEffect(() => {
     const fetchAllPois = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/schedule");
+        const res = await axios.get(`http://localhost:8800/schedule/${(currentUser.uid)}`);
         setPois(res.data);
       } catch (err) {
         console.log(err);
@@ -67,21 +67,24 @@ const Schedule = () => {
       <div className="pois">
         {pois.map((poi) => (
           <div key={poi.sno} className="poi">
-          <div className="attr">
-            <p>Date: {poi.date}</p>
-            <p>Time: {poi.time}</p>
-            <p>Cus_no (remove): {poi.cus_no}</p>
-            <p>pid: {poi.pid}</p>
-          </div>
-          <div className="but">
-            <button className="delete" onClick={() => handleDeleteReq(poi.sno)}>Delete</button>
-            <button className="update">
-              <Link to={`/updateSchedule/${poi.sno}`} style={{ color: "inherit", textDecoration: "none" }}>
-                Update date and time
-              </Link>
-            </button>
-          </div>
-            
+            {!(poi.reservation_details) ? 
+              <div className="name"> {poi.name} </div> : 
+              <div className="name"> <a href = {poi.reservation_details}>{poi.name}</a> </div>
+            }
+            <div className="attr">
+              <p>pid: {poi.pid}</p>
+              <p>Date: {poi.date}</p>
+              <p>Time: {poi.time}</p>
+              <p>Cus_no (remove): {poi.cus_no}</p>
+            </div>
+            <div className="but">
+              <button className="delete" onClick={() => handleDeleteReq(poi.sno)}>Delete</button>
+              <button className="update">
+                <Link to={`/updateSchedule/${poi.sno}`} style={{ color: "inherit", textDecoration: "none" }}>
+                  Update date and time
+                </Link>
+              </button>
+            </div> 
           </div>
         ))}
         {dialog.isLoading && (

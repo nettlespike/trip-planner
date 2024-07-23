@@ -35,7 +35,7 @@ const Review = () => {
     <div>
       <h1>Reviews</h1>
       <div className="filter_container">
-        <p>Experience: </p>
+        <p>Experience rating is at least: </p>
         <Rating onClick={handleExpRating}/>
       </div>
       <div className="pois">

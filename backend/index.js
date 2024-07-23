@@ -215,15 +215,23 @@ app.post("/", (req,res) => {
 
 ///// schedule
 
-app.get("/schedule", (req, res) => {
-    const q = "SELECT * FROM schedule"
-    db.query(q, (err, data)=> {
-        if(err) {
-            return res.json(err)
-        }
-        return res.json(data)
-    })
+app.get("/schedule/:uid", (req, res) => {
+    const uid = req.params.uid;
+    const  q = "SELECT schedule.*, poi.name, poi.reservation_details FROM schedule LEFT JOIN poi ON schedule.pid = poi.pid WHERE schedule.cus_no = ?";
+    db.query(q, [uid], (err, data) => {
+        if (err) return res.send(err);
+        return res.json(data);
+      });
 })
+
+app.get("/rating/:rating", (req, res) => {
+    const rating = req.params.rating;
+    const q = "SELECT * FROM review WHERE experience_rating >= ?";
+    db.query(q, [rating], (err, data) => {
+      if (err) return res.send(err);
+      return res.json(data);
+    });
+});
 
 app.post("/schedule", (req,res) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
