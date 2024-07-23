@@ -19,7 +19,6 @@ INSERT INTO `test_trip`.`poi` (`pid`, `name`, `days_of_week`, `reservation_requi
 INSERT INTO `test_trip`.`poi` (`pid`, `name`, `days_of_week`, `reservation_required`) VALUES ('2', 'Mels', 'MW', '0');
 INSERT INTO `test_trip`.`poi` (`pid`, `name`, `days_of_week`, `reservation_required`) VALUES ('3', 'Yushang', 'MTW', '0');
 
-
 CREATE TABLE `restaurant` (
   `rid` tinyint(4) NOT NULL UNIQUE AUTO_INCREMENT,
   `type_of_cuisine` VARCHAR(45) DEFAULT NULL,
@@ -33,7 +32,6 @@ INSERT INTO `test_trip`.`restaurant` (`rid`, `type_of_cuisine`) VALUES ('1', 'Ch
 INSERT INTO `test_trip`.`restaurant` (`rid`, `type_of_cuisine`) VALUES ('2', 'English');
 INSERT INTO `test_trip`.`restaurant` (`rid`, `type_of_cuisine`) VALUES ('3', 'Chinese');
 
-
 CREATE TABLE `activity` (
   `aid` tinyint(4) NOT NULL UNIQUE AUTO_INCREMENT,
   `is_time_sensitive` TINYINT DEFAULT 0,
@@ -46,20 +44,13 @@ CREATE TABLE `users` (
   `username` VARCHAR(45) NOT NULL DEFAULT "guest",
   `email` VARCHAR(45) DEFAULT NULL,
   `password` VARCHAR(60) NOT NULL DEFAULT "password",
+  `isAdmin` TINYINT NOT NULL DEFAULT 0,
+  `isStoreOwner` TINYINT NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `test_trip`.`users` (`uid`, `username`,`password`) VALUES (1, "bob","password123");
 INSERT INTO `test_trip`.`users` (`uid`, `username`,`password`) VALUES (2, "jane","toooodles");
-
-
-
-CREATE TABLE `customer` (
-  `cno` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
-  PRIMARY KEY (`cno`),
-  CONSTRAINT FOREIGN KEY (`cno`) REFERENCES `users` (`uid`) ON UPDATE CASCADE ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 
 CREATE TABLE `review` (
   `rno` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
@@ -78,22 +69,15 @@ INSERT INTO `test_trip`.`review` (`rno`, `experience_rating`, `poi_code`) VALUES
 INSERT INTO `test_trip`.`review` (`rno`, `experience_rating`, `poi_code`) VALUES(2,2,1);
 INSERT INTO `test_trip`.`review` (`rno`, `experience_rating`, `poi_code`) VALUES(3,3,2);
 
-
-
-CREATE TABLE `administrator` (
-  `ano` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
-  `isStoreOwner` TINYINT NOT NULL DEFAULT 1,
-  PRIMARY KEY (`ano`),
-  CONSTRAINT FOREIGN KEY (`ano`) REFERENCES `users` (`uid`) ON UPDATE CASCADE ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 CREATE TABLE `schedule` (
     `sno` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
     `date` VARCHAR(45) DEFAULT NULL,
     `time` VARCHAR(45) DEFAULT NULL,
     `cus_no` tinyint(4) NOT NULL DEFAULT 0,
+    `pid` INT NOT NULL DEFAULT 0,
     PRIMARY KEY(`sno`),
     CONSTRAINT FOREIGN KEY (`cus_no`) REFERENCES `users` (`uid`) ON UPDATE CASCADE ON DELETE CASCADE
+    CONSTRAINT FOREIGN KEY (`pid`) REFERENCES `poi` (`pid`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `contains` (

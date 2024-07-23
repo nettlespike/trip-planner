@@ -75,7 +75,6 @@ const Schedule = () => {
               <p>pid: {poi.pid}</p>
               <p>Date: {poi.date}</p>
               <p>Time: {poi.time}</p>
-              <p>Cus_no (remove): {poi.cus_no}</p>
             </div>
             <div className="but">
               <button className="delete" onClick={() => handleDeleteReq(poi.sno)}>Delete</button>
