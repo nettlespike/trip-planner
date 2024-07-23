@@ -91,7 +91,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>POIs</h1>
+      <h1>Restaurants</h1>
       <div className="filter_container">
         <input type="checkbox" value={1} onChange={clickReservation} checked={checkbox == 1}/> <span>Reservation required</span>
         <input type="checkbox" value={2} onChange={clickNoReservation} checked={checkbox == 2}/> <span>No reservation required</span>
