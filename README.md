@@ -69,6 +69,9 @@ Production data is stored in a separate table than the sample data, so it is fin
         * input_details
     - Click next and finish importing the data
 - Run the remaining SQL code in create-prod-data.sql
+- Import review and users data using 'Table Data Import Wizard' on their respective tables in SQL Workbench, using 'trip_reviews.csv' and 'usertest.csv' respectively. For 'userstest.csv', please specify that the destination attribute for username is username, and not uid
+
+
 - To use production data, you need to specify that in the .env file. If you haven't created a .env file in the backend folder, create it now. Update it with your local connection info and make sure DB_DATABASE=trip_data
 
 ```

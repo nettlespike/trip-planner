@@ -83,7 +83,7 @@ CREATE TABLE `review` (
   `poi_code` INT NOT NULL DEFAULT 1,
   PRIMARY KEY (`rno`),
   CONSTRAINT FOREIGN KEY (`poi_code`) REFERENCES `poi` (`pid`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT FOREIGN KEY (`cus_no`) REFERENCES `users`(`uid`) 
+  CONSTRAINT FOREIGN KEY (`cus_no`) REFERENCES `users`(`uid`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `schedule` (
@@ -105,3 +105,7 @@ CREATE TABLE `contains` (
     CONSTRAINT FOREIGN KEY (`sno`) REFERENCES `schedule` (`sno`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+/* For users data, please import usertest.csv using Table Import Data Wizard onto the 'users' table. 
+Please specify
+	username maps to username
+*/
