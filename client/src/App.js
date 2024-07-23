@@ -14,7 +14,9 @@ import Update from "./pages/Update";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import AddReview from "./pages/AddReview";
+import Review from "./pages/Review";
 import Footer from "./components/Footer";
+import Password from "./pages/Password";
 import "./style.css"
 
 const Layout = () => {
@@ -59,6 +61,14 @@ const router = createBrowserRouter([
       {
         path: "/addReview",
         element: <AddReview />,
+      },
+      {
+        path: "/review",
+        element: <Review />,
+      },
+      {
+        path: "/password",
+        element: <Password />,
       },
     ],
   },

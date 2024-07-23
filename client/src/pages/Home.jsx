@@ -5,20 +5,12 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/authContext.js";
 import { useContext } from "react";
-import Slider from '@material-ui/core/Slider';
+import ReactSearchBox from "react-search-box";
 
 const Home = () => {
   const [pois, setPois] = useState([]);
   const [checkbox, setCheckbox] = useState([]);
-  const [sliderVal, setSliderVal] = useState([]);
-
-  const marks = [
-    {value: 1, label: '1',},
-    {value: 2, label: '2',},
-    {value: 3, label: '3',},
-    {value: 4, label: '4',},
-    {value: 5, label: '5',}
-  ];
+  const [spid, setSpid] = useState([]);
 
   // const { token } = useContext(AuthContext);
 
@@ -61,7 +53,7 @@ const Home = () => {
     }
   };
 
-  // filter
+  // filters
 
   const clickReservation = async (e) => {
     try {
@@ -83,17 +75,36 @@ const Home = () => {
     }
   };
 
-  const updateSlider = (e) => {
-    setCheckbox(e.target.value);
+  const handleSearch = (e) => {
+      setSpid(e);
+      console.log(spid)
   };
 
-  const handleRating = async (e) => {
-    e.preventDefault();
+  const handleSearchClick = async (e) => {
     try {
-      const res = await axios.get("http://localhost:8800/noreservation", sliderVal);
+      const res = await axios.get(`http://localhost:8800/search/${spid}`);
       setPois(res.data);
     } catch (err) {
       console.log(err.response.data);
+    }
+  };
+
+  const handleWeekend = async (e) => {
+    if (e.target.checked) {
+      try {
+        const res = await axios.get("http://localhost:8800/weekend");
+        setPois(res.data);
+      } catch (err) {
+        console.log(err.response.data);
+      }
+    }
+    else {
+      try {
+        const res = await axios.get("http://localhost:8800/poi");
+        setPois(res.data);
+      } catch (err) {
+        console.log(err.response.data);
+      }
     }
   };
 
@@ -103,16 +114,9 @@ const Home = () => {
       <div className="filter_container">
         <input type="checkbox" value={1} onChange={clickReservation} checked={checkbox == 1}/> <span>Reservation required</span>
         <input type="checkbox" value={2} onChange={clickNoReservation} checked={checkbox == 2}/> <span>No reservation required</span>
-        <Slider
-          aria-label="Custom marks"
-          defaultValue={1}
-          step={1}
-          valueLabelDisplay="auto"
-          marks={marks}
-          min={1} max={5}
-          onChange={updateSlider}
-        />
-        <button onClick={handleRating}>Search</button>
+        <input type="checkbox" onChange={handleWeekend}/> <span>Open weekends</span>
+        <ReactSearchBox placeholder="search by id" onChange={handleSearch}/>
+        <button onClick={handleSearchClick}>Search</button>
       </div>
       <div className="pois">
         {pois.map((poi) => (
@@ -122,11 +126,8 @@ const Home = () => {
             </div>
             <div className="attr">
               <p>{poi.days_of_week}</p>
-              {/*<p>{poi.time}</p>*/}
               <p>{poi.address}</p>
               <p>{poi.reservation_required}</p>
-             {/* <p>{poi.location}</p>  }
-             {/* <p>{poi.accessibility}</p> */}
             </div>
             <div className="but">
               <button className="add" onClick={handleClick}>Add to Schedule</button>
