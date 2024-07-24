@@ -19,7 +19,7 @@ const AddReview = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/", poi);
+      await axios.post("http://localhost:8800/review", poi);
       navigate("/");
     } catch (err) {
       console.log(err.response.data);

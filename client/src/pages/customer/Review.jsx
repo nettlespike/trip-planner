@@ -21,7 +21,7 @@ const Review = () => {
   const handleExpRating = async (e) => {
     setRating(e);
     try {
-      const res = await axios.get(`http://localhost:8800/rating/${rating}`);
+      const res = await axios.get(`http://localhost:8800/review/${rating}`);
       setPois(res.data);
     } catch (err) {
       console.log(err.response.data);
