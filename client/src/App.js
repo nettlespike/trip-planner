@@ -70,7 +70,7 @@ const router = createBrowserRouter([
         element: <Review />,
       },
       {
-        path: "/password",
+        path: "/users",
         element: <Password />,
       },
       {

@@ -17,7 +17,7 @@ const Analytics = () => {
 
   return (
     <div>
-      <h1>Reviews</h1>
+      <h1>Analytics</h1>
       <div className="pois">
         {obj.map((poi) => (
           <div key={poi.pid} className="row">
@@ -28,6 +28,7 @@ const Analytics = () => {
             <div className="attr">
               <p>Restaurant code: {poi.pid}</p>
               <p>Popularity: {poi.popularity}</p>
+              <p>Avg revisit rating: {poi.rating}</p>
             </div>
           </div>
         ))}

@@ -145,7 +145,7 @@ button {
 
 .navbar {
   padding-left: 30px;
-  background-color: skyblue;
+  background-color: #4aa4f6;
 }
 
 .navbar .container {
@@ -216,6 +216,30 @@ button {
 }
 
 .links .manage:hover {
+  font-weight: bold;
+}
+
+.links .analytics {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .analytics:hover {
+  font-weight: bold;
+}
+
+.links .users {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .users:hover {
   font-weight: bold;
 }
 
