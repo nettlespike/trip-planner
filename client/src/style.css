@@ -8,10 +8,11 @@
 }
 
 h1 {
-  margin-top: 100px;
+  margin-top: 50px;
   white-space: nowrap;
   display: flow-root;
   align-items: center;
+  padding-left: 30px;
 
 }
 
@@ -105,17 +106,39 @@ button {
   }
 }
 
-filter_container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.filter_container {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
   gap: 10px;
+  /* margin-bottom: 10px; */
+  /* background-color:red; */
+  justify-content: flex-start;
+  padding-left: 30px; 
+}
+
+.filter_container label {
+  align-items: center;
+  display: inline-flex; /* Ensure label and input are inline-flex */
+  align-items: center; /* Vertically align items */
+  gap: 5px;
+}
+
+.filter_container input[type="checkbox"] {
+  align-items: center;
+  margin-right: 10px;
+  justify-content: flex-start;
   margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 .filter_container input[type="text"] {
   width: 500px; 
   padding: 10px;
+  margin-bottom: 10px;
+  /* background-color:red; */
+  justify-content: flex-start;
+  padding-left: 30px;
   border: 1px solid gray;
 }
 
@@ -131,6 +154,7 @@ filter_container {
 /* NAVBAR */
 
     .navbar {
+      padding-left: 30px;
       background-color: skyblue;
       .container {
         padding: 10px 0px;
@@ -140,9 +164,10 @@ filter_container {
         .links {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 20px;
 
           h6 {
+            gap: 20px;
             font-size: 16px;
             font-weight: 300;
           }
@@ -152,7 +177,7 @@ filter_container {
           }
 
           .write {
-            background-color: lightGreen;
+            /* background-color: lightGreen; */
             width: 150px;
             height: 50px;
             border-radius: 50%;
