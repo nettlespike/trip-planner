@@ -8,7 +8,7 @@ const Home = () => {
   const [pois, setPois] = useState([]);
   const [checkbox, setCheckbox] = useState([]);
   const [spid, setSpid] = useState([]);
-  const { currentUser, logout } = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
 
   useEffect(() => {
     const fetchAllPois = async () => {

@@ -6,8 +6,7 @@ import { AuthContext } from "../../context/authContext.js";
 
 const Schedule = () => {
   const [pois, setPois] = useState([]);
-  const { currentUser, logout } = useContext(AuthContext);
-
+  const { currentUser } = useContext(AuthContext);
   const [dialog, setDialog] = useState({
     message: "",
     isLoading: false,
@@ -41,6 +40,7 @@ const Schedule = () => {
   useEffect(() => {
     const fetchAllPois = async () => {
       try {
+        console.log(currentUser.uid)
         const res = await axios.get(`http://localhost:8800/schedule/${(currentUser.uid)}`);
         setPois(res.data);
       } catch (err) {

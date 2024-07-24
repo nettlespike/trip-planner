@@ -4,6 +4,7 @@ import dotenv from "dotenv"
 import cors from "cors"
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/users.js";
+import scheduleRoutes from "./routes/schedule.js";
 import cookieParser from "cookie-parser";
 import jwt from "jsonwebtoken";
 
@@ -22,6 +23,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use("/poi/auth", authRoutes);
 app.use("/poi/users", userRoutes);
+app.use("/schedule", scheduleRoutes);
 
 app.get("/", (req, res) => {
     res.json("front page")
@@ -210,61 +212,12 @@ app.post("/", (req,res) => {
     })
 })
 
-///// schedule
-
-app.get("/schedule/:uid", (req, res) => {
-    const uid = req.params.uid;
-    const  q = "SELECT schedule.*, poi.name, poi.reservation_details FROM schedule LEFT JOIN poi ON schedule.pid = poi.pid WHERE schedule.cus_no = ?";
-    db.query(q, [uid], (err, data) => {
-        if (err) return res.send(err);
-        return res.json(data);
-      });
-})
-
 app.get("/rating/:rating", (req, res) => {
     const rating = req.params.rating;
     const q = "SELECT * FROM review WHERE experience_rating >= ?";
     db.query(q, [rating], (err, data) => {
       if (err) return res.send(err);
       return res.json(data);
-    });
-});
-
-app.post("/schedule", (req,res) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    const q = "INSERT INTO schedule(`cus_no`,`pid`) VALUES (?)"
-    const values = [
-        req.body.user.uid,
-        req.body.poi,
-    ]
-    db.query(q, [values], (err, data)=> {
-        if (err) return res.send(err);
-        return res.json(data);
-    })
-})
-
-app.delete("/schedule/:sno", (req, res) => {
-    const sno = req.params.sno;
-    const q = " DELETE FROM schedule WHERE sno = ? ";
-  
-    db.query(q, [sno], (err, data) => {
-      if (err) return res.send(err);
-      return res.json(data);
-    });
-});
-
-app.put("/schedule/:sno", (req, res) => {
-    const sno = req.params.sno;
-    const q = "UPDATE schedule SET `date`= ?, `time`= ? WHERE sno = ?";
-
-    const values = [
-        req.body.date,
-        req.body.time,
-    ];
-
-    db.query(q, [...values, sno], (err, data) => {
-        if (err) return res.send(err);
-        return res.json(data);
     });
 });
 
