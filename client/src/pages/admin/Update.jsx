@@ -6,7 +6,7 @@ const Update = () => {
 
   const navigate = useNavigate();
   const location = useLocation();
-  const [error,setError] = useState(false)
+  const [error, setError] = useState(false)
   const [poi, setPoi] = useState({
     pid: null,
     name: "",

@@ -13,7 +13,7 @@ const Add = () => {
     location: "",
     accessibility: "",
   });
-  const [error,setError] = useState(false)
+  const [error, setError] = useState(false)
 
   const navigate = useNavigate();
 

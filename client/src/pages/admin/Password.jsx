@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Password = () => {
   const [user, setUser] = useState([]);
   const [query, setQuery] = useState([]);
-  const [error,setError] = useState(false)
+  const [error, setError] = useState(false)
 
   const handleChange = (e) => {
     setUser(e.target.value);

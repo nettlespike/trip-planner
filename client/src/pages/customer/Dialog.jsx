@@ -1,4 +1,4 @@
-function Dialog({ message, onDialog, nameProduct }) {
+function Dialog({ message, onDialog, namePoi }) {
     return (
       <div
         style={{
@@ -28,7 +28,7 @@ function Dialog({ message, onDialog, nameProduct }) {
           }}
         >
           <h3 stlye={{ color: "#111", fontSize: "16px" }}>{message}</h3>
-          <h1 style={{ color: "blue", fontSize: "24px" }}>{nameProduct}</h1>
+          <h1 style={{ color: "blue", fontSize: "24px" }}>{namePoi}</h1>
           <div style={{ display: "flex", alignItems: "center" }}>
             <button
               onClick={() => onDialog(true)}

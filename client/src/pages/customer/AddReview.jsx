@@ -8,7 +8,7 @@ const AddReview = () => {
     would_revisit_rating: "",
     comment: "",
   });
-  const [error,setError] = useState(false)
+  const [error, setError] = useState(false)
 
   const navigate = useNavigate();
 

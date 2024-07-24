@@ -9,22 +9,26 @@ const Pois = () => {
   const [dialog, setDialog] = useState({
     message: "",
     isLoading: false,
-    //Update
-    namePoi: ""
+    namePoi: "",
   });
   const idPoiRef = useRef();
+  
   const handleDialog = (message, isLoading, namePoi) => {
     setDialog({
       message,
       isLoading,
-      //Update
-      namePoi
+      namePoi,
     });
   };
 
-  const handleDeleteReq = (id) => {
-    handleDialog("Are you sure you want to delete?", true);
-    idPoiRef.current = id;
+  const handleDeleteReq = (poi) => {
+    setDialog({
+      message: "Are you sure you want to delete?",
+      isLoading: true,
+      namePoi: poi.name,
+    });
+    // handleDialog("Are you sure you want to delete?", true, name);
+    idPoiRef.current = poi.id;
   };
 
   const areUSureDelete = (choose) => {
@@ -47,8 +51,6 @@ const Pois = () => {
     };
     fetchAllPois();
   }, []);
-
-  console.log(pois);
 
   const handleDelete = async (pid) => {
     try {
@@ -75,7 +77,7 @@ const Pois = () => {
               <p>{poi.reservation_required}</p>
             </div>
             <div className="but">
-              <button className="delete" onClick={() => handleDeleteReq(poi.pid)}>Delete</button>
+              <button className="delete" onClick={() => handleDeleteReq(poi)}>Delete</button>
               <button className="update">
                 <Link to={`/update/${poi.pid}`} style={{ color: "inherit", textDecoration: "none" }}>
                   Update
@@ -87,7 +89,6 @@ const Pois = () => {
         ))}
         {dialog.isLoading && (
         <Dialog
-          //Update
           namePoi={dialog.namePoi}
           onDialog={areUSureDelete}
           message={dialog.message}
