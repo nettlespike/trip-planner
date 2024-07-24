@@ -1,6 +1,5 @@
 import axios from "axios";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const AddReview = () => {
@@ -9,15 +8,13 @@ const AddReview = () => {
     would_revisit_rating: "",
     comment: "",
   });
-  // const [error,setError] = useState(false)
+  const [error,setError] = useState(false)
 
   const navigate = useNavigate();
 
   const handleChange = (e) => {
     setPoi((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
-
-  // console.log(poi)
 
   const handleClick = async (e) => {
     e.preventDefault();
@@ -26,7 +23,7 @@ const AddReview = () => {
       navigate("/");
     } catch (err) {
       console.log(err.response.data);
-      // setError(true)
+      setError(true)
     }
   };
 
@@ -37,7 +34,7 @@ const AddReview = () => {
       <input type="number" placeholder="would_revisit_rating (1 to 5)" name="would_revisit_rating" min="1" max="5" onChange={handleChange}></input>
       <textarea rows="4" cols="50" placeholder="comment" onChange={handleChange}/>
       <button onClick={handleClick}>Submit</button>
-      {/* {error && "Something went wrong!"} */}
+      {error && "Something went wrong!"}
       <Link to="/">See all POIs</Link>
     </div>
   );

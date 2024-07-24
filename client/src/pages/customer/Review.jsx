@@ -1,8 +1,5 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState, useRef } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { Rating } from 'react-simple-star-rating'
 
 const Review = () => {
@@ -42,7 +39,7 @@ const Review = () => {
         {pois.map((poi) => (
           <div key={poi.rno} className="poi">
             <div className="attr">
-              <p>Poi code: {poi.poi_code}</p>
+              <p>Restaurant code: {poi.poi_code}</p>
               <p>Date: {poi.date}</p>
               <p>Experience: {poi.experience_rating}</p>
               <p>Revisit: {poi.would_revisit_rating}</p>

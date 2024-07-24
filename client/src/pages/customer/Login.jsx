@@ -1,8 +1,6 @@
-import axios from "axios";
-import React, { useState } from "react";
-import { useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../context/authContext.js";
+import { AuthContext } from "../../context/authContext.js";
 
 const Login = () => {
   const [inputs, setInputs] = useState({
@@ -10,9 +8,7 @@ const Login = () => {
     password: "",
   });
   const [err, setError] = useState(null);
-
   const navigate = useNavigate();
-
   const { login } = useContext(AuthContext);
 
   const handleChange = (e) => {
@@ -22,7 +18,6 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // await axios.post("http://localhost:8800/poi/auth/login", inputs);
       await login(inputs);
       navigate("/");
     } catch (err) {

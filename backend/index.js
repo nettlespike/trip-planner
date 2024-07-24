@@ -4,7 +4,6 @@ import dotenv from "dotenv"
 import cors from "cors"
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/users.js";
-// import postRoutes from "./routes/posts.js";
 import cookieParser from "cookie-parser";
 import jwt from "jsonwebtoken";
 
@@ -23,7 +22,6 @@ app.use(express.json())
 app.use(cookieParser())
 app.use("/poi/auth", authRoutes);
 app.use("/poi/users", userRoutes);
-// app.use("/poi/posts", postRoutes);
 
 app.get("/", (req, res) => {
     res.json("front page")
@@ -114,7 +112,6 @@ app.get("/searchuser", (req, res) => {
 
 app.get("/searchuser/:user", (req, res) => {
     const email = req.params.user;
-    // console.log(email)
     const q = "SELECT * FROM users WHERE email = ?";
     db.query(q, [email], (err, data) => {
         console.log(q)

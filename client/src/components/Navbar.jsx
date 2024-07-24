@@ -9,9 +9,11 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <div className="links">
-          <span>{"Hello, "+ currentUser?.username}</span>
           {currentUser ? (
-            <span onClick={logout}>Logout</span>
+            <div>
+              <span>{"Hello, "+ currentUser?.username + "!   "}</span>
+              <span onClick={logout}>Logout</span>
+            </div>
           ) : (
             <Link className="link" to="/login">Login</Link>
           )}

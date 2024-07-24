@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
 import axios from "axios";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../context/authContext.js";
+import { AuthContext } from "../../context/authContext.js";
 import ReactSearchBox from "react-search-box";
 
 const Home = () => {
@@ -96,7 +96,7 @@ const Home = () => {
         <input type="checkbox" value={1} onChange={clickReservation} checked={checkbox == 1}/> <span>Reservation required</span>
         <input type="checkbox" value={2} onChange={clickNoReservation} checked={checkbox == 2}/> <span>No reservation required</span>
         <input type="checkbox" onChange={handleWeekend}/> <span>Open weekends</span>
-        <ReactSearchBox placeholder="search by id" onChange={handleSearch}/>
+        <ReactSearchBox placeholder="Search by restaurant code" onChange={handleSearch}/>
         <button onClick={handleSearchClick}>Search</button>
       </div>
       <div className="pois">

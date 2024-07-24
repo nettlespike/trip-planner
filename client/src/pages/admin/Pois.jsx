@@ -1,12 +1,10 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
 import axios from "axios";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import Dialog from "./Dialog";
-import { AuthContext } from "../context/authContext.js";
+import Dialog from "../customer/Dialog";
 
-const Schedule = () => {
+const Pois = () => {
   const [pois, setPois] = useState([]);
-  const { currentUser, logout } = useContext(AuthContext);
 
   const [dialog, setDialog] = useState({
     message: "",
@@ -41,7 +39,7 @@ const Schedule = () => {
   useEffect(() => {
     const fetchAllPois = async () => {
       try {
-        const res = await axios.get(`http://localhost:8800/schedule/${(currentUser.uid)}`);
+        const res = await axios.get("http://localhost:8800/poi");
         setPois(res.data);
       } catch (err) {
         console.log(err);
@@ -52,9 +50,9 @@ const Schedule = () => {
 
   console.log(pois);
 
-  const handleDelete = async (sno) => {
+  const handleDelete = async (pid) => {
     try {
-      await axios.delete(`http://localhost:8800/schedule/${sno}`);
+      await axios.delete(`http://localhost:8800/poi/${pid}`);
       window.location.reload()
     } catch (err) {
       console.log(err);
@@ -66,24 +64,25 @@ const Schedule = () => {
       <h1>Trip Planner</h1>
       <div className="pois">
         {pois.map((poi) => (
-          <div key={poi.sno} className="poi">
+          <div key={poi.pid} className="poi">
             {!(poi.reservation_details) ? 
               <div className="name"> {poi.name} </div> : 
               <div className="name"> <a href = {poi.reservation_details}>{poi.name}</a> </div>
             }
             <div className="attr">
-              <p>pid: {poi.pid}</p>
-              <p>Date: {poi.date}</p>
-              <p>Time: {poi.time}</p>
+              <p>{poi.days_of_week}</p>
+              <p>{poi.address}</p>
+              <p>{poi.reservation_required}</p>
             </div>
             <div className="but">
-              <button className="delete" onClick={() => handleDeleteReq(poi.sno)}>Delete</button>
+              <button className="delete" onClick={() => handleDeleteReq(poi.pid)}>Delete</button>
               <button className="update">
-                <Link to={`/updateSchedule/${poi.sno}`} style={{ color: "inherit", textDecoration: "none" }}>
-                  Update date and time
+                <Link to={`/update/${poi.pid}`} style={{ color: "inherit", textDecoration: "none" }}>
+                  Update
                 </Link>
               </button>
-            </div> 
+            </div>
+            
           </div>
         ))}
         {dialog.isLoading && (
@@ -95,8 +94,14 @@ const Schedule = () => {
         />
         )}
       </div>
+
+      <button className="addHome">
+        <Link to="/add" style={{ color: "inherit", textDecoration: "none" }}>
+          Add new POI
+        </Link>
+      </button>
     </div>
   );
 };
 
-export default Schedule;
+export default Pois;

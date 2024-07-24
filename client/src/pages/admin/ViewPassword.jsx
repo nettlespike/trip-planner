@@ -1,9 +1,5 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState, useRef } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import ReactSearchBox from "react-search-box";
+import React, { useEffect, useState } from "react";
 
 const Password = () => {
   const [pois, setPois] = useState([]);
