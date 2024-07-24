@@ -38,7 +38,7 @@ const Home = () => {
 
   const clickReservation = async (e) => {
     try {
-      const res = await axios.get("http://localhost:8800/reservation");
+      const res = await axios.get("http://localhost:8800/filter/reservation");
       setPois(res.data);
       setCheckbox(e.target.value);
     } catch (err) {
@@ -48,7 +48,7 @@ const Home = () => {
 
   const clickNoReservation = async (e) => {
     try {
-      const res = await axios.get("http://localhost:8800/noreservation");
+      const res = await axios.get("http://localhost:8800/filter/noreservation");
       setPois(res.data);
       setCheckbox(e.target.value);
     } catch (err) {
@@ -73,7 +73,7 @@ const Home = () => {
   const handleWeekend = async (e) => {
     if (e.target.checked) {
       try {
-        const res = await axios.get("http://localhost:8800/weekend");
+        const res = await axios.get("http://localhost:8800/filter/weekend");
         setPois(res.data);
       } catch (err) {
         console.log(err.response.data);
@@ -101,7 +101,7 @@ const Home = () => {
       </div>
       <div className="pois">
         {pois.map((poi) => (
-          <div key={poi.pid} className="poi">
+          <div key={poi.pid} className="row">
             {!(poi.reservation_details) ? 
               <div className="name"> {poi.name} </div> : 
               <div className="name"> <a href = {poi.reservation_details}>{poi.name}</a> </div>

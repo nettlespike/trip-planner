@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const AddReview = () => {
-  const [poi, setPoi] = useState({
+  const [review, setReview] = useState({
     experience_rating: "",
     would_revisit_rating: "",
     comment: "",
@@ -13,13 +13,13 @@ const AddReview = () => {
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    setPoi((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    setReview((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/review", poi);
+      await axios.post("http://localhost:8800/review", review);
       navigate("/");
     } catch (err) {
       console.log(err.response.data);

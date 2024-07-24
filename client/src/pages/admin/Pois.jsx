@@ -64,7 +64,7 @@ const Pois = () => {
       <h1>Trip Planner</h1>
       <div className="pois">
         {pois.map((poi) => (
-          <div key={poi.pid} className="poi">
+          <div key={poi.pid} className="row">
             {!(poi.reservation_details) ? 
               <div className="name"> {poi.name} </div> : 
               <div className="name"> <a href = {poi.reservation_details}>{poi.name}</a> </div>

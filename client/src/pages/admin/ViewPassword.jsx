@@ -2,35 +2,33 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const Password = () => {
-  const [pois, setPois] = useState([]);
+  const [user, setUser] = useState([]);
 
   useEffect(() => {
-    const fetchAllPois = async () => {
+    const fetchAllUsers = async () => {
       try {
         const res = await axios.get("http://localhost:8800/users");
-        setPois(res.data);
+        setUser(res.data);
       } catch (err) {
         console.log(err);
       }
     };
-    fetchAllPois();
+    fetchAllUsers();
   }, []);
-
-  console.log(pois);
 
   return (
     <div>
       <h1>Users</h1>
       <div className="pois">
-        {pois.map((poi) => (
-          <div key={poi.uid} className="poi">
+        {user.map((user) => (
+          <div key={user.uid} className="row">
             <div className="attr">
-              <p>uid: {poi.uid}</p>
-              <p>username: {poi.username}</p>
-              <p>email: {poi.email}</p>
-              <p>password: {poi.password}</p>
-              <p>isAdmin: {poi.isAdmin}</p>
-              <p>isStoreOwner: {poi.isStoreOwner}</p>
+              <p>uid: {user.uid}</p>
+              <p>username: {user.username}</p>
+              <p>email: {user.email}</p>
+              <p>password: {user.password}</p>
+              <p>isAdmin: {user.isAdmin}</p>
+              <p>isStoreOwner: {user.isStoreOwner}</p>
             </div>
           </div>
         ))}

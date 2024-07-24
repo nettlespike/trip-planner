@@ -6,6 +6,7 @@ import authRoutes from "./routes/auth.js";
 import scheduleRoutes from "./routes/schedule.js";
 import reviewRoutes from "./routes/review.js";
 import poiRoutes from "./routes/poi.js";
+import filterRoutes from "./routes/filter.js";
 import cookieParser from "cookie-parser";
 
 const app = express()
@@ -26,10 +27,13 @@ app.use("/poi/auth", authRoutes);
 app.use("/schedule", scheduleRoutes);
 app.use("/review", reviewRoutes);
 app.use("/poi", poiRoutes); // admin
+app.use("/search", filterRoutes);
 
 app.get("/", (req, res) => {
     res.json("front page")
 })
+
+// search for password / user info
 
 app.get("/users", (req,res)=> {
    const q = "SELECT * FROM users"
@@ -40,50 +44,6 @@ app.get("/users", (req,res)=> {
         return res.json(data)
     })
 })
-
-// filters
-
-app.get("/reservation", (req,res)=> {
-    const q = "SELECT * FROM poi WHERE reservation_required = '1'"
-    db.query(q, (err, data)=> {
-        if(err) {
-             return res.json(err)
-        }
-        return res.json(data)
-    })
-})
-
-app.get("/noreservation", (req,res)=> {
-    const q = "SELECT * FROM poi WHERE reservation_required = '0'"
-    db.query(q, (err, data)=> {
-        if(err) {
-            return res.json(err)
-        }
-        return res.json(data)
-    })
-})
-
-app.get("/weekend", (req,res)=> {
-    const q = "SELECT * FROM poi WHERE time LIKE '%Sunday%Saturday%'"
-    db.query(q, (err, data)=> {
-        if(err) {
-            return res.json(err)
-        }
-        return res.json(data)
-    })
-})
-
-app.get("/search/:pid", (req, res) => {
-    const pid = req.params.pid;
-    const q = "SELECT * FROM poi WHERE pid = ?";
-
-    db.query(q, [pid], (err, data) => {
-        if (err) return res.send(err);
-        return res.json(data);
-    });
-});
-
-// search for password
 
 app.get("/searchuser", (req, res) => {
     const email = req.params.email;

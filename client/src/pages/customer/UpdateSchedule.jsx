@@ -6,11 +6,6 @@ const UpdateSchedule = () => {
 
   const navigate = useNavigate();
   const location = useLocation();
-
-  console.log(location.pathname.split("/")[2])
-
-  const sno = location.pathname.split("/")[2];
-  
   const [poi, setPoi] = useState({
     sno: null,
     date: "",
@@ -19,12 +14,12 @@ const UpdateSchedule = () => {
     pid: "",
   });
   const [error,setError] = useState(false)
+
+  const sno = location.pathname.split("/")[2];
   
   const handleChange = (e) => {
     setPoi((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
-
-  console.log(poi)
 
   const handleClick = async (e) => {
     e.preventDefault();
