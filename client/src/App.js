@@ -8,6 +8,7 @@ import Add from "./pages/admin/Add";
 import Pois from "./pages/admin/Pois";
 import Update from "./pages/admin/Update";
 import Password from "./pages/admin/ViewPassword";
+import Analytics from "./pages/admin/Analytics";
 
 import Home from "./pages/customer/Home";
 import Register from "./pages/customer/Register";
@@ -79,6 +80,10 @@ const router = createBrowserRouter([
       {
         path: "/updateSchedule/:sno",
         element: <UpdateSchedule />,
+      },
+      {
+        path: "/analytics",
+        element: <Analytics />,
       },
     ],
   },

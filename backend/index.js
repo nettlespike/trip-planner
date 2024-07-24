@@ -33,6 +33,16 @@ app.get("/", (req, res) => {
     res.json("front page")
 })
 
+app.get("/analytics", (req, res) => {
+    const uid = req.params.uid;
+    // const  q = "SELECT schedule.*, poi.name, poi.reservation_details FROM schedule LEFT JOIN poi ON schedule.pid = poi.pid WHERE schedule.cus_no = ?";
+    const  q = "SELECT info.*, poi.name, poi.reservation_details FROM poi RIGHT JOIN (SELECT pid, COUNT(*) as popularity FROM schedule GROUP BY pid) AS info ON poi.pid = info.pid";
+    db.query(q, (err, data) => {
+        if (err) return res.send(err);
+        return res.json(data);
+      });
+});
+
 // search for password / user info
 
 app.get("/users", (req,res)=> {

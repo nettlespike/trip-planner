@@ -76,6 +76,7 @@ button {
 }
 
 .form {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -109,7 +110,6 @@ button {
 .filter_container label {
   align-items: center;
   display: inline-flex;
-  align-items: center;
   gap: 5px;
 }
 
@@ -139,6 +139,10 @@ button {
   border: none;
 }
 
+.checkboxtext {
+  padding-right: 20px;
+}
+
 .navbar {
   padding-left: 30px;
   background-color: skyblue;
@@ -159,7 +163,7 @@ button {
 
 .links h6 {
   gap: 20px;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 300;
 }
 
@@ -167,18 +171,56 @@ button {
   cursor: pointer;
 }
 
-.links .write {
-  width: 150px;
+.links .home {
+  width: 200px;
   height: 50px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 300;
 }
 
-.links .write:hover {
+.links .home:hover {
   font-weight: bold;
+}
+
+.links .review {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .review:hover {
+  font-weight: bold;
+}
+
+.links .schedule {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .schedule:hover {
+  font-weight: bold;
+}
+
+.links .manage {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .manage:hover {
+  font-weight: bold;
+}
+
+.login {
+  margin-right: 20px;
 }
 
 .links a {

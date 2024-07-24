@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container">
         <div className="links">
           {currentUser ? (
-            <div>
+            <div className="login">
               <span>{"Hello, "+ currentUser?.username + "!   "}</span>
               <span onClick={logout}>Logout</span>
             </div>
@@ -22,7 +22,7 @@ const Navbar = () => {
             <span className="home"><Link className={location.pathname === '/' ? 'home active' : 'home'} to="/">Customer Home Page</Link></span> : 
             <span className="home"><Link className={location.pathname === '/' ? 'home active' : 'home'} to="/">Home Page</Link></span>
           }
-          <span className="write"><Link className={location.pathname === '/review' ? 'link active' : 'link'} to="/review">View all reviews</Link></span>
+          <span className="review"><Link className={location.pathname === '/review' ? 'link active' : 'link'} to="/review">View all reviews</Link></span>
           {!(currentUser?.isAdmin) ? 
             <span className="schedule"><Link className={location.pathname === '/schedule' ? 'schedule active' : 'schedule'} to="/schedule">My Schedule</Link></span> : 
             null

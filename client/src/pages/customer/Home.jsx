@@ -93,9 +93,9 @@ const Home = () => {
     <div>
       <h1>Restaurants</h1>
       <div className="filter_container">
-        <input type="checkbox" value={1} onChange={clickReservation} checked={checkbox == 1}/> <span>Reservation required</span>
-        <input type="checkbox" value={2} onChange={clickNoReservation} checked={checkbox == 2}/> <span>No reservation required</span>
-        <input type="checkbox" onChange={handleWeekend}/> <span>Open weekends</span>
+        <input type="checkbox" value={1} onChange={clickReservation} checked={checkbox == 1}/> <span className="checkboxtext">Reservation required</span>
+        <input type="checkbox" value={2} onChange={clickNoReservation} checked={checkbox == 2}/> <span className="checkboxtext"> No reservation required</span>
+        <input type="checkbox" onChange={handleWeekend}/> <span className="checkboxtext">Open weekends</span>
         <ReactSearchBox placeholder="Search by restaurant code" onChange={handleSearch}/>
         <button onClick={handleSearchClick}>Search</button>
       </div>

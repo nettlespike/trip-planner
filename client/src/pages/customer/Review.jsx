@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Rating } from 'react-simple-star-rating'
 
 const Review = () => {
-  const [review, setReview] = useState([]); // reviews
+  const [review, setReview] = useState([]);
   const [rating, setRating] = useState([]);
 
   useEffect(() => {
@@ -36,14 +36,14 @@ const Review = () => {
         <Rating onClick={handleExpRating}/>
       </div>
       <div className="pois">
-        {review.map((poi) => (
-          <div key={poi.rno} className="row">
+        {review.map((review) => (
+          <div key={review.rno} className="row">
             <div className="attr">
-              <p>Restaurant code: {poi.poi_code}</p>
-              <p>Date: {poi.date}</p>
-              <p>Experience: {poi.experience_rating}</p>
-              <p>Revisit: {poi.would_revisit_rating}</p>
-              <p>Comment: {poi.comment}</p>
+              <p>Restaurant code: {review.poi_code}</p>
+              <p>Date: {review.date}</p>
+              <p>Experience: {review.experience_rating}</p>
+              <p>Revisit: {review.would_revisit_rating}</p>
+              <p>Comment: {review.comment}</p>
             </div>
           </div>
         ))}
