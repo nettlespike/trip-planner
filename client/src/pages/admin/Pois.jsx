@@ -1,10 +1,13 @@
 import axios from "axios";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useContext } from "react";
 import { Link } from "react-router-dom";
 import Dialog from "../customer/Dialog";
+import { AuthContext } from "../../context/authContext";
+
 
 const Pois = () => {
   const [pois, setPois] = useState([]);
+  const { currentUser } = useContext(AuthContext);
 
   const [dialog, setDialog] = useState({
     message: "",
@@ -64,43 +67,48 @@ const Pois = () => {
   return (
     <div>
       <h1>Trip Planner</h1>
-      <div className="pois">
-        {pois.map((poi) => (
-          <div key={poi.pid} className="row">
-            {!(poi.reservation_details) ? 
-              <div className="name"> {poi.name} </div> : 
-              <div className="name"> <a href = {poi.reservation_details}>{poi.name}</a> </div>
-            }
-            <div className="attr">
-              <p>{poi.days_of_week}</p>
-              <p>{poi.address}</p>
-              <p>{poi.reservation_required}</p>
+      {currentUser?.isAdmin ?
+      <div>
+        <div className="pois">
+          {pois.map((poi) => (
+            <div key={poi.pid} className="row">
+              {!(poi.reservation_details) ? 
+                <div className="name"> {poi.name} </div> : 
+                <div className="name"> <a href = {poi.reservation_details}>{poi.name}</a> </div>
+              }
+              <div className="attr">
+                <p>{poi.days_of_week}</p>
+                <p>{poi.address}</p>
+                <p>{poi.reservation_required}</p>
+              </div>
+              <div className="but">
+                <button className="delete" onClick={() => handleDeleteReq(poi)}>Delete</button>
+                <button className="update">
+                  <Link to={`/update/${poi.pid}`} style={{ color: "inherit", textDecoration: "none" }}>
+                    Update
+                  </Link>
+                </button>
+              </div>
+              
             </div>
-            <div className="but">
-              <button className="delete" onClick={() => handleDeleteReq(poi)}>Delete</button>
-              <button className="update">
-                <Link to={`/update/${poi.pid}`} style={{ color: "inherit", textDecoration: "none" }}>
-                  Update
-                </Link>
-              </button>
-            </div>
-            
-          </div>
-        ))}
-        {dialog.isLoading && (
-        <Dialog
-          namePoi={dialog.namePoi}
-          onDialog={areUSureDelete}
-          message={dialog.message}
-        />
-        )}
+          ))}
+          {dialog.isLoading && (
+          <Dialog
+            namePoi={dialog.namePoi}
+            onDialog={areUSureDelete}
+            message={dialog.message}
+          />
+          )}
+        </div>
+      
+        <button className="addHome">
+          <Link to="/add" style={{ color: "inherit", textDecoration: "none" }}>
+            Add new POI
+          </Link>
+        </button>
       </div>
-
-      <button className="addHome">
-        <Link to="/add" style={{ color: "inherit", textDecoration: "none" }}>
-          Add new POI
-        </Link>
-      </button>
+    : <p>You are not authorized on this page.</p>
+    }
     </div>
   );
 };

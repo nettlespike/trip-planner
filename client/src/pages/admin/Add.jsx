@@ -1,6 +1,7 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/authContext";
 
 const Add = () => {
   const [poi, setPoi] = useState({
@@ -14,7 +15,7 @@ const Add = () => {
     accessibility: "",
   });
   const [error, setError] = useState(false)
-
+  const { currentUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -35,16 +36,21 @@ const Add = () => {
   return (
     <div className="form">
       <h1>Add New POI</h1>
-      <input type="text" placeholder="name" name="name" onChange={handleChange}/>
-      <input type="text" placeholder="days_of_week" name="days_of_week" onChange={handleChange}/>
-      <input type="text" placeholder="time" name="time" onChange={handleChange}/>
-      <input type="text" placeholder="address" name="address" onChange={handleChange}/>
-      <input type="text" placeholder="reservation_details" name="reservation_details" onChange={handleChange}/>
-      <input type="number" placeholder="reservation_required" name="reservation_required" onChange={handleChange}/>
-      <input type="text" placeholder="accessibility" name="accessibility" onChange={handleChange}/>
-      <button onClick={handleClick}>Add</button>
-      {error && "Something went wrong!"}
-      <Link to="/">See all POIs</Link>
+      {currentUser?.isAdmin ?
+        <div>
+          <input type="text" placeholder="name" name="name" onChange={handleChange}/>
+          <input type="text" placeholder="days_of_week" name="days_of_week" onChange={handleChange}/>
+          <input type="text" placeholder="time" name="time" onChange={handleChange}/>
+          <input type="text" placeholder="address" name="address" onChange={handleChange}/>
+          <input type="text" placeholder="reservation_details" name="reservation_details" onChange={handleChange}/>
+          <input type="number" placeholder="reservation_required" name="reservation_required" onChange={handleChange}/>
+          <input type="text" placeholder="accessibility" name="accessibility" onChange={handleChange}/>
+          <button onClick={handleClick}>Add</button>
+          {error && "Something went wrong!"}
+          <Link to="/">See all POIs</Link>
+        </div>
+        : <p>You are not authorized on this page.</p>
+      }
     </div>
   );
 };
