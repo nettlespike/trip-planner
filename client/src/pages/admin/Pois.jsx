@@ -25,13 +25,13 @@ const Pois = () => {
   };
 
   const handleDeleteReq = (poi) => {
-    setDialog({
-      message: "Are you sure you want to delete?",
-      isLoading: true,
-      namePoi: poi.name,
-    });
-    // handleDialog("Are you sure you want to delete?", true, name);
-    idPoiRef.current = poi.id;
+    // setDialog({
+    //   message: "Are you sure you want to delete?",
+    //   isLoading: true,
+    //   namePoi: poi.name,
+    // });
+    handleDialog("Are you sure you want to delete?", true, poi.name);
+    idPoiRef.current = poi.pid;
   };
 
   const areUSureDelete = (choose) => {
