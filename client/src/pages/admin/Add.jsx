@@ -37,7 +37,7 @@ const Add = () => {
     <div className="form">
       <h1>Add New POI</h1>
       {currentUser?.isAdmin ?
-        <div>
+        <div className="form">
           <input type="text" placeholder="name" name="name" onChange={handleChange}/>
           <input type="text" placeholder="days_of_week" name="days_of_week" onChange={handleChange}/>
           <input type="text" placeholder="time" name="time" onChange={handleChange}/>

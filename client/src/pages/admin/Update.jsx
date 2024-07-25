@@ -47,7 +47,7 @@ const Update = () => {
               <input type="text" placeholder="time" name="time" onChange={handleChange}/>
               <input type="text" placeholder="address" name="address" onChange={handleChange}/>
               <input type="text" placeholder="reservation_details" name="reservation_details" onChange={handleChange}/>
-              <input type="number" placeholder="No Reservation Required" name="reservation_required" onChange={handleChange}/>
+              <input type="number" placeholder="reservation_required" name="reservation_required" onChange={handleChange}/>
               <input type="text" placeholder="accessibility" name="accessibility" onChange={handleChange}/>
 
               <button onClick={handleClick}>Update</button>

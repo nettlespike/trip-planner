@@ -104,7 +104,6 @@ const Home = () => {
     <div>
       <h1>Restaurants</h1>
       <div className="filter_container">
-        <p>check: {checkbox}</p>
         <input type="checkbox" onChange={clickNoReservation}/> <span className="checkboxtext"> No reservation required</span>
         <input type="checkbox" onChange={handleWeekend}/> <span className="checkboxtext">Open weekends</span>
         <ReactSearchBox placeholder="Search by restaurant code" onChange={handleSearch}/>
