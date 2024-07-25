@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { Rating } from 'react-simple-star-rating'
+import moment from "moment";
 
 const Review = () => {
   const [pois, setPois] = useState([]); // reviews
@@ -42,8 +43,8 @@ const Review = () => {
         {pois.map((poi) => (
           <div key={poi.rno} className="poi">
             <div className="attr">
-              <p>Poi code: {poi.poi_code}</p>
-              <p>Date: {poi.date}</p>
+              <p><a>Poi code: {poi.poi_code}</a></p>
+              <p>Date: {moment(poi.date).format('YYYY-MM-DD')}</p>
               <p>Experience: {poi.experience_rating}</p>
               <p>Revisit: {poi.would_revisit_rating}</p>
               <p>Comment: {poi.comment}</p>
