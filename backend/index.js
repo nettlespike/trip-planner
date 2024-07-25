@@ -34,13 +34,17 @@ app.get("/", (req, res) => {
 })
 
 app.get("/analytics", (req, res) => {
-    const uid = req.params.uid;
-    // const  q = "SELECT schedule.*, poi.name, poi.reservation_details FROM schedule LEFT JOIN poi ON schedule.pid = poi.pid WHERE schedule.cus_no = ?";
-    // const  q = "SELECT info.*, poi.name, poi.reservation_details FROM poi RIGHT JOIN (SELECT pid, COUNT(*) as popularity FROM schedule GROUP BY pid) AS info ON poi.pid = info.pid";
-    // const q = "SELECT pid, COUNT(*) as popularity FROM schedule GROUP BY pid"
-    // const  q = "SELECT popTable.*, rateTable.rating from (SELECT pid, COUNT(*) as popularity FROM schedule GROUP BY pid) AS popTable LEFT JOIN (SELECT poi_code, avg(would_revisit_rating) as rating FROM review GROUP BY poi_code) as rateTable ON rateTable.poi_code = popTable.pid";
+
     const  q = "SELECT info.pid, info.popularity, ROUND(info.rating, 2) as rating, poi.name, poi.reservation_details FROM poi RIGHT JOIN (SELECT popTable.*, rateTable.rating from (SELECT pid, COUNT(*) as popularity FROM schedule GROUP BY pid) AS popTable LEFT JOIN (SELECT poi_code, avg(would_revisit_rating) as rating FROM review GROUP BY poi_code) as rateTable ON rateTable.poi_code = popTable.pid) AS info ON poi.pid = info.pid ORDER BY info.popularity DESC";
 
+    db.query(q, (err, data) => {
+        if (err) return res.send(err);
+        return res.json(data);
+      });
+});
+
+app.get("/tablepartition", (req, res) => {
+    const q = "select * from review order by date"
     db.query(q, (err, data) => {
         if (err) return res.send(err);
         return res.json(data);

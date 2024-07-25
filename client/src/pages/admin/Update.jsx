@@ -28,7 +28,7 @@ const Update = () => {
   };
 
   const handleClick = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     try {
       await axios.put("http://localhost:8800/poi/" + pId, poi);
       navigate("/");

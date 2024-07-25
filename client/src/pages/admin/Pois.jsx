@@ -68,7 +68,12 @@ const Pois = () => {
     <div>
       <h1>Trip Planner</h1>
       {currentUser?.isAdmin ?
-      <div>
+      <div className="filter_container">
+        <button className="addHome">
+          <Link to="/add" style={{ color: "inherit", textDecoration: "none" }}>
+            Add new POI
+          </Link>
+        </button>
         <div className="pois">
           {pois.map((poi) => (
             <div key={poi.pid} className="row">
@@ -100,12 +105,6 @@ const Pois = () => {
           />
           )}
         </div>
-      
-        <button className="addHome">
-          <Link to="/add" style={{ color: "inherit", textDecoration: "none" }}>
-            Add new POI
-          </Link>
-        </button>
       </div>
     : <p>You are not authorized on this page.</p>
     }

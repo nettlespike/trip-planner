@@ -31,7 +31,7 @@ const Password = () => {
                 <p>email: {user.email}</p>
                 <p>password: {user.password}</p>
                 <p>isAdmin: {user.isAdmin}</p>
-                <p>isStoreOwner: {user.isStoreOwner}</p>
+                {/* <p>isStoreOwner: {user.isStoreOwner}</p> */}
               </div>
             </div>
           ))}
