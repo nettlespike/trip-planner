@@ -43,12 +43,12 @@ const Update = () => {
           <h1>Update the POI</h1>
           {currentUser?.isAdmin ?
             <div className="form">
-              <input type="text" placeholder="Restaurant name" name="name" onChange={handleChange}/>
-              <input type="text" placeholder="time" name="time" onChange={handleChange}/>
-              <input type="text" placeholder="address" name="address" onChange={handleChange}/>
-              <input type="text" placeholder="reservation_details" name="reservation_details" onChange={handleChange}/>
-              <input type="number" placeholder="reservation_required" name="reservation_required" onChange={handleChange}/>
-              <input type="text" placeholder="accessibility" name="accessibility" onChange={handleChange}/>
+              <input type="text" placeholder="name" name="name" autocomplete="off" onChange={handleChange}/>
+              <input type="text" placeholder="time" name="time" autocomplete="off" onChange={handleChange}/>
+              <input type="text" placeholder="address" name="address" autocomplete="off" onChange={handleChange}/>
+              <input type="text" placeholder="reservation_details" name="reservation_details" autocomplete="off" onChange={handleChange}/>
+              <input type="number" placeholder="reservation_required" name="reservation_required" autocomplete="off" onChange={handleChange}/>
+              <input type="text" placeholder="accessibility" name="accessibility" autocomplete="off" onChange={handleChange}/>
 
               <button onClick={handleClick}>Update</button>
               {error && "Something went wrong!"}
