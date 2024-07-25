@@ -27,7 +27,7 @@ const Login = () => {
   return (
     <div className="form">
       <h1>Login</h1>
-      <input required type="text" placeholder="username" name="username" onChange={handleChange}/>
+      <input required type="text" placeholder="username" name="username" autocomplete="off" onChange={handleChange}/>
       <input required type="password" placeholder="password" name="password" onChange={handleChange}/>
       <button onClick={handleSubmit}>Login</button>
       {err && <p>{err}</p>}

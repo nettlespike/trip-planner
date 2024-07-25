@@ -31,8 +31,8 @@ const Register = () => {
   return (
     <div className="form">
       <h1>Register</h1>
-      <input required type="text" placeholder="username" name="username" onChange={handleChange}/>
-      <input required type="email" placeholder="email" name="email" onChange={handleChange}/>
+      <input required type="text" placeholder="username" name="username" autocomplete="off" onChange={handleChange}/>
+      <input required type="email" placeholder="email" name="email" autocomplete="off" onChange={handleChange}/>
       <input required type="password" placeholder="password" name="password" onChange={handleChange}/>
       <button onClick={handleClick}>Register</button>
       {error && "Something went wrong!"}

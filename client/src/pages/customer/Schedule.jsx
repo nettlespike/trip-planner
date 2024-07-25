@@ -70,7 +70,7 @@ const Schedule = () => {
               <div className="name"> <a href = {schedule.reservation_details}>{schedule.name}</a> </div>
             }
             <div className="attr">
-              <p>Restaurant code: {schedule.pid}</p>
+              <p>Location code: {schedule.pid}</p>
               <p>Date: {schedule.date}</p>
               <p>Time: {schedule.time}</p>
             </div>

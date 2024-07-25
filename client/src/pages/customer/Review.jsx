@@ -39,7 +39,7 @@ const Review = () => {
         {review.map((review) => (
           <div key={review.rno} className="row">
             <div className="attr">
-              <p>Restaurant code: {review.poi_code}</p>
+              <p>Location code: {review.poi_code}</p>
               <p>Date: {review.date}</p>
               <p>Experience: {review.experience_rating}</p>
               <p>Revisit: {review.would_revisit_rating}</p>

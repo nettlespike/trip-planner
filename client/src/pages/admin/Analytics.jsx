@@ -26,7 +26,7 @@ const Analytics = () => {
               <div className="name"> <a href = {poi.reservation_details}>{poi.name}</a> </div>
             }
             <div className="attr">
-              <p>Restaurant code: {poi.pid}</p>
+              <p>Location code: {poi.pid}</p>
               <p>Popularity: {poi.popularity}</p>
               <p>Avg revisit rating: {poi.rating}</p>
             </div>
