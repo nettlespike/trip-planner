@@ -24,11 +24,12 @@ function Dialog({ message, onDialog, namePoi }) {
             transform: "translate(-50%,-50%)",
             background: "white",
             padding: "20px",
-            borderRadius: "10px"
+            borderRadius: "10px",
+            
           }}
         >
-          <h3 stlye={{ color: "#111", fontSize: "16px" }}>{message}</h3>
-          <h1 style={{ color: "blue", fontSize: "24px" }}>{namePoi}</h1>
+          <h3 style={{ color: "#111", fontSize: "16px" }}>{message}</h3>
+          <h3 style={{ color: "blue", fontSize: "20px" }}>{namePoi}</h3>
           <div style={{ display: "flex", alignItems: "center" }}>
             <button
               onClick={() => onDialog(true)}

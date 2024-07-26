@@ -50,7 +50,7 @@ const Home = () => {
     if (e.target.checked) {
       try {
         // console.log(e.target.value)
-        const res = await axios.get("http://localhost:8800/search/noreservation");
+        const res = await axios.get("http://localhost:8800/search/reservation");
         setPois(res.data);
         // setCheckbox(e.target.value);
       } catch (err) {
@@ -104,7 +104,7 @@ const Home = () => {
     <div>
       <h1>Locations</h1>
       <div className="filter_container">
-        <input type="checkbox" onChange={clickNoReservation}/> <span className="checkboxtext"> No reservation required</span>
+        <input type="checkbox" onChange={clickNoReservation}/> <span className="checkboxtext"> Reservation required</span>
         <input type="checkbox" onChange={handleWeekend}/> <span className="checkboxtext">Open weekends</span>
         <ReactSearchBox placeholder="Search by location code" onChange={handleSearch}/>
         <button onClick={handleSearchClick}>Search</button>
