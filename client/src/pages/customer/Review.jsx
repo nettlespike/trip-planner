@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Rating } from 'react-simple-star-rating'
+import moment from "moment";
+
 
 const Review = () => {
   const [review, setReview] = useState([]);
@@ -40,7 +42,7 @@ const Review = () => {
           <div key={review.rno} className="row">
             <div className="attr">
               <p>Location code: {review.poi_code}</p>
-              <p>Date: {review.date}</p>
+              <p>Date: {moment(poi.date).format('YYYY-MM-DD')}</p>
               <p>Experience: {review.experience_rating}</p>
               <p>Revisit: {review.would_revisit_rating}</p>
               <p>Comment: {review.comment}</p>
@@ -52,4 +54,3 @@ const Review = () => {
   );
 };
 
-export default Review;
