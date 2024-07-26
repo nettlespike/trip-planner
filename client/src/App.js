@@ -1,24 +1,25 @@
 import {
   createBrowserRouter,
   RouterProvider,
-  BrowserRouter,
-  Routes,
-  Route,
   Outlet,
 } from "react-router-dom";
+
+import Add from "./pages/admin/Add";
+import Pois from "./pages/admin/Pois";
+import Update from "./pages/admin/Update";
+import Password from "./pages/admin/ViewPassword";
+import Analytics from "./pages/admin/Analytics";
+
+import Home from "./pages/customer/Home";
+import Register from "./pages/customer/Register";
+import Login from "./pages/customer/Login";
+import Review from "./pages/customer/Review";
+import AddReview from "./pages/customer/AddReview";
+import Schedule from "./pages/customer/Schedule";
+import UpdateSchedule from "./pages/customer/UpdateSchedule";
+
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Add from "./pages/Add";
-import Pois from "./pages/Pois";
-import Update from "./pages/Update";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import AddReview from "./pages/AddReview";
-import Review from "./pages/Review";
 import Footer from "./components/Footer";
-import Password from "./pages/ViewPassword";
-import Schedule from "./pages/Schedule";
-import UpdateSchedule from "./pages/UpdateSchedule";
 import "./style.css"
 
 const Layout = () => {
@@ -69,7 +70,7 @@ const router = createBrowserRouter([
         element: <Review />,
       },
       {
-        path: "/password",
+        path: "/users",
         element: <Password />,
       },
       {
@@ -80,26 +81,14 @@ const router = createBrowserRouter([
         path: "/updateSchedule/:sno",
         element: <UpdateSchedule />,
       },
+      {
+        path: "/analytics",
+        element: <Analytics />,
+      },
     ],
   },
   
 ]);
-
-// function App() {
-//   return (
-//     <div className="app">
-//       <BrowserRouter>
-//         <Routes>
-//           <Route path="/" element={<Pois />} />
-//           <Route path="/add" element={<Add />} />
-//           <Route path="/update/:pid" element={<Update />} />
-//           <Route path="/register" element={<Register />} />
-//           <Route path="/login" element={<Login />} />
-//         </Routes>
-//       </BrowserRouter>
-//     </div>
-//   );
-// }
 
 function App() {
   return (

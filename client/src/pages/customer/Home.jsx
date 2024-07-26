@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
 import axios from "axios";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../context/authContext.js";
+import { AuthContext } from "../../context/authContext.js";
 import ReactSearchBox from "react-search-box";
 
 const Home = () => {
   const [pois, setPois] = useState([]);
   const [checkbox, setCheckbox] = useState([]);
   const [spid, setSpid] = useState([]);
-  const { currentUser, logout } = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
 
   useEffect(() => {
     const fetchAllPois = async () => {
@@ -38,7 +38,7 @@ const Home = () => {
 
   const clickReservation = async (e) => {
     try {
-      const res = await axios.get("http://localhost:8800/reservation");
+      const res = await axios.get("http://localhost:8800/search/reservation");
       setPois(res.data);
       setCheckbox(e.target.value);
     } catch (err) {
@@ -47,12 +47,23 @@ const Home = () => {
   };
 
   const clickNoReservation = async (e) => {
-    try {
-      const res = await axios.get("http://localhost:8800/noreservation");
-      setPois(res.data);
-      setCheckbox(e.target.value);
-    } catch (err) {
-      console.log(err.response.data);
+    if (e.target.checked) {
+      try {
+        // console.log(e.target.value)
+        const res = await axios.get("http://localhost:8800/search/reservation");
+        setPois(res.data);
+        // setCheckbox(e.target.value);
+      } catch (err) {
+        console.log(err.response.data);
+      }
+    }
+    else {
+      try {
+        const res = await axios.get("http://localhost:8800/poi");
+        setPois(res.data);
+      } catch (err) {
+        console.log(err.response.data);
+      }
     }
   };
 
@@ -73,7 +84,7 @@ const Home = () => {
   const handleWeekend = async (e) => {
     if (e.target.checked) {
       try {
-        const res = await axios.get("http://localhost:8800/weekend");
+        const res = await axios.get("http://localhost:8800/search/weekend");
         setPois(res.data);
       } catch (err) {
         console.log(err.response.data);
@@ -91,17 +102,16 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Restaurants</h1>
+      <h1>Locations</h1>
       <div className="filter_container">
-        <input type="checkbox" value={1} onChange={clickReservation} checked={checkbox == 1}/> <span>Reservation required</span>
-        <input type="checkbox" value={2} onChange={clickNoReservation} checked={checkbox == 2}/> <span>No reservation required</span>
-        <input type="checkbox" onChange={handleWeekend}/> <span>Open weekends</span>
-        <ReactSearchBox placeholder="search by id" onChange={handleSearch}/>
+        <input type="checkbox" onChange={clickNoReservation}/> <span className="checkboxtext"> Reservation required</span>
+        <input type="checkbox" onChange={handleWeekend}/> <span className="checkboxtext">Open weekends</span>
+        <ReactSearchBox placeholder="Search by location code" onChange={handleSearch}/>
         <button onClick={handleSearchClick}>Search</button>
       </div>
       <div className="pois">
         {pois.map((poi) => (
-          <div key={poi.pid} className="poi">
+          <div key={poi.pid} className="row">
             {!(poi.reservation_details) ? 
               <div className="name"> {poi.name} </div> : 
               <div className="name"> <a href = {poi.reservation_details}>{poi.name}</a> </div>

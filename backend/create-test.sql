@@ -71,8 +71,8 @@ INSERT INTO `test_trip`.`review` (`rno`, `experience_rating`, `poi_code`) VALUES
 
 CREATE TABLE `schedule` (
     `sno` tinyint(4) NOT NULL UNIQUE DEFAULT 0,
-    `date` VARCHAR(45) DEFAULT NULL,
-    `time` VARCHAR(45) DEFAULT NULL,
+    `date` VARCHAR(45) DEFAULT "TBD",
+    `time` VARCHAR(45) DEFAULT "TBD",
     `cus_no` tinyint(4) NOT NULL DEFAULT 0,
     `pid` INT NOT NULL DEFAULT 0,
     PRIMARY KEY(`sno`),

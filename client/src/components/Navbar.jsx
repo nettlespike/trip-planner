@@ -1,31 +1,36 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"; // Added useLocation
 import { AuthContext } from "../context/authContext";
 
 const Navbar = () => {
   const { currentUser, logout } = useContext(AuthContext);
+  const location = useLocation(); // Added useLocation to get the current route
 
   return (
     <div className="navbar">
       <div className="container">
         <div className="links">
-          <span>{"Hello, "+ currentUser?.username}</span>
           {currentUser ? (
-            <span onClick={logout}>Logout</span>
+            <div className="login">
+              <span>{"Hello, "+ currentUser?.username + "!   "}</span>
+              <span onClick={logout}>Logout</span>
+            </div>
           ) : (
             <Link className="link" to="/login">Login</Link>
           )}
-          {currentUser?.isAdmin ? 
-            <span className="home"><Link className="home" to="/">Customer Home Page</Link></span> : 
-            <span className="home"><Link className="home" to="/">Home Page</Link></span>
-          }
-          <span className="write"><Link className="link" to="/review">View all reviews</Link></span>
+          <span className="home"><Link className={location.pathname === '/' ? 'home active' : 'home'} to="/">{currentUser?.isAdmin ? "Customer Home Page" : "Home Page"}</Link></span>
+          <span className="review"><Link className={location.pathname === '/review' ? 'link active' : 'link'} to="/review">View all reviews</Link></span>
           {!(currentUser?.isAdmin) ? 
-            <span className="schedule"><Link className="schedule" to="/schedule">My Schedule</Link></span> : 
+            <span className="schedule"><Link className={location.pathname === '/schedule' ? 'schedule active' : 'schedule'} to="/schedule">My Schedule</Link></span> : 
+            null
+          }
+          <span className="analytics"><Link className={location.pathname === '/analytics' ? 'analytics active' : 'analytics'} to="/analytics">Analytics</Link></span> 
+          {currentUser?.isAdmin ?
+              <span className="manage"><Link className={location.pathname === '/poi' ? 'manage active' : 'manage'} to="/poi">Manage POIs</Link></span> : 
             null
           }
           {currentUser?.isAdmin ?
-            <span className="manage"><Link className="manage" to="/poi">Manage POIs</Link></span> : 
+              <span className="users"><Link className={location.pathname === '/users' ? 'users active' : 'users'} to="/users">Users</Link></span> : 
             null
           }
         </div>

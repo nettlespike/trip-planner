@@ -1,6 +1,5 @@
 import axios from "axios";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -9,15 +8,13 @@ const Register = () => {
     email: "",
     password: "",
   });
-  const [error,setError] = useState(false)
+  const [error, setError] = useState(false)
 
   const navigate = useNavigate();
 
   const handleChange = (e) => {
     setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
-
-  // console.log(inputs)
 
   const handleClick = async (e) => {
     e.preventDefault();
@@ -34,8 +31,8 @@ const Register = () => {
   return (
     <div className="form">
       <h1>Register</h1>
-      <input required type="text" placeholder="username" name="username" onChange={handleChange}/>
-      <input required type="email" placeholder="email" name="email" onChange={handleChange}/>
+      <input required type="text" placeholder="username" name="username" autocomplete="off" onChange={handleChange}/>
+      <input required type="email" placeholder="email" name="email" autocomplete="off" onChange={handleChange}/>
       <input required type="password" placeholder="password" name="password" onChange={handleChange}/>
       <button onClick={handleClick}>Register</button>
       {error && "Something went wrong!"}

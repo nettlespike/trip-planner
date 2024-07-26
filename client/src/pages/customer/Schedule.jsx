@@ -1,13 +1,12 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
 import axios from "axios";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import Dialog from "./Dialog";
-import { AuthContext } from "../context/authContext.js";
+import { AuthContext } from "../../context/authContext.js";
 
 const Schedule = () => {
-  const [pois, setPois] = useState([]);
-  const { currentUser, logout } = useContext(AuthContext);
-
+  const [schedule, setSchedule] = useState([]);
+  const { currentUser } = useContext(AuthContext);
   const [dialog, setDialog] = useState({
     message: "",
     isLoading: false,
@@ -24,9 +23,9 @@ const Schedule = () => {
     });
   };
 
-  const handleDeleteReq = (id) => {
-    handleDialog("Are you sure you want to delete?", true);
-    idPoiRef.current = id;
+  const handleDeleteReq = (poi) => {
+    handleDialog("Are you sure you want to delete?", true, poi.name);
+    idPoiRef.current = poi.pid;
   };
 
   const areUSureDelete = (choose) => {
@@ -39,18 +38,17 @@ const Schedule = () => {
   };
 
   useEffect(() => {
-    const fetchAllPois = async () => {
+    const fetchAllSchedule = async () => {
       try {
+        // console.log(currentUser.uid)
         const res = await axios.get(`http://localhost:8800/schedule/${(currentUser.uid)}`);
-        setPois(res.data);
+        setSchedule(res.data);
       } catch (err) {
         console.log(err);
       }
     };
-    fetchAllPois();
+    fetchAllSchedule();
   }, []);
-
-  console.log(pois);
 
   const handleDelete = async (sno) => {
     try {
@@ -65,21 +63,21 @@ const Schedule = () => {
     <div>
       <h1>Trip Planner</h1>
       <div className="pois">
-        {pois.map((poi) => (
-          <div key={poi.sno} className="poi">
-            {!(poi.reservation_details) ? 
-              <div className="name"> {poi.name} </div> : 
-              <div className="name"> <a href = {poi.reservation_details}>{poi.name}</a> </div>
+        {schedule.map((schedule) => (
+          <div key={schedule.sno} className="row">
+            {!(schedule.reservation_details) ? 
+              <div className="name"> {schedule.name} </div> : 
+              <div className="name"> <a href = {schedule.reservation_details}>{schedule.name}</a> </div>
             }
             <div className="attr">
-              <p>pid: {poi.pid}</p>
-              <p>Date: {poi.date}</p>
-              <p>Time: {poi.time}</p>
+              <p>Location code: {schedule.pid}</p>
+              <p>Date: {schedule.date}</p>
+              <p>Time: {schedule.time}</p>
             </div>
             <div className="but">
-              <button className="delete" onClick={() => handleDeleteReq(poi.sno)}>Delete</button>
+              <button className="delete" onClick={() => handleDeleteReq(schedule)}>Delete</button>
               <button className="update">
-                <Link to={`/updateSchedule/${poi.sno}`} style={{ color: "inherit", textDecoration: "none" }}>
+                <Link to={`/updateSchedule/${schedule.sno}`} style={{ color: "inherit", textDecoration: "none" }}>
                   Update date and time
                 </Link>
               </button>

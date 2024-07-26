@@ -1,17 +1,11 @@
 import axios from "axios";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const UpdateSchedule = () => {
 
   const navigate = useNavigate();
   const location = useLocation();
-
-  console.log(location.pathname.split("/")[2])
-
-  const sno = location.pathname.split("/")[2];
-  
   const [poi, setPoi] = useState({
     sno: null,
     date: "",
@@ -19,13 +13,13 @@ const UpdateSchedule = () => {
     cus_no: "",
     pid: "",
   });
-  // const [error,setError] = useState(false)
+  const [error,setError] = useState(false)
+
+  const sno = location.pathname.split("/")[2];
   
   const handleChange = (e) => {
     setPoi((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
-
-  console.log(poi)
 
   const handleClick = async (e) => {
     e.preventDefault();
@@ -34,7 +28,7 @@ const UpdateSchedule = () => {
       navigate("/schedule");
     } catch (err) {
       console.log(err.response.data);
-      // setError(true)
+      setError(true)
     }
   };
 
@@ -46,7 +40,7 @@ const UpdateSchedule = () => {
           <input type="time" placeholder="time" name="time" onChange={handleChange}/>
 
         <button onClick={handleClick}>Update</button>
-        {/* {error && "Something went wrong!"} */}
+        {error && "Something went wrong!"}
         <Link to="/">See all POIs</Link>
       
       </div>

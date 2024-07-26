@@ -8,11 +8,11 @@
 }
 
 h1 {
-  margin-top: 100px;
+  margin-top: 50px;
   white-space: nowrap;
   display: flow-root;
   align-items: center;
-
+  padding-left: 30px;
 }
 
 .pois {
@@ -26,7 +26,7 @@ h1 {
   box-sizing: border-box;
 }
 
-.poi {
+.row {
   flex: 1;
   display: flex;
   align-items: center;
@@ -39,25 +39,21 @@ h1 {
   height: 100px;
 }
 
-.poi .name {
+.row .name {
   font-size: 20px;
   font-weight: bold;
   min-width: 150px;
   text-align: left;
-  /* background-color: brown; */
 }
 
-.poi .attr {
+.row .attr {
   display: flex;
   flex-direction: row;
   gap: 10px;
   word-wrap: normal;
-  /* background-color: blueviolet; */
 }
 
-.but{
-  /* display: flex; */
-  /* background-color: red; */
+.but {
   padding: 20px;
   right: 10px;
   position: absolute;
@@ -75,11 +71,12 @@ button {
   margin-bottom: 10px;
 }
 
-.poi button {
+.row button {
   margin-right: 20px;
 }
 
 .form {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -97,7 +94,6 @@ button {
   button {
     border: none;
     padding: 10px;
-    background-color: white;
     background-color: teal;
     color: white;
     font-weight: bold;
@@ -105,17 +101,32 @@ button {
   }
 }
 
-filter_container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.filter_container {
   gap: 10px;
+  justify-content: flex-start;
+  padding-left: 30px; 
+}
+
+.filter_container label {
+  align-items: center;
+  display: inline-flex;
+  gap: 5px;
+}
+
+.filter_container input[type="checkbox"] {
+  align-items: center;
+  margin-right: 10px;
+  justify-content: flex-start;
   margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 .filter_container input[type="text"] {
   width: 500px; 
   padding: 10px;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  padding-left: 30px;
   border: 1px solid gray;
 }
 
@@ -128,46 +139,121 @@ filter_container {
   border: none;
 }
 
-/* NAVBAR */
+.checkboxtext {
+  padding-right: 20px;
+}
 
-    .navbar {
-      background-color: skyblue;
-      .container {
-        padding: 10px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .links {
-          display: flex;
-          align-items: center;
-          gap: 10px;
+.navbar {
+  padding-left: 30px;
+  background-color: #4aa4f6;
+}
 
-          h6 {
-            font-size: 16px;
-            font-weight: 300;
-          }
+.navbar .container {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-          span {
-            cursor: pointer;
-          }
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-          .write {
-            background-color: lightGreen;
-            width: 150px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 300;
-            border: 1px solid white;
+.links h6 {
+  gap: 20px;
+  /* font-size: 16px; */
+  font-weight: 300;
+}
 
-            &:hover {
-              color: teal;
-              background-color: white;
-              border: 1px solid teal;
-            }
-          }
-        }
-      }
-    }
+.links span {
+  cursor: pointer;
+}
+
+.links .home {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .home:hover {
+  font-weight: bold;
+}
+
+.links .review {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .review:hover {
+  font-weight: bold;
+}
+
+.links .schedule {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .schedule:hover {
+  font-weight: bold;
+}
+
+.links .manage {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .manage:hover {
+  font-weight: bold;
+}
+
+.links .analytics {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .analytics:hover {
+  font-weight: bold;
+}
+
+.links .users {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .users:hover {
+  font-weight: bold;
+}
+
+.login {
+  margin-right: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  font-weight: bold;
+  color: teal;
+  text-decoration: underline;
+}

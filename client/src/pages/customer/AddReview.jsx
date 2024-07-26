@@ -1,32 +1,31 @@
 import axios from "axios";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const AddReview = () => {
-  const [poi, setPoi] = useState({
+  const [review, setReview] = useState({
     experience_rating: "",
     would_revisit_rating: "",
     comment: "",
   });
-  // const [error,setError] = useState(false)
+  const [error, setError] = useState(false)
 
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    setPoi((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    console.log(e)
+    setReview((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    console.log(review)
   };
-
-  // console.log(poi)
 
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/", poi);
+      await axios.post("http://localhost:8800/review", review);
       navigate("/");
     } catch (err) {
       console.log(err.response.data);
-      // setError(true)
+      setError(true)
     }
   };
 
@@ -35,9 +34,9 @@ const AddReview = () => {
       <h1>Add New Review</h1>
       <input type="number" placeholder="experience_rating (1 to 5)" name="experience_rating" min="1" max="5" onChange={handleChange}></input>
       <input type="number" placeholder="would_revisit_rating (1 to 5)" name="would_revisit_rating" min="1" max="5" onChange={handleChange}></input>
-      <textarea rows="4" cols="50" placeholder="comment" onChange={handleChange}/>
+      <textarea rows="4" cols="50" placeholder="comment" name="comment" onChange={handleChange}/>
       <button onClick={handleClick}>Submit</button>
-      {/* {error && "Something went wrong!"} */}
+      {error && "Something went wrong!"}
       <Link to="/">See all POIs</Link>
     </div>
   );
