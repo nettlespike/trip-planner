@@ -33,12 +33,12 @@ Go into directory where project is stored and type in terminal
 > npm i
 
 ## 5. Creating data into database locally
-- Open up SQL workbench and configure your user 
+- Open up SQL workbench and configure your user (note down your username and password selected)
 
 ### Creating sample data
-- Copy, Paste, and run create-test.sql (found in backend folder in your project) in SQL workbench to make all your data
+- Copy, Paste, and run the code found in backend/Sample Data/create-test.sql in SQL workbench to make all your data
 - Create a file called ".env" in the backend folder and fill it with information like so based on your personal SQL Server configurations:
-  - Note: you probably only have to change the value of DB_PAASSWORD and DB_USERNAME
+  - Note: you probably only have to change the value of DB_PAASSWORD and DB_USERNAME to match your personal credentials
 
 ```
 DB_CONNECTION=mysql
@@ -50,9 +50,10 @@ DB_PASSWORD="my_password"
 ```
 ### Creating production data
 Production data is stored in a separate table than the sample data, so it is fine to follow these steps after creating the sample data. 
-- Copy, paste, and run first 3 lines of create-prod-data.sql (found in backend folder in your project) in SQL workbench. This will create the production database
+
+- Copy, paste, and run first 3 lines of code found in backend/Production Data/create-prod-data.sql in SQL workbench. This will create the production database
 - Afterwords, please right click on the newly created database and select the option 'Table Data Import Wizard'
-    - The file path should be '..../trip-planner/backend/google_maps_export.csv' where .... is where you stored this project folder on your computer
+    - The file path should be '..../trip-planner/backend/Production Data/trip_poi.csv' where .... is where you stored this project folder on your computer
     - Click next and select 'Create new table option'
         - Ensure table is being created in trip_data database
         - Name the table: RawData
@@ -69,10 +70,10 @@ Production data is stored in a separate table than the sample data, so it is fin
         * input_details
     - Click next and finish importing the data
 - Run the remaining SQL code in create-prod-data.sql
-- Import review and users data using 'Table Data Import Wizard' on their respective tables in SQL Workbench, using 'trip_reviews.csv' and 'usertest.csv' respectively. For 'userstest.csv', please specify that the destination attribute for username is username, and not uid
+- Import users, reviews, and schedules data using 'Table Data Import Wizard' on their respective tables in SQL Workbench, using 'trip_users.csv' (for users table), 'trip_reviews.csv' (for reviews table), and 'trip_scheddules.csv' (for schedules table) respectively. For 'trip_users.csv', please specify that the destination attribute for username is username, and not uid. Similarly, for trip_scehdules.csv, please specify destination attribute for date is date, not sno.
 
 
-- To use production data, you need to specify that in the .env file. If you haven't created a .env file in the backend folder, create it now. Update it with your local connection info and make sure DB_DATABASE=trip_data
+- To use production data, you need to specify that in the .env file. If you haven't created a .env file in the backend folder, create it now. Update it with your local connection credential info and make sure DB_DATABASE=trip_data
 
 ```
 DB_CONNECTION=mysql
