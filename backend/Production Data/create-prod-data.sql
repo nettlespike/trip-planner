@@ -45,6 +45,10 @@ INSERT INTO `poi`(`pid`,`name`, `time`, `address`, `reservation_details`, `acces
 SELECT `id`,`name`, `opening_hours`, `address`, `booking_link`, `poi`
 FROM `RawData`;
 
+UPDATE poi 
+SET reservation_required = 1
+WHERE NOT (reservation_details IS NULL OR reservation_details = "");
+
 CREATE TABLE `restaurant` (
   `rid` INT NOT NULL UNIQUE DEFAULT 0,
   `type_of_cuisine` VARCHAR(1000) DEFAULT NULL,
