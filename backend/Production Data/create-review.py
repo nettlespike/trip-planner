@@ -3,7 +3,7 @@ import random
 from datetime import datetime,timedelta
 
 
-len = 1000
+len = 500
 
 reviews = ["I recently dined here and had a fantastic experience. The atmosphere was inviting, and the staff were friendly and attentive. The menu had a great variety, and everything we ordered was delicious and well-prepared. Highly recommend and will definitely return!",
            "Had an amazing meal at this restaurant. The ambiance was cozy, and the service was excellent. The food was flavorful and beautifully presented. A wonderful dining spot that I highly recommend!",
@@ -68,20 +68,21 @@ def gen_date(min_year=2005, max_year=datetime.now().year):
 mydict = []
 
 for i in range(len):
-    username = 'aaaaa'
-    email = 'aaaaaa'
     poi_code = random.randrange(1, 237)
     experience_rating = random.randrange(0, 10)
-    revisit_rating = random.randrange(0,2) #4-5
+    revisit_rating = random.randrange(0,3) 
     rn = random.randrange(15, 38)
-    #Bad -> 0,1
-    #Normal ->2,3,4,5
+    #Bad -> 0,1,2
+    #Normal ->3,4,5
     #Good -> 6,7,8,9
-    if experience_rating >= 2 & experience_rating <= 5:
-        experience_rating = random.randrange(3,5)
-        revisit_rating = random.randrange(3,5)
+    if experience_rating <= 2:
+        revisit_rating = random.randrange(0, 3)
+
+    elif experience_rating <= 5:
+        experience_rating = random.randrange(3,6)
+        revisit_rating = random.randrange(3,6)
         rn = random.randrange(3, 22)
-    elif experience_rating >= 6:
+    else:
         experience_rating = random.randrange(4,6)
         revisit_rating = random.randrange(4,6)
         rn = random.randrange(0,15)

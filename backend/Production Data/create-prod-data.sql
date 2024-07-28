@@ -28,10 +28,18 @@ CREATE TABLE `poi` (
   `address` VARCHAR(200) DEFAULT NULL,
   `reservation_details` VARCHAR(500) DEFAULT NULL,
   `reservation_required` TINYINT DEFAULT 0,
-  `location` VARCHAR(45) DEFAULT NULL,
   `accessibility` VARCHAR(1000) DEFAULT NULL,
   PRIMARY KEY (`pid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+/* To test if there are duplicates in RawData, uncomment and run the following code */
+/*SELECT name, address, COUNT(*)
+FROM RawData
+GROUP BY name, address
+HAVING COUNT(*) > 1
+*/
+
+/* There should be no duplicate records, but if there is, manually delete them */
 
 INSERT INTO `poi`(`pid`,`name`, `time`, `address`, `reservation_details`, `accessibility`)
 SELECT `id`,`name`, `opening_hours`, `address`, `booking_link`, `poi`
@@ -108,4 +116,9 @@ CREATE TABLE `contains` (
 /* For users data, please import usertest.csv using Table Import Data Wizard onto the 'users' table. 
 Please specify
 	username maps to username
+*/
+
+/* For schedules data, please import backend/Production Data/trip_schedules.csv using Table Import Data Wizard onto 'schedule' table.
+Please specify
+	date maps to date
 */

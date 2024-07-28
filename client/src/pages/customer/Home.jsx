@@ -119,7 +119,7 @@ const Home = () => {
             <div className="attr">
               <p>{poi.days_of_week}</p>
               <p>{poi.address}</p>
-              <p>{poi.reservation_required}</p>
+              <p>{(poi.reservation_required)? "Reservation Required": ""} </p>
             </div>
             <div className="but">
               <button className="add" onClick={() => handleSchedule(poi.pid)}>Add to Schedule</button>

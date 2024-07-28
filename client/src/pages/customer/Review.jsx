@@ -41,8 +41,9 @@ const Review = () => {
         {review.map((review) => (
           <div key={review.rno} className="row">
             <div className="attr">
-              <p>Location code: {review.poi_code}</p>
-              <p>Date: {moment(poi.date).format('YYYY-MM-DD')}</p>
+              <p>Code: {review.poi_code}</p>
+              <p>{review.name}</p>
+              <p>Date: {moment(review.date).format('YYYY-MM-DD')}</p>
               <p>Experience: {review.experience_rating}</p>
               <p>Revisit: {review.would_revisit_rating}</p>
               <p>Comment: {review.comment}</p>
