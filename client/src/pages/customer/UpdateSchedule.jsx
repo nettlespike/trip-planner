@@ -24,7 +24,7 @@ const UpdateSchedule = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.put("http://localhost:8800/schedule/" + sno, poi);
+      await axios.put("http://localhost:8800/schedule/" + sno, poi); // update schedule entry using primary key sno
       navigate("/schedule");
     } catch (err) {
       console.log(err.response.data);

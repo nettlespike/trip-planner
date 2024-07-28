@@ -6,8 +6,8 @@ import ReactSearchBox from "react-search-box";
 
 const Home = () => {
   const [pois, setPois] = useState([]);
-  const [checkbox, setCheckbox] = useState([]);
-  const [spid, setSpid] = useState([]);
+  // const [checkbox, setCheckbox] = useState([]);
+  const [spid, setSpid] = useState([]); // search bar value
   const { currentUser } = useContext(AuthContext);
 
   useEffect(() => {
@@ -36,11 +36,11 @@ const Home = () => {
 
   // filters
 
-  const clickReservation = async (e) => {
+  const clickReservation = async (e) => { // filter in original implementation, now removed
     try {
       const res = await axios.get("http://localhost:8800/search/reservation");
       setPois(res.data);
-      setCheckbox(e.target.value);
+      // setCheckbox(e.target.value);
     } catch (err) {
       console.log(err.response.data);
     }
@@ -49,7 +49,6 @@ const Home = () => {
   const clickNoReservation = async (e) => {
     if (e.target.checked) {
       try {
-        // console.log(e.target.value)
         const res = await axios.get("http://localhost:8800/search/reservation");
         setPois(res.data);
         // setCheckbox(e.target.value);
@@ -68,8 +67,7 @@ const Home = () => {
   };
 
   const handleSearch = (e) => {
-      setSpid(e);
-      console.log(spid)
+      setSpid(e); // update search bar value
   };
 
   const handleSearchClick = async (e) => {

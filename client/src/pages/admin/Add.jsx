@@ -25,7 +25,7 @@ const Add = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/poi", poi);
+      await axios.post("http://localhost:8800/poi", poi); // add POI to database
       navigate("/");
     } catch (err) {
       console.log(err.response.data);
@@ -36,6 +36,7 @@ const Add = () => {
   return (
     <div className="form">
       <h1>Add New POI</h1>
+      {/* only admins have access to the form */}
       {currentUser?.isAdmin ?
         <div className="form">
           <input type="text" placeholder="name" name="name" autocomplete="off" onChange={handleChange}/>

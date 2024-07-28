@@ -19,7 +19,7 @@ const Register = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/poi/auth/register", inputs);
+      await axios.post("http://localhost:8800/poi/auth/register", inputs); // create new user
       setError(false)
       navigate("/login");
     } catch (err) {

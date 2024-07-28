@@ -9,7 +9,7 @@ const Password = () => {
   useEffect(() => {
     const fetchAllUsers = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/users");
+        const res = await axios.get("http://localhost:8800/users"); // get user info from database
         setUser(res.data);
       } catch (err) {
         console.log(err);
@@ -21,6 +21,7 @@ const Password = () => {
   return (
     <div>
       <h1>Users</h1>
+      {/* only admins have access to user info */}
       {currentUser?.isAdmin ?
         <div className="pois">
           {user.map((user) => (

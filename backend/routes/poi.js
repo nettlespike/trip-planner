@@ -3,9 +3,9 @@ import { read, write, del, up } from "../controllers/poi.js";
 
 const router = express.Router();
 
-router.get("/", read);
-router.post("/", write);
-router.delete("/:pid", del);
-router.put("/:pid", up);
+router.get("/", read); // view existing POIs
+router.post("/", write); // add new POIs
+router.delete("/:pid", del); // delete existing POIs
+router.put("/:pid", up); // update existing POIs
 
 export default router;

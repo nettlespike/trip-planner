@@ -4,12 +4,14 @@ import {
   Outlet,
 } from "react-router-dom";
 
+// admin
 import Add from "./pages/admin/Add";
 import Pois from "./pages/admin/Pois";
 import Update from "./pages/admin/Update";
 import Password from "./pages/admin/ViewPassword";
 import Analytics from "./pages/admin/Analytics";
 
+// customers
 import Home from "./pages/customer/Home";
 import Register from "./pages/customer/Register";
 import Login from "./pages/customer/Login";
@@ -18,6 +20,7 @@ import AddReview from "./pages/customer/AddReview";
 import Schedule from "./pages/customer/Schedule";
 import UpdateSchedule from "./pages/customer/UpdateSchedule";
 
+// other scripts
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./style.css"
@@ -32,6 +35,7 @@ const Layout = () => {
   );
 };
 
+// link paths and scripts
 const router = createBrowserRouter([
   {
     path: "/",

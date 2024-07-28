@@ -11,7 +11,7 @@ const Review = () => {
   useEffect(() => {
     const fetchAllReviews = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/review");
+        const res = await axios.get("http://localhost:8800/review"); // view reviews
         setReview(res.data);
       } catch (err) {
         console.log(err);
@@ -23,7 +23,7 @@ const Review = () => {
   const handleExpRating = async (e) => {
     setRating(e);
     try {
-      const res = await axios.get(`http://localhost:8800/review/${rating}`);
+      const res = await axios.get(`http://localhost:8800/review/${rating}`); // view reviews by rating
       setReview(res.data);
     } catch (err) {
       console.log(err.response.data);

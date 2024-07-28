@@ -10,27 +10,26 @@ const Schedule = () => {
   const [dialog, setDialog] = useState({
     message: "",
     isLoading: false,
-    //Update
     namePoi: ""
   });
-  const idPoiRef = useRef();
+  const snoRef = useRef();
   const handleDialog = (message, isLoading, namePoi) => {
     setDialog({
       message,
       isLoading,
-      //Update
       namePoi
     });
   };
 
+  // users need to confirm before the schedule entry gets deleted
   const handleDeleteReq = (poi) => {
     handleDialog("Are you sure you want to delete?", true, poi.name);
-    idPoiRef.current = poi.pid;
+    snoRef.current = poi.sno;
   };
 
   const areUSureDelete = (choose) => {
     if (choose) {
-      handleDelete(idPoiRef.current);
+      handleDelete(snoRef.current);
       handleDialog("", false);
     } else {
       handleDialog("", false);
@@ -41,7 +40,7 @@ const Schedule = () => {
     const fetchAllSchedule = async () => {
       try {
         // console.log(currentUser.uid)
-        const res = await axios.get(`http://localhost:8800/schedule/${(currentUser.uid)}`);
+        const res = await axios.get(`http://localhost:8800/schedule/${(currentUser.uid)}`); // get the current user's schedule by uid
         setSchedule(res.data);
       } catch (err) {
         console.log(err);
@@ -52,7 +51,7 @@ const Schedule = () => {
 
   const handleDelete = async (sno) => {
     try {
-      await axios.delete(`http://localhost:8800/schedule/${sno}`);
+      await axios.delete(`http://localhost:8800/schedule/${sno}`); // delete schedule entry using primary key sno
       window.location.reload()
     } catch (err) {
       console.log(err);
@@ -86,7 +85,6 @@ const Schedule = () => {
         ))}
         {dialog.isLoading && (
         <Dialog
-          //Update
           namePoi={dialog.namePoi}
           onDialog={areUSureDelete}
           message={dialog.message}

@@ -8,7 +8,6 @@ import { AuthContext } from "../../context/authContext";
 const Pois = () => {
   const [pois, setPois] = useState([]);
   const { currentUser } = useContext(AuthContext);
-
   const [dialog, setDialog] = useState({
     message: "",
     isLoading: false,
@@ -24,12 +23,8 @@ const Pois = () => {
     });
   };
 
+  // users need to confirm before POI gets deleted
   const handleDeleteReq = (poi) => {
-    // setDialog({
-    //   message: "Are you sure you want to delete?",
-    //   isLoading: true,
-    //   namePoi: poi.name,
-    // });
     handleDialog("Are you sure you want to delete?", true, poi.name);
     idPoiRef.current = poi.pid;
   };
@@ -46,7 +41,7 @@ const Pois = () => {
   useEffect(() => {
     const fetchAllPois = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/poi");
+        const res = await axios.get("http://localhost:8800/poi"); // get POIs from database
         setPois(res.data);
       } catch (err) {
         console.log(err);
@@ -57,7 +52,7 @@ const Pois = () => {
 
   const handleDelete = async (pid) => {
     try {
-      await axios.delete(`http://localhost:8800/poi/${pid}`);
+      await axios.delete(`http://localhost:8800/poi/${pid}`); // delete using primary key pid
       window.location.reload()
     } catch (err) {
       console.log(err);

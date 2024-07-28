@@ -30,7 +30,7 @@ const Update = () => {
   const handleClick = async (e) => {
     // e.preventDefault();
     try {
-      await axios.put("http://localhost:8800/poi/" + pId, poi);
+      await axios.put("http://localhost:8800/poi/" + pId, poi);  // update POI using primary key pid
       navigate("/");
     } catch (err) {
       console.log(err.response.data);
@@ -41,6 +41,7 @@ const Update = () => {
   return (
       <div className="form">
           <h1>Update the POI</h1>
+          {/* only admins have access to the form */}
           {currentUser?.isAdmin ?
             <div className="form">
               <input type="text" placeholder="name" name="name" autocomplete="off" onChange={handleChange}/>

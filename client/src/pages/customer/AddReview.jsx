@@ -21,7 +21,7 @@ const AddReview = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/review", review);
+      await axios.post("http://localhost:8800/review", review); // add new review to database
       navigate("/");
     } catch (err) {
       console.log(err.response.data);
