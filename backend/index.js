@@ -32,7 +32,7 @@ app.use("/poi", poiRoutes); // admins can write POIs
 app.use("/search", filterRoutes);
 
 app.get("/", (req, res) => {
-    res.json("front page")
+   res.json("front page")
 })
 
 app.get("/analytics", (req, res) => {

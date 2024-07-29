@@ -41,8 +41,8 @@ HAVING COUNT(*) > 1
 
 /* There should be no duplicate records, but if there is, manually delete them */
 
-INSERT INTO `poi`(`pid`,`name`, `time`, `address`, `reservation_details`, `accessibility`)
-SELECT `id`,`name`, `opening_hours`, `address`, `booking_link`, `poi`
+INSERT INTO `poi`(`pid`,`name`, `time`, `address`, `reservation_details`, `location`,`accessibility`)
+SELECT `id`,`name`, `opening_hours`, `address`, `booking_link`, `city`, `poi`
 FROM `RawData`;
 
 UPDATE poi 

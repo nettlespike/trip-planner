@@ -1,7 +1,7 @@
 import { db } from "../index.js";
 
 export const read = (req,res)=> {
-    const q = "SELECT * FROM poi LIMIT 10"
+    const q = "SELECT * FROM poi";
      db.query(q, (err, data)=> {
          if(err) {
              return res.json(err)
