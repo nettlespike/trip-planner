@@ -166,3 +166,64 @@
 5. No output, but the specified entry will be deleted from the poi table.
 
 6. No output, but the specified entry in the poi table will be updated.
+
+7.
+[
+  {
+    "sno": 2,
+    "date": "13-10-2024",
+    "time": "9:30:00 AM",
+    "cus_no": 1,
+    "pid": 132,
+    "name": "Guac Mexi Grill",
+    "reservation_details": "https://www.skipthedishes.com/guac-mexi-grill-university-avenue-east?utm_source=google&utm_medium=organic&utm_campaign=gpa"
+  },
+  {
+    "sno": 400,
+    "date": "16-06-2025",
+    "time": "12:45:00 PM",
+    "cus_no": 1,
+    "pid": 68,
+    "name": "Daldongnae Korean BBQ - Waterloo",
+    "reservation_details": ""
+  }
+]
+
+8.
+[
+  {
+    "pid": 20,
+    "popularity": 6,
+    "rating": null,
+    "name": "ALMADINA Woodstone Oven & Grill",
+    "reservation_details": ""
+  },
+  {
+    "pid": 43,
+    "popularity": 5,
+    "rating": 5,
+    "name": "Huether Hotel",
+    "reservation_details": "https://www.doordash.com/store/the-huether-hotel-waterloo-724982/?utm_campaign=gpa"
+  },
+  {
+    "pid": 68,
+    "popularity": 5,
+    "rating": 2,
+    "name": "Daldongnae Korean BBQ - Waterloo",
+    "reservation_details": ""
+  },
+  {
+    "pid": 81,
+    "popularity": 5,
+    "rating": 3.25,
+    "name": "Freshii",
+    "reservation_details": "https://order.online/store/-1897626/?pickup=true&hideModal=true&utm_source=gfo&rwg_token=AJKvS9UgGyCGQWcMbipQq3IntxOhiZuFFiWoYOfik0jYulVUPOlnMVCfnzCaayaWKljTsM4zSqBkHMs7bs6KDRico67S0gdFol1sRLlHH8qRfZHzS4c3cow%3D"
+  },
+  {
+    "pid": 92,
+    "popularity": 5,
+    "rating": 3.5,
+    "name": "Potluck Caribbean Cuisine",
+    "reservation_details": "https://www.skipthedishes.com/potluck-restaurant-253-king?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder"
+  }
+]

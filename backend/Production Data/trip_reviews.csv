@@ -2,7 +2,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2008-02-29,5,3,"Great dining experience! The decor was modern and stylish, the staff were attentive, and the food was fantastic. A wonderful place to eat that I highly recommend!",154,28
 2019-12-06,4,3,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",168,204
 2005-01-01,4,5,"Enjoyed a great dinner here. The atmosphere was pleasant, and the staff were courteous. The menu had something for everyone, and our meals were delicious. Will definitely visit again!",56,163
-2015-11-08,2,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",398,204
+2015-11-08,2,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",398,204
 2018-10-17,5,4,Pog,365,220
 2014-07-27,5,5,"Enjoyed a great dinner here. The atmosphere was pleasant, and the staff were courteous. The menu had something for everyone, and our meals were delicious. Will definitely visit again!",210,49
 2023-12-20,0,0,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",143,80
@@ -16,15 +16,15 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2016-10-09,3,3,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",7,31
 2005-10-24,4,4,Great service!,170,217
 2017-03-02,4,5,"Great dining experience! The decor was modern and stylish, the staff were attentive, and the food was fantastic. A wonderful place to eat that I highly recommend!",331,37
-2021-12-10,2,0,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",388,144
-2019-12-26,2,2,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldn’t recommend this place.",262,74
+2021-12-10,2,0,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",388,144
+2019-12-26,2,2,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldnï¿½t recommend this place.",262,74
 2020-11-01,5,4,Great time!,2,58
-2015-05-19,2,1,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",316,224
+2015-05-19,2,1,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",316,224
 2016-07-20,5,4,"My experience here was fairly positive. The setting was pleasant, and the staff were polite. The menu offered a reasonable selection, and the dishes were fine. A solid option for dining out.",249,156
 2022-01-26,1,0,"My visit to this restaurant was pleasant. The atmosphere was comfortable, and the staff were friendly. The food was good, though not outstanding. It's a nice place to dine.",172,137
 2008-04-09,5,3,"Enjoyed a great dinner here. The atmosphere was pleasant, and the staff were courteous. The menu had something for everyone, and our meals were delicious. Will definitely visit again!",63,102
 2017-09-12,5,5,Great food,378,39
-2010-05-22,0,1,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",247,156
+2010-05-22,0,1,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",247,156
 2022-08-11,4,4,"Fantastic dining experience! The ambiance was warm and inviting, the staff were attentive, and the food was superb. Highly recommend this place and can't wait to return!",247,189
 2018-05-28,5,5,"Had an okay meal here. The atmosphere was pleasant, and the service was fine. The food was average but decent overall. It's a decent spot for a meal.",185,215
 2005-08-02,1,2,"My experience here was fairly positive. The setting was pleasant, and the staff were polite. The menu offered a reasonable selection, and the dishes were fine. A solid option for dining out.",309,152
@@ -33,7 +33,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2023-05-03,4,4,"Had a lovely meal here. The ambiance was relaxing, the service was excellent, and the food was delicious. Highly recommend this restaurant and will definitely return!",276,120
 2015-08-15,4,4,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",369,125
 2022-04-11,4,4,Great time!,276,138
-2014-01-04,0,0,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",29,27
+2014-01-04,0,0,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",29,27
 2013-01-25,1,0,"My visit to this restaurant was pleasant. The atmosphere was comfortable, and the staff were friendly. The food was good, though not outstanding. It's a nice place to dine.",38,163
 2022-02-22,4,4,"This restaurant is a gem. The atmosphere is elegant, the staff are friendly, and the food is exceptional. A highly recommended spot for a great meal. Will be back for sure!",54,101
 2008-02-23,5,5,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",327,57
@@ -42,7 +42,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2012-05-23,1,0,"Enjoyed a meal here recently. The setting was nice, and the service was acceptable. The food was decent, though not particularly memorable. A reasonable choice for dining out.",280,108
 2012-12-06,5,3,"Enjoyed a great dinner here. The atmosphere was pleasant, and the staff were courteous. The menu had something for everyone, and our meals were delicious. Will definitely visit again!",149,212
 2007-07-11,4,4,"I dined here recently and had a pleasant experience. The atmosphere was nice, and the staff were generally attentive. The menu had a decent variety, and the food was good. Overall, it was an enjoyable visit.",3,25
-2007-12-05,1,0,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldn’t dine here again.",324,226
+2007-12-05,1,0,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldnï¿½t dine here again.",324,226
 2007-10-27,5,5,"I dined here recently and had a pleasant experience. The atmosphere was nice, and the staff were generally attentive. The menu had a decent variety, and the food was good. Overall, it was an enjoyable visit.",110,133
 2010-09-11,4,5,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",258,32
 2005-01-01,4,4,Pog,386,121
@@ -61,22 +61,22 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2013-08-03,4,4,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",219,227
 2014-12-09,5,4,"Great dining experience! The decor was modern and stylish, the staff were attentive, and the food was fantastic. A wonderful place to eat that I highly recommend!",324,211
 2018-01-28,4,4,Great time!,365,99
-2006-03-29,0,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",93,30
+2006-03-29,0,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",93,30
 2014-04-25,5,4,"Had a lovely meal here. The ambiance was relaxing, the service was excellent, and the food was delicious. Highly recommend this restaurant and will definitely return!",267,64
 2010-05-11,0,1,"Had an okay meal here. The atmosphere was pleasant, and the service was fine. The food was average but decent overall. It's a decent spot for a meal.",303,224
 2022-05-31,5,4,"I recently dined here and had a fantastic experience. The atmosphere was inviting, and the staff were friendly and attentive. The menu had a great variety, and everything we ordered was delicious and well-prepared. Highly recommend and will definitely return!",199,60
 2007-10-15,4,4,Great food,57,194
 2021-07-12,3,5,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",253,196
-2019-07-21,2,0,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",182,83
+2019-07-21,2,0,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",182,83
 2015-10-13,5,4,"This restaurant offers a delightful dining experience. The decor is stylish, and the staff are very accommodating. The dishes were fresh and tasty. I highly recommend this place and look forward to coming back.",343,25
-2007-08-06,1,2,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldn’t dine here again.",111,98
+2007-08-06,1,2,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldnï¿½t dine here again.",111,98
 2013-08-25,3,4,Great food,251,148
 2023-08-12,1,0,"This restaurant failed to impress. The decor was dated, and the service was lacking. The food was mediocre and did not meet expectations. A place I would avoid.",138,85
 2016-04-21,2,2,"This restaurant was quite nice. The ambiance was comfortable, and the service was satisfactory. The food was decent and met our expectations. It's a good place for a casual meal.",307,114
 2021-04-26,5,4,Pog,13,144
 2017-12-05,4,4,"My experience here was fairly positive. The setting was pleasant, and the staff were polite. The menu offered a reasonable selection, and the dishes were fine. A solid option for dining out.",223,35
 2015-03-25,3,4,"I dined here recently and had a pleasant experience. The atmosphere was nice, and the staff were generally attentive. The menu had a decent variety, and the food was good. Overall, it was an enjoyable visit.",155,186
-2010-03-03,0,1,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",29,51
+2010-03-03,0,1,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",29,51
 2012-10-19,2,2,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",357,224
 2016-07-14,2,0,"This restaurant was a good experience. The ambiance was nice, and the service was fine. The food was decent, with a good variety on the menu. A solid place for a meal.",99,188
 2011-07-03,4,5,Great food,318,37
@@ -89,12 +89,12 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2024-02-08,4,4,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",122,135
 2015-01-04,4,4,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",305,226
 2010-10-29,5,3,Great food,207,185
-2009-03-08,2,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",328,234
+2009-03-08,2,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",328,234
 2019-09-28,2,0,"This restaurant was quite nice. The ambiance was comfortable, and the service was satisfactory. The food was decent and met our expectations. It's a good place for a casual meal.",296,141
 2010-10-21,3,5,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",356,92
-2016-06-20,2,1,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",335,125
+2016-06-20,2,1,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",335,125
 2024-04-15,5,4,Great service!,341,124
-2010-12-19,1,1,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",174,175
+2010-12-19,1,1,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",174,175
 2017-09-29,3,5,"Great dining experience! The decor was modern and stylish, the staff were attentive, and the food was fantastic. A wonderful place to eat that I highly recommend!",347,196
 2017-05-08,4,5,Good food for the price,92,70
 2019-06-19,4,5,"Enjoyed a great dinner here. The atmosphere was pleasant, and the staff were courteous. The menu had something for everyone, and our meals were delicious. Will definitely visit again!",8,159
@@ -106,7 +106,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2008-01-24,4,5,"Had an okay meal here. The atmosphere was pleasant, and the service was fine. The food was average but decent overall. It's a decent spot for a meal.",48,83
 2012-08-05,4,4,"Had an amazing meal at this restaurant. The ambiance was cozy, and the service was excellent. The food was flavorful and beautifully presented. A wonderful dining spot that I highly recommend!",257,162
 2022-06-03,1,1,"I dined here recently and had a pleasant experience. The atmosphere was nice, and the staff were generally attentive. The menu had a decent variety, and the food was good. Overall, it was an enjoyable visit.",1,8
-2018-03-03,4,3,Great time!,42,151
+2018-03-03,4,3,"Great time!"",42,151
 2021-08-20,5,5,"This restaurant offers a delightful dining experience. The decor is stylish, and the staff are very accommodating. The dishes were fresh and tasty. I highly recommend this place and look forward to coming back.",162,147
 2019-09-25,4,4,"This restaurant was quite nice. The ambiance was comfortable, and the service was satisfactory. The food was decent and met our expectations. It's a good place for a casual meal.",372,31
 2006-07-29,4,4,"Had a lovely meal here. The ambiance was relaxing, the service was excellent, and the food was delicious. Highly recommend this restaurant and will definitely return!",174,138
@@ -117,19 +117,19 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2009-04-04,4,4,Good food for the price,334,44
 2017-06-06,5,3,"Great dining experience! The decor was modern and stylish, the staff were attentive, and the food was fantastic. A wonderful place to eat that I highly recommend!",43,211
 2016-03-10,1,1,Hate this place lololol,382,35
-2009-04-17,2,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",273,184
+2009-04-17,2,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",273,184
 2024-01-03,4,4,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",127,197
 2021-10-18,4,5,"Enjoyed a great dinner here. The atmosphere was pleasant, and the staff were courteous. The menu had something for everyone, and our meals were delicious. Will definitely visit again!",321,4
 2017-03-17,4,4,"Fantastic dining experience! The ambiance was warm and inviting, the staff were attentive, and the food was superb. Highly recommend this place and can't wait to return!",119,188
 2020-01-11,5,5,Great service!,192,98
 2015-02-05,0,1,"Had a reasonable meal here. The setting was nice, and the staff were polite. The food was good, though not remarkable. It's a decent spot for a casual meal.I dined here recently and was disappointed. The atmosphere was lackluster, and the staff were inattentive. The menu lacked variety, and the food was mediocre at best. Not a place I would recommend.",323,160
-2014-08-12,1,0,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldn’t dine here again.",290,16
+2014-08-12,1,0,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldnï¿½t dine here again.",290,16
 2012-06-04,4,4,"This restaurant is a gem. The atmosphere is elegant, the staff are friendly, and the food is exceptional. A highly recommended spot for a great meal. Will be back for sure!",272,214
 2012-11-07,5,5,Great food,67,39
 2023-10-10,2,2,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",44,134
 2013-05-16,5,4,"Had a lovely meal here. The ambiance was relaxing, the service was excellent, and the food was delicious. Highly recommend this restaurant and will definitely return!",186,2
 2018-02-26,5,5,"Enjoyed a great dinner here. The atmosphere was pleasant, and the staff were courteous. The menu had something for everyone, and our meals were delicious. Will definitely visit again!",228,1
-2022-06-16,2,0,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",348,197
+2022-06-16,2,0,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",348,197
 2011-01-23,3,5,Great time!,352,232
 2007-05-14,4,4,"Had an amazing meal at this restaurant. The ambiance was cozy, and the service was excellent. The food was flavorful and beautifully presented. A wonderful dining spot that I highly recommend!",327,113
 2016-07-25,4,4,"I recently dined here and had a fantastic experience. The atmosphere was inviting, and the staff were friendly and attentive. The menu had a great variety, and everything we ordered was delicious and well-prepared. Highly recommend and will definitely return!",48,31
@@ -142,9 +142,9 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2016-12-24,1,0,Bringing my gf here next time hehe,336,134
 2012-01-07,4,4,"Recently dined here and had a wonderful time. The atmosphere was cozy, the service was excellent, and the food was amazing. Highly recommend and will definitely be back!",385,141
 2014-11-22,3,3,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",209,76
-2008-04-18,0,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",123,92
+2008-04-18,0,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",123,92
 2008-12-08,4,4,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",248,41
-2007-05-13,2,1,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",377,162
+2007-05-13,2,1,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",377,162
 2013-06-30,5,4,Great service!,347,37
 2015-03-02,1,2,Found a fly in my food,177,110
 2024-04-10,2,0,Bringing my gf here next time hehe,59,150
@@ -169,7 +169,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2013-07-04,5,5,Good food for the price,195,160
 2023-02-01,4,4,"Had a lovely meal here. The ambiance was relaxing, the service was excellent, and the food was delicious. Highly recommend this restaurant and will definitely return!",212,216
 2009-11-01,2,0,"My experience here was fairly positive. The setting was pleasant, and the staff were polite. The menu offered a reasonable selection, and the dishes were fine. A solid option for dining out.",85,197
-2005-11-24,1,1,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",97,216
+2005-11-24,1,1,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",97,216
 2017-03-24,0,1,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",191,38
 2005-03-21,4,4,"Fantastic dining experience! The ambiance was warm and inviting, the staff were attentive, and the food was superb. Highly recommend this place and can't wait to return!",4,233
 2006-04-24,0,0,"My experience here was fairly positive. The setting was pleasant, and the staff were polite. The menu offered a reasonable selection, and the dishes were fine. A solid option for dining out.",121,185
@@ -192,7 +192,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2012-11-24,5,5,"This restaurant is a gem. The atmosphere is elegant, the staff are friendly, and the food is exceptional. A highly recommended spot for a great meal. Will be back for sure!",347,19
 2015-08-11,5,4,"Had a lovely meal here. The ambiance was relaxing, the service was excellent, and the food was delicious. Highly recommend this restaurant and will definitely return!",289,212
 2016-06-26,1,2,"Had an okay meal here. The atmosphere was pleasant, and the service was fine. The food was average but decent overall. It's a decent spot for a meal.",74,170
-2012-05-24,1,1,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",244,211
+2012-05-24,1,1,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",244,211
 2009-09-07,5,4,"Enjoyed a great dinner here. The atmosphere was pleasant, and the staff were courteous. The menu had something for everyone, and our meals were delicious. Will definitely visit again!",315,140
 2006-10-10,4,3,"Fantastic dining experience! The ambiance was warm and inviting, the staff were attentive, and the food was superb. Highly recommend this place and can't wait to return!",265,69
 2019-01-05,4,5,Good food for the price,55,81
@@ -208,7 +208,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2022-06-24,0,2,"Enjoyed a meal here recently. The setting was nice, and the service was acceptable. The food was decent, though not particularly memorable. A reasonable choice for dining out.",240,49
 2011-06-26,3,3,Great time!,193,120
 2016-01-03,4,5,"Fantastic dining experience! The ambiance was warm and inviting, the staff were attentive, and the food was superb. Highly recommend this place and can't wait to return!",107,96
-2018-07-05,0,0,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",218,71
+2018-07-05,0,0,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",218,71
 2012-08-15,2,1,"Had an okay meal here. The atmosphere was pleasant, and the service was fine. The food was average but decent overall. It's a decent spot for a meal.",192,33
 2009-07-09,3,4,"Great dining experience! The decor was modern and stylish, the staff were attentive, and the food was fantastic. A wonderful place to eat that I highly recommend!",48,149
 2018-12-30,4,4,"My experience here was fairly positive. The setting was pleasant, and the staff were polite. The menu offered a reasonable selection, and the dishes were fine. A solid option for dining out.",11,163
@@ -217,10 +217,10 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2007-08-17,2,1,"I dined here recently and had a pleasant experience. The atmosphere was nice, and the staff were generally attentive. The menu had a decent variety, and the food was good. Overall, it was an enjoyable visit.",215,27
 2014-10-14,0,2,Kicked me out for NOTHING,274,9
 2017-05-30,0,0,"This restaurant failed to impress. The decor was dated, and the service was lacking. The food was mediocre and did not meet expectations. A place I would avoid.",329,90
-2010-08-15,2,0,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",220,57
+2010-08-15,2,0,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",220,57
 2024-05-22,4,4,Good food for the price,329,70
 2012-11-11,4,5,"This restaurant is a gem. The atmosphere is elegant, the staff are friendly, and the food is exceptional. A highly recommended spot for a great meal. Will be back for sure!",264,200
-2010-05-19,1,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",296,157
+2010-05-19,1,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",296,157
 2015-04-23,4,4,Great service!,62,45
 2006-08-09,4,4,Good food for the price,380,208
 2018-04-30,2,1,"I dined here recently and had a pleasant experience. The atmosphere was nice, and the staff were generally attentive. The menu had a decent variety, and the food was good. Overall, it was an enjoyable visit.",135,221
@@ -230,13 +230,13 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2008-10-25,5,4,"Had an amazing meal at this restaurant. The ambiance was cozy, and the service was excellent. The food was flavorful and beautifully presented. A wonderful dining spot that I highly recommend!",42,170
 2017-02-11,4,4,Great food,241,70
 2022-12-19,1,2,"My experience here was fairly positive. The setting was pleasant, and the staff were polite. The menu offered a reasonable selection, and the dishes were fine. A solid option for dining out.",151,71
-2018-10-11,0,1,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldn’t dine here again.",156,224
+2018-10-11,0,1,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldnï¿½t dine here again.",156,224
 2011-03-14,0,0,"Had an okay meal here. The atmosphere was pleasant, and the service was fine. The food was average but decent overall. It's a decent spot for a meal.",170,76
 2017-01-13,2,1,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",54,129
-2009-11-08,1,1,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldn’t recommend this place.",322,19
+2009-11-08,1,1,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldnï¿½t recommend this place.",322,19
 2005-01-05,5,5,"Had an amazing meal at this restaurant. The ambiance was cozy, and the service was excellent. The food was flavorful and beautifully presented. A wonderful dining spot that I highly recommend!",335,182
 2021-02-04,0,1,"My experience here was underwhelming. The setting was uninspiring, and the staff seemed disinterested. The menu was limited, and the dishes were poorly executed. Not a memorable visit.",292,34
-2005-12-12,1,0,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldn’t recommend this place.",368,78
+2005-12-12,1,0,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldnï¿½t recommend this place.",368,78
 2016-04-11,5,3,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",262,121
 2022-08-08,1,0,Kicked me out for NOTHING,21,18
 2006-07-31,2,2,"Enjoyed a meal here recently. The setting was nice, and the service was acceptable. The food was decent, though not particularly memorable. A reasonable choice for dining out.",121,188
@@ -253,9 +253,9 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2018-11-02,5,4,"Recently dined here and had a wonderful time. The atmosphere was cozy, the service was excellent, and the food was amazing. Highly recommend and will definitely be back!",124,35
 2024-08-28,5,4,"Recently dined here and had a wonderful time. The atmosphere was cozy, the service was excellent, and the food was amazing. Highly recommend and will definitely be back!",244,23
 2024-09-12,5,5,"This restaurant offers a delightful dining experience. The decor is stylish, and the staff are very accommodating. The dishes were fresh and tasty. I highly recommend this place and look forward to coming back.",371,102
-2011-09-29,2,0,"Had a poor experience here. The setting was lackluster, and the staff were inattentive. The food was bland and not enjoyable. I won’t be returning.",105,47
+2011-09-29,2,0,"Had a poor experience here. The setting was lackluster, and the staff were inattentive. The food was bland and not enjoyable. I wonï¿½t be returning.",105,47
 2023-12-10,3,3,"Great dining experience! The decor was modern and stylish, the staff were attentive, and the food was fantastic. A wonderful place to eat that I highly recommend!",63,136
-2014-12-26,0,0,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldn’t recommend this place.",148,128
+2014-12-26,0,0,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldnï¿½t recommend this place.",148,128
 2005-03-19,4,4,"I recently dined here and had a fantastic experience. The atmosphere was inviting, and the staff were friendly and attentive. The menu had a great variety, and everything we ordered was delicious and well-prepared. Highly recommend and will definitely return!",83,181
 2024-11-15,5,5,"Great dining experience! The decor was modern and stylish, the staff were attentive, and the food was fantastic. A wonderful place to eat that I highly recommend!",277,6
 2019-10-15,5,4,"I recently dined here and had a fantastic experience. The atmosphere was inviting, and the staff were friendly and attentive. The menu had a great variety, and everything we ordered was delicious and well-prepared. Highly recommend and will definitely return!",245,142
@@ -280,7 +280,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2010-11-13,5,4,"Had an amazing meal at this restaurant. The ambiance was cozy, and the service was excellent. The food was flavorful and beautifully presented. A wonderful dining spot that I highly recommend!",294,201
 2012-01-30,3,5,Bringing my gf here next time hehe,147,71
 2011-06-22,4,4,"This restaurant is a gem. The atmosphere is elegant, the staff are friendly, and the food is exceptional. A highly recommended spot for a great meal. Will be back for sure!",224,200
-2014-08-07,0,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",163,71
+2014-08-07,0,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",163,71
 2009-08-28,4,4,"Fantastic dining experience! The ambiance was warm and inviting, the staff were attentive, and the food was superb. Highly recommend this place and can't wait to return!",242,46
 2018-02-17,5,5,"Great dining experience! The decor was modern and stylish, the staff were attentive, and the food was fantastic. A wonderful place to eat that I highly recommend!",184,162
 2021-03-27,5,4,"Had an amazing meal at this restaurant. The ambiance was cozy, and the service was excellent. The food was flavorful and beautifully presented. A wonderful dining spot that I highly recommend!",201,96
@@ -288,8 +288,8 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2021-11-19,4,5,"This restaurant is a gem. The atmosphere is elegant, the staff are friendly, and the food is exceptional. A highly recommended spot for a great meal. Will be back for sure!",21,19
 2024-02-19,2,0,Hate this place lololol,235,55
 2024-04-03,5,4,Good food for the price,348,146
-2021-02-09,2,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",5,235
-2019-10-25,0,2,"Had a poor experience here. The setting was lackluster, and the staff were inattentive. The food was bland and not enjoyable. I won’t be returning.",49,218
+2021-02-09,2,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",5,235
+2019-10-25,0,2,"Had a poor experience here. The setting was lackluster, and the staff were inattentive. The food was bland and not enjoyable. I wonï¿½t be returning.",49,218
 2022-10-21,5,5,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",309,220
 2005-11-23,1,2,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",99,151
 2015-01-14,2,1,"This restaurant failed to impress. The decor was dated, and the service was lacking. The food was mediocre and did not meet expectations. A place I would avoid.",35,212
@@ -303,7 +303,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2018-01-16,4,4,"Recently dined here and had a wonderful time. The atmosphere was cozy, the service was excellent, and the food was amazing. Highly recommend and will definitely be back!",372,61
 2016-10-20,4,5,"Enjoyed a great dinner here. The atmosphere was pleasant, and the staff were courteous. The menu had something for everyone, and our meals were delicious. Will definitely visit again!",347,78
 2021-11-13,1,0,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",363,189
-2008-06-17,1,1,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldn’t recommend this place.",279,197
+2008-06-17,1,1,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldnï¿½t recommend this place.",279,197
 2018-09-16,4,3,Great time!,362,212
 2022-02-18,4,4,Great food,13,213
 2014-08-23,3,5,Pog,35,43
@@ -311,28 +311,28 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2016-06-20,5,5,"Had a lovely meal here. The ambiance was relaxing, the service was excellent, and the food was delicious. Highly recommend this restaurant and will definitely return!",291,191
 2020-11-23,1,2,"This restaurant was a disappointment. The atmosphere was uninviting, and the service was poor. The food was tasteless and overpriced. Not a place I would recommend.",155,230
 2024-03-20,0,1,"I dined here recently and had a pleasant experience. The atmosphere was nice, and the staff were generally attentive. The menu had a decent variety, and the food was good. Overall, it was an enjoyable visit.",6,6
-2022-06-02,0,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I won’t be coming back.",284,122
+2022-06-02,0,2,"Had an unpleasant meal here. The atmosphere was uninviting, and the service was subpar. The food was tasteless and poorly prepared. I wonï¿½t be coming back.",284,122
 2017-10-13,1,1,"I dined here recently and had a pleasant experience. The atmosphere was nice, and the staff were generally attentive. The menu had a decent variety, and the food was good. Overall, it was an enjoyable visit.",90,81
 2021-07-20,4,5,"Recently dined here and had a wonderful time. The atmosphere was cozy, the service was excellent, and the food was amazing. Highly recommend and will definitely be back!",277,121
 2017-02-25,5,5,"Recently dined here and had a wonderful time. The atmosphere was cozy, the service was excellent, and the food was amazing. Highly recommend and will definitely be back!",289,195
 2016-12-30,5,3,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",17,152
 2005-07-16,5,5,"Had a lovely meal here. The ambiance was relaxing, the service was excellent, and the food was delicious. Highly recommend this restaurant and will definitely return!",379,200
 2013-05-18,4,4,"Fantastic dining experience! The ambiance was warm and inviting, the staff were attentive, and the food was superb. Highly recommend this place and can't wait to return!",225,157
-2008-11-26,2,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",165,111
+2008-11-26,2,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",165,111
 2010-07-20,3,3,"I dined here recently and had a pleasant experience. The atmosphere was nice, and the staff were generally attentive. The menu had a decent variety, and the food was good. Overall, it was an enjoyable visit.",375,194
 2021-08-10,0,2,"Had an okay meal here. The atmosphere was pleasant, and the service was fine. The food was average but decent overall. It's a decent spot for a meal.",221,49
 2017-09-17,1,0,"My experience here was fairly positive. The setting was pleasant, and the staff were polite. The menu offered a reasonable selection, and the dishes were fine. A solid option for dining out.",303,192
 2023-11-25,1,0,"This restaurant was quite nice. The ambiance was comfortable, and the service was satisfactory. The food was decent and met our expectations. It's a good place for a casual meal.",56,235
 2017-10-29,1,1,"This restaurant was a disappointment. The atmosphere was uninviting, and the service was poor. The food was tasteless and overpriced. Not a place I would recommend.",305,87
 2008-01-03,2,1,"This restaurant was quite nice. The ambiance was comfortable, and the service was satisfactory. The food was decent and met our expectations. It's a good place for a casual meal.",109,12
-2017-10-10,1,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",265,183
+2017-10-10,1,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",265,183
 2023-11-25,5,4,Great food,382,211
 2024-08-08,4,4,"This restaurant offers a delightful dining experience. The decor is stylish, and the staff are very accommodating. The dishes were fresh and tasty. I highly recommend this place and look forward to coming back.",28,6
 2011-10-20,1,0,"This restaurant was quite nice. The ambiance was comfortable, and the service was satisfactory. The food was decent and met our expectations. It's a good place for a casual meal.",127,236
 2012-06-05,0,0,"This restaurant was a disappointment. The atmosphere was uninviting, and the service was poor. The food was tasteless and overpriced. Not a place I would recommend.",373,204
 2012-09-30,5,5,"This restaurant is a gem. The atmosphere is elegant, the staff are friendly, and the food is exceptional. A highly recommended spot for a great meal. Will be back for sure!",247,110
 2016-08-06,4,3,"Had a lovely meal here. The ambiance was relaxing, the service was excellent, and the food was delicious. Highly recommend this restaurant and will definitely return!",77,7
-2018-02-16,1,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldn’t dine here again.",336,68
+2018-02-16,1,2,"This restaurant was a letdown. The ambiance was dull, and the service was slow. The food was bland and not worth the price. I wouldnï¿½t dine here again.",336,68
 2023-03-08,5,5,Pog,159,81
 2024-02-24,4,4,Great time!,308,6
 2017-03-30,4,5,Good food for the price,358,206
@@ -371,7 +371,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2021-01-29,5,5,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",393,193
 2021-11-05,5,5,Good food for the price,290,180
 2006-01-14,4,4,"Dining here was a decent experience. The ambiance was fine, and the staff were friendly. The food was good, though not exceptional. It's a solid choice for a meal.",3,211
-2024-01-11,2,2,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldn’t dine here again.",246,81
+2024-01-11,2,2,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldnï¿½t dine here again.",246,81
 2005-12-20,5,4,Great food,154,11
 2009-09-01,4,4,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",66,156
 2023-02-16,5,4,"Dined here recently and loved it. The setting was charming, and the service was top-notch. The food was flavorful and well-prepared. Definitely a place I recommend and will revisit!",271,112
@@ -425,7 +425,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2006-03-16,1,2,Found a fly in my food,342,216
 2007-08-08,5,4,Great time!,42,203
 2012-09-27,5,4,"Fantastic dining experience! The ambiance was warm and inviting, the staff were attentive, and the food was superb. Highly recommend this place and can't wait to return!",268,139
-2011-07-02,0,1,"Had a poor experience here. The setting was lackluster, and the staff were inattentive. The food was bland and not enjoyable. I won’t be returning.",222,182
+2011-07-02,0,1,"Had a poor experience here. The setting was lackluster, and the staff were inattentive. The food was bland and not enjoyable. I wonï¿½t be returning.",222,182
 2012-12-06,5,4,Great service!,185,171
 2013-03-17,5,5,"Great dining experience! The decor was modern and stylish, the staff were attentive, and the food was fantastic. A wonderful place to eat that I highly recommend!",386,54
 2008-07-23,0,2,"I dined here recently and had a pleasant experience. The atmosphere was nice, and the staff were generally attentive. The menu had a decent variety, and the food was good. Overall, it was an enjoyable visit.",129,19
@@ -469,7 +469,7 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2016-01-23,4,5,Great time!,276,46
 2011-12-10,1,0,Owner is a terrible person,6,94
 2024-12-24,4,4,"Recently dined here and had a wonderful time. The atmosphere was cozy, the service was excellent, and the food was amazing. Highly recommend and will definitely be back!",384,141
-2024-06-18,2,0,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldn’t dine here again.",153,35
+2024-06-18,2,0,"My visit here was disappointing. The setting was unappealing, and the staff were indifferent. The food was bland and poorly presented. I wouldnï¿½t dine here again.",153,35
 2016-08-23,5,5,"I dined here recently and had a pleasant experience. The atmosphere was nice, and the staff were generally attentive. The menu had a decent variety, and the food was good. Overall, it was an enjoyable visit.",214,40
 2018-12-24,1,1,"Enjoyed a meal here recently. The setting was nice, and the service was acceptable. The food was decent, though not particularly memorable. A reasonable choice for dining out.",57,57
 2015-04-23,5,4,Great food,253,173
@@ -488,13 +488,13 @@ date,experience_rating,would_revisit_rating,comment,cus_no,poi_code
 2013-05-29,2,2,"This restaurant was a disappointment. The atmosphere was uninviting, and the service was poor. The food was tasteless and overpriced. Not a place I would recommend.",356,79
 2015-07-02,1,2,Hate this place lololol,160,47
 2016-04-01,4,5,Pog,168,147
-2014-03-03,1,0,"Had a poor experience here. The setting was lackluster, and the staff were inattentive. The food was bland and not enjoyable. I won’t be returning.",83,135
+2014-03-03,1,0,"Had a poor experience here. The setting was lackluster, and the staff were inattentive. The food was bland and not enjoyable. I wonï¿½t be returning.",83,135
 2011-08-26,5,5,"I recently dined here and had a fantastic experience. The atmosphere was inviting, and the staff were friendly and attentive. The menu had a great variety, and everything we ordered was delicious and well-prepared. Highly recommend and will definitely return!",332,39
 2023-07-15,2,1,"This restaurant was a disappointment. The atmosphere was uninviting, and the service was poor. The food was tasteless and overpriced. Not a place I would recommend.",96,62
 2020-09-05,4,5,"I recently dined here and had a fantastic experience. The atmosphere was inviting, and the staff were friendly and attentive. The menu had a great variety, and everything we ordered was delicious and well-prepared. Highly recommend and will definitely return!",314,115
 2019-10-09,2,1,Kicked me out for NOTHING,387,228
 2008-03-04,0,2,"Had a reasonable meal here. The setting was nice, and the staff were polite. The food was good, though not remarkable. It's a decent spot for a casual meal.I dined here recently and was disappointed. The atmosphere was lackluster, and the staff were inattentive. The menu lacked variety, and the food was mediocre at best. Not a place I would recommend.",296,141
-2009-05-21,0,1,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldn’t recommend this place.",7,47
+2009-05-21,0,1,"Dining here was disappointing. The ambiance was drab, and the staff were unhelpful. The food was unimpressive and not enjoyable. I wouldnï¿½t recommend this place.",7,47
 2024-05-21,5,5,"Great dining experience! The decor was modern and stylish, the staff were attentive, and the food was fantastic. A wonderful place to eat that I highly recommend!",275,194
 2024-05-20,4,4,Great food,339,102
 2007-12-24,5,4,"Fantastic dining experience! The ambiance was warm and inviting, the staff were attentive, and the food was superb. Highly recommend this place and can't wait to return!",371,1

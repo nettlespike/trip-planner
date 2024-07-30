@@ -17,8 +17,23 @@ VALUES ("Tims", "MTWTF",
 -- Delete poi
 DELETE FROM poi WHERE pid = 123;
 
--- Update POI
+-- Update poi
 UPDATE poi SET 
 name = "Tims", days_of_week= "MTWTFSS", time= null,
 address= "150 University Ave W", reservation_details= null, reservation_required= 0, 
 location= "Waterloo", accessibility=null WHERE pid = 4;
+
+-- Select schedule entries and their corresponding poi name and poi reservation_details
+SELECT schedule.*, poi.name, poi.reservation_details FROM schedule 
+LEFT JOIN poi ON schedule.pid = poi.pid 
+WHERE schedule.cus_no = 1;
+
+-- Select popular pois
+SELECT info.pid, info.popularity, ROUND(info.rating, 2) as rating, poi.name, poi.reservation_details FROM poi 
+RIGHT JOIN (SELECT popTable.*, rateTable.rating FROM (SELECT pid, COUNT(*) as popularity 
+FROM schedule GROUP BY pid) AS popTable 
+LEFT JOIN (SELECT poi_code, avg(would_revisit_rating) as rating FROM review GROUP BY poi_code) as rateTable 
+ON rateTable.poi_code = popTable.pid) AS info ON poi.pid = info.pid 
+ORDER BY info.popularity DESC
+LIMIT 5;
+
