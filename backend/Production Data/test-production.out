@@ -161,4 +161,8 @@
     }
 ]
 
+4. No output, but the specified entry will be added to the poi table.
 
+5. No output, but the specified entry will be deleted from the poi table.
+
+6. No output, but the specified entry in the poi table will be updated.
